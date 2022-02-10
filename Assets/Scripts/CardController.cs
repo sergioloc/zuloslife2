@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class CardController : MonoBehaviour {
 
-    Collider2D collider;
     public bool isSelected;
     public GameObject spawn;
 
     void Start() {
-        collider = GetComponent<Collider2D>();
         isSelected = false;
     }
 
     // GETTERS
 
     public Collider2D GetCollider() {
-        return collider;
+        return GetComponent<Collider2D>();
     }
 
     public GameObject GetSpawn() {

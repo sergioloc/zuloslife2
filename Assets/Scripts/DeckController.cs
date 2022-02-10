@@ -19,8 +19,8 @@ public class DeckController : MonoBehaviour {
             RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
             if (hit.collider != null) {
                 if (hit.collider == spawnArea) {
-                    //Debug.Log(mousePos2D);
-                    Debug.Log(GetActiveCard());
+                    CardController activeCard = GetActiveCard();
+                    Instantiate(activeCard.GetSpawn(), mousePos2D, Quaternion.identity);
                 }
                 else {
                     for (int i = 0; i < cards.Count; i++) {
