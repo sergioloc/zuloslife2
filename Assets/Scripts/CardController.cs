@@ -6,24 +6,31 @@ public class CardController : MonoBehaviour {
 
     Collider2D collider;
     public bool isSelected;
+    public GameObject spawn;
 
     void Start() {
         collider = GetComponent<Collider2D>();
         isSelected = false;
     }
 
-    void Update() {
-         if (Input.GetMouseButtonDown(0)) {
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
-            
-            RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
-            if (hit.collider != null && hit.collider == collider && !isSelected) {
-                Debug.Log(hit.collider.gameObject.name);
-                hit.collider.attachedRigidbody.AddForce(Vector2.up);
-                isSelected = true;
-            }
-        }
+    // GETTERS
+
+    public Collider2D GetCollider() {
+        return collider;
+    }
+
+    public GameObject GetSpawn() {
+        return spawn;
+    }
+
+    public bool IsSelected() {
+        return isSelected;
+    }
+
+    // SETTERS
+
+    public void SetSelected(bool isSelected) {
+        this.isSelected = isSelected;
     }
 
 }
