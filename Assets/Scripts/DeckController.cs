@@ -20,7 +20,11 @@ public class DeckController : MonoBehaviour {
             if (hit.collider != null) {
                 if (hit.collider == spawnArea) {
                     CardController activeCard = GetActiveCard();
-                    Instantiate(activeCard.GetSpawn(), mousePos2D, Quaternion.identity);
+                    if (activeCard != null) {
+                        Instantiate(activeCard.GetSpawn(), mousePos2D, Quaternion.identity);
+                        activeCard.SetSelected(false);
+                        activeCard.Cooldown();
+                    }
                 }
                 else {
                     for (int i = 0; i < cards.Count; i++) {
@@ -43,43 +47,53 @@ public class DeckController : MonoBehaviour {
     }
 
     public void pressCard1() {
-        cards[0].SetSelected(true);
-        cards[1].SetSelected(false);
-        cards[2].SetSelected(false);
-        cards[3].SetSelected(false);
-        cards[4].SetSelected(false);
+        if (cards[0].IsReady()) {
+            cards[0].SetSelected(true);
+            cards[1].SetSelected(false);
+            cards[2].SetSelected(false);
+            cards[3].SetSelected(false);
+            cards[4].SetSelected(false);
+        }
     }
 
     public void pressCard2() {
-        cards[0].SetSelected(false);
-        cards[1].SetSelected(true);
-        cards[2].SetSelected(false);
-        cards[3].SetSelected(false);
-        cards[4].SetSelected(false);
+        if (cards[1].IsReady()) {
+            cards[0].SetSelected(false);
+            cards[1].SetSelected(true);
+            cards[2].SetSelected(false);
+            cards[3].SetSelected(false);
+            cards[4].SetSelected(false);
+        }
     }
 
     public void pressCard3() {
-        cards[0].SetSelected(false);
-        cards[1].SetSelected(false);
-        cards[2].SetSelected(true);
-        cards[3].SetSelected(false);
-        cards[4].SetSelected(false);
+        if (cards[2].IsReady()) {
+            cards[0].SetSelected(false);
+            cards[1].SetSelected(false);
+            cards[2].SetSelected(true);
+            cards[3].SetSelected(false);
+            cards[4].SetSelected(false);
+        }
     }
 
     public void pressCard4() {
-        cards[0].SetSelected(false);
-        cards[1].SetSelected(false);
-        cards[2].SetSelected(false);
-        cards[3].SetSelected(true);
-        cards[4].SetSelected(false);
+        if (cards[3].IsReady()) {
+            cards[0].SetSelected(false);
+            cards[1].SetSelected(false);
+            cards[2].SetSelected(false);
+            cards[3].SetSelected(true);
+            cards[4].SetSelected(false);
+        }
     }
 
     public void pressCard5() {
-        cards[0].SetSelected(false);
-        cards[1].SetSelected(false);
-        cards[2].SetSelected(false);
-        cards[3].SetSelected(false);
-        cards[4].SetSelected(true);
+        if (cards[4].IsReady()) {
+            cards[0].SetSelected(false);
+            cards[1].SetSelected(false);
+            cards[2].SetSelected(false);
+            cards[3].SetSelected(false);
+            cards[4].SetSelected(true);
+        }
     }
 
 }

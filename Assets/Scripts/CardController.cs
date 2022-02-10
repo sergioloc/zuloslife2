@@ -1,14 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CardController : MonoBehaviour {
 
-    public bool isSelected;
-    public GameObject spawn;
+    [SerializeField]
+    private GameObject spawn;
+    [SerializeField]
+    private Image loader;
+    [SerializeField]
+    private int cooldown = 0;
+    [SerializeField]
+    private bool isSelected;
+
+    private float counter;
+    private bool isCooldown;
 
     void Start() {
+        loader.fillAmount = 0f;
+        counter = 0;
+        isCooldown = false;
         isSelected = false;
+    }
+
+    void Update() {
+        if (isCooldown) {
+            loader.fillAmount = counter / cooldown;
+            counter -= Time.deltaTime;
+            if (loader.fillAmount == 0f)
+                isCooldown = false;
+        }
     }
 
     // GETTERS
@@ -21,6 +43,10 @@ public class CardController : MonoBehaviour {
         return spawn;
     }
 
+    public bool IsReady() {
+        return counter <= 0;
+    }
+
     public bool IsSelected() {
         return isSelected;
     }
@@ -29,6 +55,14 @@ public class CardController : MonoBehaviour {
 
     public void SetSelected(bool isSelected) {
         this.isSelected = isSelected;
+    }
+
+    public void Cooldown() {
+        if (cooldown != 0) {
+            isCooldown = true;
+            counter = cooldown;
+            loader.fillAmount = 1f;
+        }
     }
 
 }

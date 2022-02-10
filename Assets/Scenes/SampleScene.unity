@@ -644,8 +644,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fcdff1668267f0469850a8d7a006218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isSelected: 0
   spawn: {fileID: 8373461442510106976, guid: 51b03be89f5f76444b06364fad6e549d, type: 3}
+  loader: {fileID: 2134053467}
+  cooldown: 5
+  isSelected: 0
 --- !u!114 &649391221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -869,8 +871,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fcdff1668267f0469850a8d7a006218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isSelected: 0
   spawn: {fileID: 7247062534220374791, guid: f1b53a7be09ae3741bd20ab77cf6fefc, type: 3}
+  loader: {fileID: 1195803671}
+  cooldown: 5
+  isSelected: 0
 --- !u!114 &825258550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -977,7 +981,7 @@ GameObject:
   - component: {fileID: 868248354}
   - component: {fileID: 868248353}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Loader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1131,7 +1135,7 @@ GameObject:
   - component: {fileID: 1195803672}
   - component: {fileID: 1195803671}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Loader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1285,7 +1289,7 @@ GameObject:
   - component: {fileID: 1345524782}
   - component: {fileID: 1345524781}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Loader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1401,8 +1405,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fcdff1668267f0469850a8d7a006218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isSelected: 0
   spawn: {fileID: 7587781305193324083, guid: ea787e0cb2ca2ab45a2bf66fc935f4df, type: 3}
+  loader: {fileID: 2104592492}
+  cooldown: 3
+  isSelected: 0
 --- !u!114 &1610882750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1644,8 +1650,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fcdff1668267f0469850a8d7a006218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isSelected: 0
   spawn: {fileID: 1035101452867884727, guid: 862e1f51c3501044e91f2a54a3ccc0c3, type: 3}
+  loader: {fileID: 1345524781}
+  cooldown: 3
+  isSelected: 0
 --- !u!1 &1743239556
 GameObject:
   m_ObjectHideFlags: 0
@@ -1699,8 +1707,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fcdff1668267f0469850a8d7a006218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isSelected: 0
   spawn: {fileID: 3892489512465882029, guid: 27c0e20c59bf9764cbe6fdae77d9a97d, type: 3}
+  loader: {fileID: 868248353}
+  cooldown: 3
+  isSelected: 0
 --- !u!114 &1743239559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1968,7 +1978,7 @@ GameObject:
   - component: {fileID: 2104592493}
   - component: {fileID: 2104592492}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Loader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2043,7 +2053,7 @@ GameObject:
   - component: {fileID: 2134053468}
   - component: {fileID: 2134053467}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Loader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
