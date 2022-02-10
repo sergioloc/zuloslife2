@@ -42,4 +42,44 @@ public class DeckController : MonoBehaviour {
         return null;
     }
 
+    public void pressCard1() {
+        cards[0].SetSelected(true);
+        cards[1].SetSelected(false);
+        cards[2].SetSelected(false);
+        cards[3].SetSelected(false);
+        cards[4].SetSelected(false);
+    }
+
+    public void pressCard2() {
+        cards[0].SetSelected(false);
+        cards[1].SetSelected(true);
+        cards[2].SetSelected(false);
+        cards[3].SetSelected(false);
+        cards[4].SetSelected(false);
+    }
+
+    public void pressCard3() {
+        cards[0].SetSelected(false);
+        cards[1].SetSelected(false);
+        cards[2].SetSelected(true);
+        cards[3].SetSelected(false);
+        cards[4].SetSelected(false);
+    }
+
+    public void pressCard4() {
+        cards[0].SetSelected(false);
+        cards[1].SetSelected(false);
+        cards[2].SetSelected(false);
+        cards[3].SetSelected(true);
+        cards[4].SetSelected(false);
+    }
+
+    public void pressCard5() {
+        cards[0].SetSelected(false);
+        cards[1].SetSelected(false);
+        cards[2].SetSelected(false);
+        cards[3].SetSelected(false);
+        cards[4].SetSelected(true);
+    }
+
 }
