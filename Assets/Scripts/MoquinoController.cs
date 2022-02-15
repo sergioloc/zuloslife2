@@ -5,13 +5,15 @@ using UnityEngine;
 public class MoquinoController : MonoBehaviour {
 
     public float speed;
-    public int targets;
+    public GameObject mucus;
+    public Transform shotPoint;
 
     private bool run;
+    private Animator animator;
 
     void Start() {
-        targets = 0;
         run = true;
+        animator = GetComponent<Animator>();
     }
 
     void FixedUpdate() {
@@ -22,23 +24,21 @@ public class MoquinoController : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag == "Player") {
-            targets++;
-            StartCoroutine(StopRunning());
+            StartCoroutine(Attack());
         }
     }
 
-    void OnTriggerExit2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Player") {
-            targets--;
-            if (targets < 1){
-                run = true;
-            }
-        }
-    }
-
-    IEnumerator StopRunning() {
-        yield return new WaitForSeconds(1f);
+    IEnumerator Attack() {
+        yield return new WaitForSeconds(1.5f);
         run = false;
+        animator.SetTrigger("Attack");
+        
+        yield return new WaitForSeconds(1.15f);
+
+        Instantiate(mucus, shotPoint.position, transform.rotation);
+
+        yield return new WaitForSeconds(0.5f);
+        run = true;
     }
 
 }
