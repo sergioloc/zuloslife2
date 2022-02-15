@@ -9,10 +9,12 @@ public class MoquinoController : MonoBehaviour {
     public Transform shotPoint;
 
     private bool run;
+    private bool isAttacking;
     private Animator animator;
 
     void Start() {
         run = true;
+        isAttacking = false;
         animator = GetComponent<Animator>();
     }
 
@@ -23,12 +25,14 @@ public class MoquinoController : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Player") {
+        if (collision.gameObject.tag == "Player" && !isAttacking) {
             StartCoroutine(Attack());
         }
     }
 
     IEnumerator Attack() {
+        isAttacking = true;
+
         yield return new WaitForSeconds(1.5f);
         run = false;
         animator.SetTrigger("Attack");
@@ -39,6 +43,7 @@ public class MoquinoController : MonoBehaviour {
 
         yield return new WaitForSeconds(0.5f);
         run = true;
+        isAttacking = false;
     }
 
 }
