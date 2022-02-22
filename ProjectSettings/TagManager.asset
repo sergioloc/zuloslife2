@@ -41,6 +41,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1035242685
+    locked: 0
+  - name: Muro
+    uniqueID: 1563869137
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
