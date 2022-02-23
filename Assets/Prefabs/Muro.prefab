@@ -5891,6 +5891,7 @@ GameObject:
   - component: {fileID: 5446771408115831045}
   - component: {fileID: 8693221263780160304}
   - component: {fileID: 3244130639875846353}
+  - component: {fileID: 7198520414501248471}
   m_Layer: 0
   m_Name: Muro
   m_TagString: Untagged
@@ -5907,7 +5908,7 @@ Transform:
   m_GameObject: {fileID: 5446771408115831044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 5446771408994008111}
   m_Father: {fileID: 0}
@@ -5945,6 +5946,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+--- !u!114 &7198520414501248471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5446771408115831044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e768d91d62eeafd45b446568eecb6799, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5446771408764181202
 GameObject:
   m_ObjectHideFlags: 0
