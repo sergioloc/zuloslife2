@@ -5,6 +5,7 @@ using UnityEngine;
 public class KasperController : MonoBehaviour {
 
     public float speed;
+    public ParticleSystem inhaleParticles;
 
     private bool run;
     private Animator animator;
@@ -13,7 +14,6 @@ public class KasperController : MonoBehaviour {
         run = true;
         animator = GetComponent<Animator>();
     }
-
     
     void FixedUpdate() {
         if (run) {
@@ -26,6 +26,10 @@ public class KasperController : MonoBehaviour {
             run = false;
             animator.SetTrigger("Attack");
         }
+    }
+
+    void Inhale() {
+        inhaleParticles.Play();
     }
     
 }
