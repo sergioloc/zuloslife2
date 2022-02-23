@@ -21,10 +21,10 @@ public class MuroController : MonoBehaviour {
         }
     }
 
-    void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Shield") {
+    void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.tag == "Player") {
             run = false;
-            //animator.SetTrigger("Attack");
+            animator.SetBool("isWall", true);
         }
     }
     
