@@ -19,10 +19,6 @@ public class LlamilioController : MonoBehaviour {
     private float distanceToTarget;
     private bool lookRight = true;
 
-    void Start() {
-       
-    }
-
     void FixedUpdate() {
         if (run) {
             transform.Translate(Vector2.right * (speed/10) * Time.deltaTime);
@@ -31,8 +27,9 @@ public class LlamilioController : MonoBehaviour {
             FollowTarget();
         }
 
-        if (targets.Count == 0)
+        if (targets.Count == 0) {
             target = null;
+        }
         else
             target = targets[NearestTarget()];
 
@@ -43,7 +40,7 @@ public class LlamilioController : MonoBehaviour {
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.tag == "Ground" && !run) {
+        if (collision.gameObject.tag == "Ground" && !run && target == null) {
             run = true;
         }
     }
@@ -52,13 +49,8 @@ public class LlamilioController : MonoBehaviour {
         if (collision.gameObject.tag == "Kasper") {
             if (!targets.Contains(collision.transform))
                 targets.Add(collision.transform);
-        }
-    }
-
-    void OnTriggerStay2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Kasper" && run) {
-            fireParticles.Play();
             run = false;
+            fireParticles.Play();
         }
     }
 
@@ -66,8 +58,9 @@ public class LlamilioController : MonoBehaviour {
         if (collision.gameObject.tag == "Kasper") {
             if (targets.Contains(collision.transform))
                 targets.Remove(collision.transform);
-            
+
             fireParticles.Stop();
+
             run = true;
             target = null;
             if (!lookRight) {
@@ -97,6 +90,7 @@ public class LlamilioController : MonoBehaviour {
         limit = -Mathf.Abs(limit);
     }
 
+    // Follow nearest target from area
     private void FollowTarget() {
         if (Mathf.Abs(distanceToTarget) >= 2.3) {
             Vector3 position = new Vector3(target.transform.position.x - limit, transform.position.y, transform.position.z);
@@ -104,6 +98,7 @@ public class LlamilioController : MonoBehaviour {
         }
     }
 
+    // Get nearest target from area
     private int NearestTarget() {
         float[] distances = new float[targets.Count];
 
