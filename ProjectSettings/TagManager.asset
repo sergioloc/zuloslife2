@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Enemy
   - Shield
+  - Kasper
   layers:
   - Default
   - TransparentFX
@@ -15,9 +16,9 @@ TagManager:
   - Water
   - UI
   - Player
-  - Liquid
-  - 
-  - 
+  - Llamilio
+  - Kasper
+  - Fire
   - 
   - 
   - 
@@ -46,6 +47,9 @@ TagManager:
     locked: 0
   - name: Muro
     uniqueID: 1563869137
+    locked: 0
+  - name: Llamilio
+    uniqueID: 1058822491
     locked: 0
   - name: Default
     uniqueID: 0
