@@ -1457,11 +1457,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7265450188093971967, guid: 51b03be89f5f76444b06364fad6e549d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.29
+      value: -4.43
       objectReference: {fileID: 0}
     - target: {fileID: 7265450188093971967, guid: 51b03be89f5f76444b06364fad6e549d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.14
+      value: -0.09
       objectReference: {fileID: 0}
     - target: {fileID: 7265450188093971967, guid: 51b03be89f5f76444b06364fad6e549d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1669,7 +1669,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 407606420861283779, guid: b03553b2ff0094b48a42e1b27c0a9ba8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.71414
+      value: 4.63
       objectReference: {fileID: 0}
     - target: {fileID: 407606420861283779, guid: b03553b2ff0094b48a42e1b27c0a9ba8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1714,6 +1714,10 @@ PrefabInstance:
     - target: {fileID: 3861042275280852518, guid: b03553b2ff0094b48a42e1b27c0a9ba8, type: 3}
       propertyPath: m_Name
       value: Kasper
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861042275280852518, guid: b03553b2ff0094b48a42e1b27c0a9ba8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b03553b2ff0094b48a42e1b27c0a9ba8, type: 3}

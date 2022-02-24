@@ -21,29 +21,33 @@ public class LlamilioController : MonoBehaviour {
         if (run) {
             transform.Translate(Vector2.right * (speed/10) * Time.deltaTime);
         }
-        else {
+        else if (!lookRight) {
+            FollowTarget();
+        }
+        if (target != null) {
             distanceToTarget = target.transform.position.x - transform.position.x;
             LookAtTarget();
         }
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.tag == "Ground") {
-            //run = true;
+        if (collision.gameObject.tag == "Ground" && !run) {
+            run = true;
         }
     }
 
-    void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Kasper") {
-            //fireParticles.Play();
+    void OnTriggerStay2D(Collider2D collision) {
+        if (collision.gameObject.tag == "Kasper" && run) {
+            fireParticles.Play();
             run = false;
         }
     }
 
     void OnTriggerExit2D(Collider2D collision) {
         if (collision.gameObject.tag == "Kasper") {
-            //fireParticles.Stop();
+            fireParticles.Stop();
             run = true;
+            target = null;
             if (!lookRight) {
                 LookRight();
             }
@@ -60,15 +64,22 @@ public class LlamilioController : MonoBehaviour {
     }
 
     private void LookRight() {
-        transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         lookRight = true;
-        limit = -limit;
+        limit = Mathf.Abs(limit);
     }
 
     private void LookLeft() {
-        transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         lookRight = false;
-        limit = -limit;
+        limit = -Mathf.Abs(limit);
+    }
+
+    private void FollowTarget() {
+        if (Mathf.Abs(distanceToTarget) >= 2.3) {
+            Vector3 position = new Vector3(target.transform.position.x - limit, transform.position.y, transform.position.z);
+            transform.position = Vector3.MoveTowards(transform.position, position, speed * Time.deltaTime);
+        }
     }
 
 }

@@ -57,7 +57,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 20, y: 2}
+  m_Size: {x: 30, y: 2}
   m_EdgeRadius: 0
 --- !u!212 &7167188363587671504
 SpriteRenderer:
@@ -247,6 +247,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   fireParticles: {fileID: 8871652995457074295}
+  smokeParticles: {fileID: 4378756233055817081}
+  sparksParticles: {fileID: 9071607355263530861}
   target: {fileID: 0}
 --- !u!1001 &6233357794436002019
 PrefabInstance:
@@ -325,5 +327,15 @@ Transform:
 --- !u!198 &8871652995457074295 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 3287386412356924564, guid: 1701ef4c9f342084db769bf4cda7b952, type: 3}
+  m_PrefabInstance: {fileID: 6233357794436002019}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4378756233055817081 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7657564654198390170, guid: 1701ef4c9f342084db769bf4cda7b952, type: 3}
+  m_PrefabInstance: {fileID: 6233357794436002019}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &9071607355263530861 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3127054160382953358, guid: 1701ef4c9f342084db769bf4cda7b952, type: 3}
   m_PrefabInstance: {fileID: 6233357794436002019}
   m_PrefabAsset: {fileID: 0}
