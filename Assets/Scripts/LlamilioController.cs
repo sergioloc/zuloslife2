@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class LlamilioController : MonoBehaviour {
 
+    [Header("Values")]
     public float speed;
-    public ParticleSystem fireParticles;
-    public GameObject target;
+    public float limit = 2.5f;
 
+    [Header("Particles")]
+    public ParticleSystem fireParticles;
+
+    [Header("Targets in area")]
+    public List<Transform> targets;
+
+    private Transform target;
     private bool run;
     private float distanceToTarget;
     private bool lookRight = true;
-    private float limit = 2.3f;
 
     void Start() {
        
@@ -24,6 +30,12 @@ public class LlamilioController : MonoBehaviour {
         else if (!lookRight) {
             FollowTarget();
         }
+
+        if (targets.Count == 0)
+            target = null;
+        else
+            target = targets[NearestTarget()];
+
         if (target != null) {
             distanceToTarget = target.transform.position.x - transform.position.x;
             LookAtTarget();
@@ -36,6 +48,13 @@ public class LlamilioController : MonoBehaviour {
         }
     }
 
+    void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.gameObject.tag == "Kasper") {
+            if (!targets.Contains(collision.transform))
+                targets.Add(collision.transform);
+        }
+    }
+
     void OnTriggerStay2D(Collider2D collision) {
         if (collision.gameObject.tag == "Kasper" && run) {
             fireParticles.Play();
@@ -45,6 +64,9 @@ public class LlamilioController : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D collision) {
         if (collision.gameObject.tag == "Kasper") {
+            if (targets.Contains(collision.transform))
+                targets.Remove(collision.transform);
+            
             fireParticles.Stop();
             run = true;
             target = null;
@@ -80,6 +102,25 @@ public class LlamilioController : MonoBehaviour {
             Vector3 position = new Vector3(target.transform.position.x - limit, transform.position.y, transform.position.z);
             transform.position = Vector3.MoveTowards(transform.position, position, speed * Time.deltaTime);
         }
+    }
+
+    private int NearestTarget() {
+        float[] distances = new float[targets.Count];
+
+        for (int i = 0; i < targets.Count; i++)
+        {
+            distances[i] = (Mathf.Abs(targets[i].position.x - transform.position.x));
+        }
+
+        float minDistance = Mathf.Min(distances);
+        int index = -1;
+
+        for (int i = 0; i < distances.Length; i++)
+        {
+            if (minDistance == distances[i])
+                index = i;
+        }
+        return index;
     }
 
 }
