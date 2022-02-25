@@ -16,16 +16,17 @@ public class LlamilioController : MonoBehaviour {
     public ParticleSystem fireParticles;
     public GameObject damage;
 
-    [Header("Targets in area")]
-    public List<Target> targets = new List<Target>();
-
+    [Header("Enemies in area")]
+    public List<Target> enemies = new List<Target>();
     private Target target;
+
     private bool run;
     private bool lookRight = true;
     private bool targetActive = false;
     private float distanceToTarget;
 
     void FixedUpdate() {
+        // Run forward if there are no enemies in area
         if (run) {
             transform.Translate(Vector2.right * (speed/10) * Time.deltaTime);
         }
@@ -51,20 +52,20 @@ public class LlamilioController : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D collision) {
         if (isEnemy(collision.gameObject.tag)) {
             
-            Target t = new Target(collision.transform, targetTag);
+            Target t = new Target(collision.transform, collision.gameObject.tag);
 
             // Add enemy to the list if is not already in
             if (!ListContains(t)) {
-                targets.Add(t);
-                Debug.Log("Enemies in area: " + targets.Count);
+                enemies.Add(t);
+                //Debug.Log("Enemies in area: " + enemies.Count);
             }
 
             // Check if next target is available
-            if (targets.Count > 0) {
-                target = targets[SearchTarget()];
+            if (enemies.Count > 0) {
+                target = enemies[SearchTarget()];
                 targetActive = true;
-                //fireParticles.Play();
-                //damage.SetActive(true);
+                fireParticles.Play();
+                damage.SetActive(true);
                 run = false;
             }
         }
@@ -77,25 +78,25 @@ public class LlamilioController : MonoBehaviour {
             // Remove enemy from list if exists
             if (ListContains(t)) {
                 RemoveFromList(t);
-                Debug.Log("Enemies in area: " + targets.Count);
+                //Debug.Log("Enemies in area: " + enemies.Count);
             }
 
             // Check if all enemies are gone
-            if (targets.Count == 0) {
+            if (enemies.Count == 0) {
                 targetActive = false;
-                //fireParticles.Stop();
-                //damage.SetActive(false);
+                fireParticles.Stop();
+                damage.SetActive(false);
                 run = true;
                 if (!lookRight) {
                     LookRight();
                 }
             }
             else
-                target = targets[SearchTarget()];
-            
+                target = enemies[SearchTarget()];
         }
     }
 
+    // Check which direction must character look
     private void LookAtTarget() {
         if (distanceToTarget > 0 && !lookRight) {
             LookRight();
@@ -105,12 +106,14 @@ public class LlamilioController : MonoBehaviour {
         }
     }
 
+    // Face character to the right
     private void LookRight() {
         transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         lookRight = true;
         limit = Mathf.Abs(limit);
     }
 
+    // Face character to the left
     private void LookLeft() {
         transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         lookRight = false;
@@ -127,22 +130,22 @@ public class LlamilioController : MonoBehaviour {
 
     // Get target enemy from area
     private int SearchTarget() {
-        for (int i = 0; i < targets.Count; i++) {
-            if (targets[i].tag == targetTag) {
+        for (int i = 0; i < enemies.Count; i++) {
+            if (enemies[i].tag == targetTag) {
                 return i;
             }
         }
 
-        // If there are no targets in area, get nearest enemy
+        // If there are no enemies in area, get nearest enemy
         return NearestEnemy();
     }
 
     // Get nearest enemy from area
     private int NearestEnemy() {
-        float[] distances = new float[targets.Count];
+        float[] distances = new float[enemies.Count];
 
-        for (int i = 0; i < targets.Count; i++) {
-            distances[i] = (Mathf.Abs(targets[i].transform.position.x - transform.position.x));
+        for (int i = 0; i < enemies.Count; i++) {
+            distances[i] = (Mathf.Abs(enemies[i].transform.position.x - transform.position.x));
         }
 
         float minDistance = Mathf.Min(distances);
@@ -155,24 +158,26 @@ public class LlamilioController : MonoBehaviour {
         return index;
     }
 
+    // Check if target is already in enemies list
     private bool ListContains(Target t) {
-        for (int i = 0; i < targets.Count; i++) {
-            //Debug.Log("Is equals? --->" + targets[i].toString() + " | " + t.toString() + " ---- " + (targets[i].transform.position.x == t.transform.position.x) + ", " + (targets[i].tag == t.tag));
-            if (targets[i].transform.position.x == t.transform.position.x && targets[i].tag == t.tag)
+        for (int i = 0; i < enemies.Count; i++) {
+            if (enemies[i].transform.position.x == t.transform.position.x && enemies[i].tag == t.tag)
                 return true;
         }
         return false;
     }
 
+    // Remove target from enemies list
     private void RemoveFromList(Target t) {
-        for (int i = 0; i < targets.Count; i++) {
-            if (targets[i].transform.position.x == t.transform.position.x && targets[i].tag == t.tag) {
-                targets.Remove(targets[i]);
+        for (int i = 0; i < enemies.Count; i++) {
+            if (enemies[i].transform.position.x == t.transform.position.x && enemies[i].tag == t.tag) {
+                enemies.Remove(enemies[i]);
                 break;
             }
         }
     }
 
+    // Check if tag belongs to target enemy or common enemy
     private bool isEnemy(string tag) {
         if (targetTag == tag)
             return true;
