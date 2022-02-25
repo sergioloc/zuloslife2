@@ -7,7 +7,10 @@ public class LlamilioController : MonoBehaviour {
     [Header("Values")]
     public float speed;
     public float limit = 2.5f;
+
+    [Header("Enemies")]
     public string targetTag;
+    public List<string> enemiesTag;
 
     [Header("Particles")]
     public ParticleSystem fireParticles;
@@ -46,7 +49,7 @@ public class LlamilioController : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag == targetTag) {
+        if (isEnemy(collision.gameObject.tag)) {
             
             Target t = new Target(collision.transform, targetTag);
 
@@ -60,15 +63,15 @@ public class LlamilioController : MonoBehaviour {
             if (targets.Count > 0) {
                 target = targets[SearchTarget()];
                 targetActive = true;
-                fireParticles.Play();
-                damage.SetActive(true);
+                //fireParticles.Play();
+                //damage.SetActive(true);
                 run = false;
             }
         }
     }
 
     void OnTriggerExit2D(Collider2D collision) {
-        if (collision.gameObject.tag == targetTag) {
+        if (isEnemy(collision.gameObject.tag)) {
             Target t = new Target(collision.transform, targetTag);
 
             // Remove enemy from list if exists
@@ -80,8 +83,8 @@ public class LlamilioController : MonoBehaviour {
             // Check if all enemies are gone
             if (targets.Count == 0) {
                 targetActive = false;
-                fireParticles.Stop();
-                damage.SetActive(false);
+                //fireParticles.Stop();
+                //damage.SetActive(false);
                 run = true;
                 if (!lookRight) {
                     LookRight();
@@ -168,6 +171,18 @@ public class LlamilioController : MonoBehaviour {
                 break;
             }
         }
+    }
+
+    private bool isEnemy(string tag) {
+        if (targetTag == tag)
+            return true;
+        else {
+            for (int i = 0; i < enemiesTag.Count; i++) {
+                if (enemiesTag[i] == tag)
+                    return true;
+            }
+        }
+        return false;
     }
 
 }

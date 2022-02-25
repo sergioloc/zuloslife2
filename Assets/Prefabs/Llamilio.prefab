@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9105033730154003346}
   - component: {fileID: 330145144050141640}
   - component: {fileID: 7167188363587671504}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Flamethrower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,10 +248,10 @@ MonoBehaviour:
   speed: 10
   limit: 2.5
   targetTag: Kasper
+  enemiesTag:
+  - Muro
   fireParticles: {fileID: 2861583993652581958}
   damage: {fileID: 8650789356322160972}
-  ignoreColliders:
-  - {fileID: 946518643868823678}
 --- !u!1001 &5584919841787406242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -346,10 +346,5 @@ ParticleSystem:
 --- !u!1 &8650789356322160972 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3858555825661732590, guid: 2089abe5f97330f49bbc5994257fcd0f, type: 3}
-  m_PrefabInstance: {fileID: 5584919841787406242}
-  m_PrefabAsset: {fileID: 0}
---- !u!70 &946518643868823678 stripped
-CapsuleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 4657613377480234972, guid: 2089abe5f97330f49bbc5994257fcd0f, type: 3}
   m_PrefabInstance: {fileID: 5584919841787406242}
   m_PrefabAsset: {fileID: 0}

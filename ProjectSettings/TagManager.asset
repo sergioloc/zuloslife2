@@ -9,6 +9,7 @@ TagManager:
   - Shield
   - Kasper
   - Fire
+  - Muro
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Fire
   - Ground
   - Area
-  - 
+  - Muro
   - 
   - 
   - 
