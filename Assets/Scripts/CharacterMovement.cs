@@ -78,7 +78,7 @@ public class CharacterMovement : MonoBehaviour {
             // Remove enemy from list if exists
             if (ListContains(t)) {
                 RemoveFromList(t);
-                //Debug.Log("Enemies in area: " + enemies.Count);
+                Debug.Log("Enemies in area: " + enemies.Count);
             }
 
             // Check if all enemies are gone

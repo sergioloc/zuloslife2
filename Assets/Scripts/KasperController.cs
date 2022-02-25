@@ -7,6 +7,7 @@ public class KasperController : MonoBehaviour {
     [Header("Values")]
     public float health = 100;
     public float speed;
+    public float fireDamage;
 
     [Header("Particles")]
     public ParticleSystem inhaleParticles;
@@ -14,12 +15,10 @@ public class KasperController : MonoBehaviour {
     public Transform deathPoint;
 
     private bool run;
-    private bool isBurning;
     private Animator animator;
 
     void Start() {
         run = true;
-        isBurning = false;
         animator = GetComponent<Animator>();
     }
     
@@ -27,19 +26,19 @@ public class KasperController : MonoBehaviour {
         if (run) {
             transform.Translate(Vector2.left * (speed/10) * Time.deltaTime);
         }
-        if (isBurning) {
-            health = health - 1;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision) {
+        Debug.Log(collision.gameObject.tag);
+        if (collision.gameObject.tag == "Fire") {
+            if (!animator.GetBool("isBurning")) {
+                animator.SetBool("isBurning", true);
+            }
+            health = health - fireDamage;
             if (health <= 0) {
                 Instantiate(deathParticles, deathPoint.position, Quaternion.identity);
                 Destroy(gameObject);
             }
-        }
-    }
-
-    void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Fire") {
-            isBurning = true;
-            animator.SetBool("isBurning", true);
         }
         else if (collision.gameObject.tag == "Shield") {
             run = false;
@@ -49,7 +48,6 @@ public class KasperController : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D collision) {
         if (collision.gameObject.tag == "Fire") {
-            isBurning = false;
             animator.SetBool("isBurning", false);
         }
     }

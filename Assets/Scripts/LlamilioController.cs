@@ -6,18 +6,28 @@ public class LlamilioController : MonoBehaviour {
     
     [Header("Particles")]
     public ParticleSystem fireParticles;
-    public GameObject damage;
+
+    public GameObject flame;
+    public float frequency;
+
+    private bool isAttacking = false;
+
+    IEnumerator ThrowFlame() {
+        Instantiate(flame, transform.position, transform.rotation);
+        yield return new WaitForSeconds(frequency);
+        if (isAttacking)
+            StartCoroutine(ThrowFlame());
+    }
 
     void StartAttack() {
-        Debug.Log("Fire!");
+        isAttacking = true;
         fireParticles.Play();
-        damage.SetActive(true);
+        StartCoroutine(ThrowFlame());
     }
 
     void StopAttack() {
-        Debug.Log("Cooldown...");
+        isAttacking = false;
         fireParticles.Stop();
-        damage.SetActive(false);
     }
 
 }

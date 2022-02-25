@@ -266,6 +266,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireParticles: {fileID: 2861583993652581958}
   damage: {fileID: 8650789356322160972}
+  flame: {fileID: 116404244459436193, guid: aec3fbfcce4ba614583c2cd5efe92b12, type: 3}
+  frequency: 0.5
 --- !u!95 &7194163369960898105
 Animator:
   serializedVersion: 3
@@ -339,10 +341,6 @@ PrefabInstance:
     - target: {fileID: 2734893955562091209, guid: 2089abe5f97330f49bbc5994257fcd0f, type: 3}
       propertyPath: m_Name
       value: Fire
-      objectReference: {fileID: 0}
-    - target: {fileID: 2734893955562091209, guid: 2089abe5f97330f49bbc5994257fcd0f, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2734893955562091209, guid: 2089abe5f97330f49bbc5994257fcd0f, type: 3}
       propertyPath: m_IsActive
