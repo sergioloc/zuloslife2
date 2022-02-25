@@ -316,24 +316,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236769224}
   m_CullTransparentMesh: 1
---- !u!1001 &331209245
+--- !u!1001 &287404660
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3244130639875846353, guid: c2240a52cd625fc4bad1b99256dc96d7, type: 3}
-      propertyPath: speed
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5446771408115831044, guid: c2240a52cd625fc4bad1b99256dc96d7, type: 3}
       propertyPath: m_Name
       value: Muro
-      objectReference: {fileID: 0}
-    - target: {fileID: 5446771408115831044, guid: c2240a52cd625fc4bad1b99256dc96d7, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5446771408115831045, guid: c2240a52cd625fc4bad1b99256dc96d7, type: 3}
       propertyPath: m_RootOrder
@@ -341,11 +333,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5446771408115831045, guid: c2240a52cd625fc4bad1b99256dc96d7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.84
+      value: -6.373861
       objectReference: {fileID: 0}
     - target: {fileID: 5446771408115831045, guid: c2240a52cd625fc4bad1b99256dc96d7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.11228192
+      value: -0.19270939
       objectReference: {fileID: 0}
     - target: {fileID: 5446771408115831045, guid: c2240a52cd625fc4bad1b99256dc96d7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -897,7 +889,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 407606420861283779, guid: b03553b2ff0094b48a42e1b27c0a9ba8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.01
+      value: 6.13
       objectReference: {fileID: 0}
     - target: {fileID: 407606420861283779, guid: b03553b2ff0094b48a42e1b27c0a9ba8, type: 3}
       propertyPath: m_LocalPosition.y

@@ -122,7 +122,9 @@ GameObject:
   - component: {fileID: 7660871940484492267}
   - component: {fileID: 1645208339163043521}
   - component: {fileID: 6998155703395431191}
-  - component: {fileID: 1410637732031641047}
+  - component: {fileID: 8172018109594012470}
+  - component: {fileID: 2841801813511186884}
+  - component: {fileID: 7194163369960898105}
   m_Layer: 7
   m_Name: Llamilio
   m_TagString: Player
@@ -216,7 +218,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &6998155703395431191
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -233,7 +235,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &1410637732031641047
+--- !u!114 &8172018109594012470
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -245,13 +247,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54d706a660fe76d488813acad1b2ec58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 5
   limit: 2.5
-  targetTag: Kasper
-  enemiesTag:
+  targetsTag:
+  - Kasper
   - Muro
+--- !u!114 &2841801813511186884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8373461442510106976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 034b681423239f34f8e8d0ef3be7996e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   fireParticles: {fileID: 2861583993652581958}
   damage: {fileID: 8650789356322160972}
+--- !u!95 &7194163369960898105
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8373461442510106976}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5bedc9f886cf376459982b4fcc928bcd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &5584919841787406242
 PrefabInstance:
   m_ObjectHideFlags: 0
