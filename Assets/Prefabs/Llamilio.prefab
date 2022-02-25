@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7167188363587671504}
   m_Layer: 0
   m_Name: Flamethrower
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57,7 +57,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 30, y: 2}
+  m_Size: {x: 35, y: 8}
   m_EdgeRadius: 0
 --- !u!212 &7167188363587671504
 SpriteRenderer:
@@ -247,8 +247,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   limit: 2.5
+  targetTag: Kasper
   fireParticles: {fileID: 2861583993652581958}
-  targets: []
+  damage: {fileID: 8650789356322160972}
+  ignoreColliders:
+  - {fileID: 946518643868823678}
 --- !u!1001 &5584919841787406242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -304,9 +307,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire
       objectReference: {fileID: 0}
+    - target: {fileID: 2734893955562091209, guid: 2089abe5f97330f49bbc5994257fcd0f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2734893955562091209, guid: 2089abe5f97330f49bbc5994257fcd0f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7653863695212081634, guid: 2089abe5f97330f49bbc5994257fcd0f, type: 3}
       propertyPath: m_Name
       value: FireParticles
+      objectReference: {fileID: 0}
+    - target: {fileID: 7653863695212081634, guid: 2089abe5f97330f49bbc5994257fcd0f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7653863695554368649, guid: 2089abe5f97330f49bbc5994257fcd0f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7653863696698549344, guid: 2089abe5f97330f49bbc5994257fcd0f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2089abe5f97330f49bbc5994257fcd0f, type: 3}
@@ -318,5 +341,15 @@ Transform:
 --- !u!198 &2861583993652581958 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 7653863695212081636, guid: 2089abe5f97330f49bbc5994257fcd0f, type: 3}
+  m_PrefabInstance: {fileID: 5584919841787406242}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8650789356322160972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3858555825661732590, guid: 2089abe5f97330f49bbc5994257fcd0f, type: 3}
+  m_PrefabInstance: {fileID: 5584919841787406242}
+  m_PrefabAsset: {fileID: 0}
+--- !u!70 &946518643868823678 stripped
+CapsuleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 4657613377480234972, guid: 2089abe5f97330f49bbc5994257fcd0f, type: 3}
   m_PrefabInstance: {fileID: 5584919841787406242}
   m_PrefabAsset: {fileID: 0}

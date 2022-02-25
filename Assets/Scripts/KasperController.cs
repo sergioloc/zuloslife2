@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class KasperController : MonoBehaviour {
 
+    [Header("Values")]
     public float health = 100;
     public float speed;
+
+    [Header("Particles")]
     public ParticleSystem inhaleParticles;
     public GameObject deathParticles;
+    public Transform deathPoint;
 
     private bool run;
     private bool isBurning;
@@ -26,7 +30,7 @@ public class KasperController : MonoBehaviour {
         if (isBurning) {
             health = health - 1;
             if (health <= 0) {
-                Instantiate(deathParticles, transform.position, Quaternion.identity);
+                Instantiate(deathParticles, deathPoint.position, Quaternion.identity);
                 Destroy(gameObject);
             }
         }
