@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SmokeMaterial
-  m_Shader: {fileID: 10721, guid: 0000000000000000f000000000000000, type: 0}
+  m_Name: ShockwaveMaterial
+  m_Shader: {fileID: -6465566751694194690, guid: 6d040a3b1e679f04fa47ec7a169a7324, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,27 +19,31 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 0a3db5e95ebefd4418445b47555c5453, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MaskTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _NormalMap:
+    - _MainText:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _EnableExternalAlpha: 0
+    - Vector1_5372491d7e934831acc69bfb857fbc17: 1.777
+    - Vector1_622103f8898d46feaafda075ec646b4e: -0.1
+    - Vector1_a698799d6c2241b281a12bb636a930f7: 0.1
+    - Vector1_c03e693f9e124311bd9323cdcef15a2a: 0.5
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmisColor: {r: 0.2, g: 0.2, b: 0.2, a: 0}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+    - Vector2_0e64668d78454d57b8fa5e43afbe3745: {r: 0.5, g: 0.5, b: 0, a: 0}
   m_BuildTextureStacks: []

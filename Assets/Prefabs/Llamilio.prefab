@@ -265,7 +265,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireParticles: {fileID: 2861583993652581958}
-  damage: {fileID: 8650789356322160972}
   flame: {fileID: 116404244459436193, guid: aec3fbfcce4ba614583c2cd5efe92b12, type: 3}
   frequency: 0.5
 --- !u!95 &7194163369960898105
@@ -354,6 +353,18 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7653863695212081636, guid: 2089abe5f97330f49bbc5994257fcd0f, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7653863695212081636, guid: 2089abe5f97330f49bbc5994257fcd0f, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7653863695212081636, guid: 2089abe5f97330f49bbc5994257fcd0f, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7653863695554368649, guid: 2089abe5f97330f49bbc5994257fcd0f, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -372,10 +383,5 @@ Transform:
 --- !u!198 &2861583993652581958 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 7653863695212081636, guid: 2089abe5f97330f49bbc5994257fcd0f, type: 3}
-  m_PrefabInstance: {fileID: 5584919841787406242}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8650789356322160972 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3858555825661732590, guid: 2089abe5f97330f49bbc5994257fcd0f, type: 3}
   m_PrefabInstance: {fileID: 5584919841787406242}
   m_PrefabAsset: {fileID: 0}
