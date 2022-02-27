@@ -29,7 +29,6 @@ public class KasperController : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D collision) {
-        Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.tag == "Fire") {
             if (!animator.GetBool("isBurning")) {
                 animator.SetBool("isBurning", true);
