@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 1135614949011226211}
   - component: {fileID: 4566297939477986015}
   - component: {fileID: 841665823327418072}
+  - component: {fileID: 160478649969928229}
   m_Layer: 6
-  m_Name: Character5
+  m_Name: Skr
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,3 +122,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &160478649969928229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7247062534220374791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef63313a403196e4b9427449b7e452fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  sockwaveTime: 3
