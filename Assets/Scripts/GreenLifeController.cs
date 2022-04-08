@@ -7,14 +7,14 @@ public class GreenLifeController : MonoBehaviour {
     public float speed;
     public float rotateSpeed;
     public GameObject projectile;
-    public Transform shotPoint;
-    public Transform body;
+    public Transform head;
 
     [Header("Targets in area")]
     public List<Transform> targets;
 
     private Rigidbody2D rb2d;
-    private bool run;
+    private bool run, shooting = false;
+    private float currentAngle = 0;
 
     void Start() {
         rb2d = GetComponent<Rigidbody2D>();
@@ -35,7 +35,9 @@ public class GreenLifeController : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag == "Enemy") {
+            shooting = true;
             StartCoroutine(StopRunning());
+            StartCoroutine(Shoot());
             if (!targets.Contains(collision.transform))
                 targets.Add(collision.transform);
         }
@@ -44,13 +46,14 @@ public class GreenLifeController : MonoBehaviour {
     void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Enemy") {
-            Shoot();
+            FindTarget();
         }
     }
 
     void OnTriggerExit2D(Collider2D collision) {
         if (collision.gameObject.tag == "Enemy") {
             run = true;
+            shooting = false;
             if (targets.Contains(collision.transform)){
                 targets.Remove(collision.transform);
             }
@@ -62,21 +65,18 @@ public class GreenLifeController : MonoBehaviour {
         run = false;
     }
 
-    private void Shoot() {
+    private void FindTarget() {
         int index = NearestTarget();
-        if (index != -1)
-            StartCoroutine(LookAt(targets[index].position));
+        if (index != -1) 
+            LookAt(targets[index].position);
     }
 
-    IEnumerator LookAt(Vector2 target) {
+    private void LookAt(Vector2 target) {
         float distanceX = target.x - transform.position.x;
         float distanceY = target.y - transform.position.y;
-        float angle = Mathf.Atan2(distanceX, distanceY) * Mathf.Rad2Deg;
-        Quaternion endRotation = Quaternion.AngleAxis(angle + 180, Vector3.back);
-        body.rotation = Quaternion.Slerp(body.rotation, endRotation, Time.deltaTime * rotateSpeed);
-
-        yield return new WaitForSeconds(1f);
-        //body.localRotation = Quaternion.Euler(0,0,0);
+        currentAngle = Mathf.Atan2(distanceX, distanceY) * Mathf.Rad2Deg;
+        Quaternion endRotation = Quaternion.AngleAxis(currentAngle, Vector3.back);
+        head.rotation = Quaternion.Slerp(head.rotation, endRotation, Time.deltaTime * rotateSpeed);
     }
 
     private int NearestTarget() {
@@ -96,6 +96,12 @@ public class GreenLifeController : MonoBehaviour {
         return index;
     }
 
-    //Instantiate(projectile, shotPoint.position, transform.rotation);
+    IEnumerator Shoot() {
+        yield return new WaitForSeconds(1f);
+        Quaternion finalRotation = Quaternion.AngleAxis(currentAngle - 45, Vector3.back);
+        Instantiate(projectile, head.position, finalRotation);
+        if (shooting)
+             StartCoroutine(Shoot());
+    }
 
 }
