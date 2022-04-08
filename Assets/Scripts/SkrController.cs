@@ -6,6 +6,8 @@ public class SkrController : MonoBehaviour {
 
     public float speed;
     public float sockwaveTime;
+    public GameObject skrParticles;
+
     private UnityEngine.Rendering.Universal.UniversalAdditionalCameraData camData;
     private bool run = false;
     
@@ -37,6 +39,7 @@ public class SkrController : MonoBehaviour {
         yield return new WaitForSeconds(1f);
         run = false;
         camData.SetRenderer(1);
+        Instantiate(skrParticles, transform.position, Quaternion.identity);
         yield return new WaitForSeconds(sockwaveTime);
         camData.SetRenderer(0);
     }

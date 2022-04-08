@@ -136,3 +136,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   sockwaveTime: 3
+  skrParticles: {fileID: 5522489244612409016, guid: adf32f89969c78b418774a2b9d5901f5, type: 3}
