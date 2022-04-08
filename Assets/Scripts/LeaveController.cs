@@ -11,8 +11,14 @@ public class LeaveController : MonoBehaviour {
         Invoke("DestroyLeave", lifetime);
     }
 
-    void Update() {
+    void FixedUpdate() {
         transform.Translate(transform.right * speed * Time.deltaTime);
+    }
+
+    void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.gameObject.tag == "Enemy") {
+            Destroy(gameObject);
+        }
     }
 
     private void DestroyLeave() {

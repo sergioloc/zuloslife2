@@ -11,6 +11,7 @@ TagManager:
   - Fire
   - Muro
   - Center
+  - Leave
   layers:
   - Default
   - TransparentFX
@@ -25,8 +26,8 @@ TagManager:
   - Ground
   - Area
   - Muro
-  - 
-  - 
+  - Weapon
+  - Moquino
   - 
   - 
   - 

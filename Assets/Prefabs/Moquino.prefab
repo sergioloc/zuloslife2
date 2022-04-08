@@ -618,7 +618,7 @@ GameObject:
   - component: {fileID: 4255958029212815524}
   - component: {fileID: 4255958029212815525}
   - component: {fileID: 4255958029212815520}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Moquino
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -692,6 +692,7 @@ MonoBehaviour:
   speed: 1
   mucus: {fileID: 7304716449303792097, guid: f9d9c58043f1c5e4ab46eb2cea1763ec, type: 3}
   shotPoint: {fileID: 4255958028698741467}
+  dieParticles: {fileID: 8586647822238974435, guid: 37be230ec85ee2f4a9032d4e6a6f7d1c, type: 3}
 --- !u!95 &4255958029212815520
 Animator:
   serializedVersion: 3

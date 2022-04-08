@@ -7,6 +7,7 @@ public class MoquinoController : MonoBehaviour {
     public float speed;
     public GameObject mucus;
     public Transform shotPoint;
+    public GameObject dieParticles;
 
     private bool run;
     private bool isAttacking;
@@ -27,6 +28,10 @@ public class MoquinoController : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag == "Player" && !isAttacking) {
             StartCoroutine(Attack());
+        }
+        else if (collision.gameObject.tag == "Leave") {
+            Instantiate(dieParticles, transform.position, transform.rotation);
+            Destroy(gameObject);
         }
     }
 
