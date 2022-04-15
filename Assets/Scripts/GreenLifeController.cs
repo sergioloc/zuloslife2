@@ -8,6 +8,7 @@ public class GreenLifeController : MonoBehaviour {
     public float rotateSpeed;
     public GameObject projectile;
     public Transform head;
+    public Transform shotPoint;
 
     [Header("Sounds")]
     public AudioSource falling;
@@ -18,7 +19,7 @@ public class GreenLifeController : MonoBehaviour {
 
     private Rigidbody2D rb2d;
     private Animator animator;
-    private bool run, shooting = false;
+    private bool run, shooting = false, hasLanded = false;
     private float currentAngle = 0;
 
     void Start() {
@@ -35,8 +36,16 @@ public class GreenLifeController : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.tag == "Ground") {
-            animator.SetBool("isWalking", true);
-            run = true;
+            animator.SetTrigger("Land");
+            hasLanded = true;
+            if (targets.Count == 0) {
+                animator.SetBool("isWalking", true);
+                run = true;
+            }
+            else {
+                animator.SetBool("isAttacking", true);
+            }
+            
         }
     }
 
@@ -50,18 +59,19 @@ public class GreenLifeController : MonoBehaviour {
         }
     }
 
-    void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Enemy") {
+    void OnTriggerStay2D(Collider2D collision) {
+        if (collision.gameObject.tag == "Enemy" && hasLanded) {
             FindTarget();
         }
     }
 
     void OnTriggerExit2D(Collider2D collision) {
         if (collision.gameObject.tag == "Enemy") {
-            animator.SetBool("isWalking", true);
+            animator.SetBool("isAttacking", false);
             run = true;
             shooting = false;
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            head.rotation = new Quaternion(0,0,0,0);
             if (targets.Contains(collision.transform)){
                 targets.Remove(collision.transform);
             }
@@ -70,7 +80,7 @@ public class GreenLifeController : MonoBehaviour {
 
     IEnumerator StopRunning() {
         yield return new WaitForSeconds(1f);
-        animator.SetBool("isWalking", false);
+        animator.SetBool("isAttacking", true);
         run = false;
     }
 
@@ -83,6 +93,10 @@ public class GreenLifeController : MonoBehaviour {
     private void LookAt(Vector2 target) {
         float distanceX = target.x - transform.position.x;
         float distanceY = target.y - transform.position.y;
+
+        if (distanceX < 0)
+            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+
         currentAngle = Mathf.Atan2(distanceX, distanceY) * Mathf.Rad2Deg;
         Quaternion endRotation = Quaternion.AngleAxis(currentAngle, Vector3.back);
         head.rotation = Quaternion.Slerp(head.rotation, endRotation, Time.deltaTime * rotateSpeed);
@@ -107,10 +121,11 @@ public class GreenLifeController : MonoBehaviour {
 
     IEnumerator Shoot() {
         yield return new WaitForSeconds(1f);
-        Quaternion finalRotation = Quaternion.AngleAxis(currentAngle - 45, Vector3.back);
-        Instantiate(projectile, head.position, finalRotation);
-        if (shooting)
-             StartCoroutine(Shoot());
+        if (shooting) {
+            Quaternion finalRotation = Quaternion.AngleAxis(currentAngle - 45, Vector3.back);
+            Instantiate(projectile, shotPoint.position, head.rotation);
+            StartCoroutine(Shoot());
+        }
     }
 
     public void PlayLandSound() {
