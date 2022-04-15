@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class MoquinoController : MonoBehaviour {
 
+    public float health;
     public float speed;
+    public float damageReceived;
     public GameObject mucus;
     public Transform shotPoint;
     public GameObject dieParticles;
@@ -29,9 +31,12 @@ public class MoquinoController : MonoBehaviour {
         if (collision.gameObject.tag == "Player" && !isAttacking) {
             StartCoroutine(Attack());
         }
-        else if (collision.gameObject.tag == "Leave") {
-            Instantiate(dieParticles, transform.position, transform.rotation);
-            Destroy(gameObject);
+        else if (collision.gameObject.tag == "Leaf") {
+            health = health - damageReceived;
+            if (health <= 0) {
+                Instantiate(dieParticles, transform.position, transform.rotation);
+                Destroy(gameObject);
+            }
         }
     }
 

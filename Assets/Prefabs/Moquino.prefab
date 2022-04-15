@@ -689,7 +689,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e26bf9573b093546a40f114d0c12d4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
   speed: 1
+  damageReceived: 34
   mucus: {fileID: 7304716449303792097, guid: f9d9c58043f1c5e4ab46eb2cea1763ec, type: 3}
   shotPoint: {fileID: 4255958028698741467}
   dieParticles: {fileID: 8586647822238974435, guid: 37be230ec85ee2f4a9032d4e6a6f7d1c, type: 3}
