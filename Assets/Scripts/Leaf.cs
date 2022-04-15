@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LeaveController : MonoBehaviour {
+public class Leaf : MonoBehaviour {
 
     public float speed;
     public float lifetime;
