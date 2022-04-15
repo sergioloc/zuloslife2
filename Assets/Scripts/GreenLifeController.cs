@@ -9,14 +9,20 @@ public class GreenLifeController : MonoBehaviour {
     public GameObject projectile;
     public Transform head;
 
+    [Header("Sounds")]
+    public AudioSource falling;
+    public AudioSource land;
+
     [Header("Targets in area")]
     public List<Transform> targets;
 
     private Rigidbody2D rb2d;
+    private Animator animator;
     private bool run, shooting = false;
     private float currentAngle = 0;
 
     void Start() {
+        animator = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
         run = false;
     }
@@ -29,6 +35,7 @@ public class GreenLifeController : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.tag == "Ground") {
+            animator.SetBool("isWalking", true);
             run = true;
         }
     }
@@ -52,6 +59,7 @@ public class GreenLifeController : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D collision) {
         if (collision.gameObject.tag == "Enemy") {
+            animator.SetBool("isWalking", true);
             run = true;
             shooting = false;
             if (targets.Contains(collision.transform)){
@@ -62,6 +70,7 @@ public class GreenLifeController : MonoBehaviour {
 
     IEnumerator StopRunning() {
         yield return new WaitForSeconds(1f);
+        animator.SetBool("isWalking", false);
         run = false;
     }
 
@@ -102,6 +111,11 @@ public class GreenLifeController : MonoBehaviour {
         Instantiate(projectile, head.position, finalRotation);
         if (shooting)
              StartCoroutine(Shoot());
+    }
+
+    public void PlayLandSound() {
+        falling.Stop();
+        land.Play();
     }
 
 }
