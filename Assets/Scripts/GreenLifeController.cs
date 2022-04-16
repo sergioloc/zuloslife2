@@ -10,6 +10,12 @@ public class GreenLifeController : MonoBehaviour {
     public Transform head;
     public Transform shotPoint;
 
+    [Header("Shadow")]
+    public GameObject shadow;
+    public GameObject shadowPosition;
+    public float height;
+    private GameObject newShadow;
+
     [Header("Sounds")]
     public AudioSource falling;
     public AudioSource land;
@@ -26,6 +32,7 @@ public class GreenLifeController : MonoBehaviour {
         animator = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
         run = false;
+        newShadow = Instantiate(shadow, new Vector3(transform.position.x, height, transform.position.z), Quaternion.identity);
     }
 
     void FixedUpdate() {
@@ -36,6 +43,9 @@ public class GreenLifeController : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.tag == "Ground") {
+            newShadow.transform.parent = gameObject.transform;
+            newShadow.transform.position = new Vector3(shadowPosition.transform.position.x, shadowPosition.transform.position.y, shadowPosition.transform.position.z);
+            Destroy(shadowPosition);
             animator.SetTrigger("Land");
             hasLanded = true;
             if (targets.Count == 0) {
