@@ -458,63 +458,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 389033081}
   m_CullTransparentMesh: 1
---- !u!1001 &479117562
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.6852684
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815579, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_Name
-      value: Moquino (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: befe46f186307734cad986683076b0b4, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,63 +998,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649391218}
   m_CullTransparentMesh: 1
---- !u!1001 &739006929
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.9750404
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.6852684
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815526, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4255958029212815579, guid: befe46f186307734cad986683076b0b4, type: 3}
-      propertyPath: m_Name
-      value: Moquino
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: befe46f186307734cad986683076b0b4, type: 3}
 --- !u!1 &786504221
 GameObject:
   m_ObjectHideFlags: 0
@@ -2310,7 +2196,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1035242685
   m_SortingLayer: -3
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -851950681204537064, guid: 500d8c5dde3a82d498999848a6c29147, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
