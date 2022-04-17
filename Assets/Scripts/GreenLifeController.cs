@@ -82,14 +82,16 @@ public class GreenLifeController : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D collision) {
         if (collision.gameObject.tag == "Enemy") {
-            animator.SetBool("isAttacking", false);
-            run = true;
-            shooting = false;
-            StopTornado();
-            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-            head.rotation = new Quaternion(0,0,0,0);
             if (targets.Contains(collision.transform)){
                 targets.Remove(collision.transform);
+            }
+            if (targets.Count == 0) {
+                animator.SetBool("isAttacking", false);
+                run = true;
+                shooting = false;
+                StopTornado();
+                transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+                head.rotation = new Quaternion(0,0,0,0);
             }
         }
     }
