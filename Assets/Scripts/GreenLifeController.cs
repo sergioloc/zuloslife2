@@ -6,9 +6,11 @@ public class GreenLifeController : MonoBehaviour {
 
     public float speed;
     public float rotateSpeed;
+    public float recoil;
     public GameObject projectile;
     public Transform head;
     public Transform shotPoint;
+    public ParticleSystem tornadoParticles;
 
     [Header("Shadow")]
     public GameObject shadow;
@@ -17,8 +19,9 @@ public class GreenLifeController : MonoBehaviour {
     private GameObject newShadow;
 
     [Header("Sounds")]
-    public AudioSource falling;
-    public AudioSource land;
+    public AudioSource fallingSound;
+    public AudioSource landSound;
+    public AudioSource tornadoSound;
 
     [Header("Targets in area")]
     public List<Transform> targets;
@@ -62,6 +65,7 @@ public class GreenLifeController : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag == "Enemy") {
             shooting = true;
+            StartTornado();
             StartCoroutine(StopRunning());
             StartCoroutine(Shoot());
             if (!targets.Contains(collision.transform))
@@ -80,6 +84,7 @@ public class GreenLifeController : MonoBehaviour {
             animator.SetBool("isAttacking", false);
             run = true;
             shooting = false;
+            StopTornado();
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             head.rotation = new Quaternion(0,0,0,0);
             if (targets.Contains(collision.transform)){
@@ -134,13 +139,28 @@ public class GreenLifeController : MonoBehaviour {
         if (shooting) {
             Quaternion finalRotation = Quaternion.AngleAxis(currentAngle - 45, Vector3.back);
             Instantiate(projectile, shotPoint.position, head.rotation);
+            Recoil();
             StartCoroutine(Shoot());
         }
     }
 
+    public void StartTornado() {
+        tornadoParticles.Play();
+        tornadoSound.Play();
+    }
+
+    public void StopTornado() {
+        tornadoParticles.Stop();
+        tornadoSound.Stop();
+    }
+
     public void PlayLandSound() {
-        falling.Stop();
-        land.Play();
+        fallingSound.Stop();
+        landSound.Play();
+    }
+
+    private void Recoil() {
+        rb2d.AddForce(Vector2.left * recoil * 100);
     }
 
 }
