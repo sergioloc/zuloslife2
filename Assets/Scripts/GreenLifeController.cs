@@ -64,6 +64,7 @@ public class GreenLifeController : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag == "Enemy") {
+            animator.SetBool("isAttacking", true);
             shooting = true;
             StartTornado();
             StartCoroutine(StopRunning());
@@ -95,7 +96,6 @@ public class GreenLifeController : MonoBehaviour {
 
     IEnumerator StopRunning() {
         yield return new WaitForSeconds(1f);
-        animator.SetBool("isAttacking", true);
         run = false;
     }
 
