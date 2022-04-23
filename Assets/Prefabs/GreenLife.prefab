@@ -15435,6 +15435,8 @@ GameObject:
   - component: {fileID: 683415506159520877}
   - component: {fileID: 5378809581732742076}
   - component: {fileID: 6722766260606130361}
+  - component: {fileID: 5021201633847506215}
+  - component: {fileID: 1736131850906631807}
   - component: {fileID: 5178061727701967267}
   - component: {fileID: 6697705262777171950}
   - component: {fileID: 4466477845230302638}
@@ -15502,6 +15504,39 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 1}
   m_Size: {x: 1, y: 3}
   m_Direction: 0
+--- !u!114 &5021201633847506215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7587781305193324083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4292027fff35ccc4b9f8494d09b7f4aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement: {fileID: 1736131850906631807}
+  action: {fileID: 5178061727701967267}
+  actionDelay: 1
+  targetTag: Enemy
+  targets: []
+--- !u!114 &1736131850906631807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7587781305193324083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5df07367ed0886b41a5ad376167640da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  shadow: {fileID: 1391083417732046919, guid: ef25c3ac56d0b744489a91eb936cecf0, type: 3}
+  shadowPosition: {fileID: 6595318995025113296}
+  height: -3.52
 --- !u!114 &5178061727701967267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15514,20 +15549,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63065c093aef1624f8adb2d33648b387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
   rotateSpeed: 10
   recoil: 40
   projectile: {fileID: 162166558154797446, guid: bb4f4f8c16f5cf24fa4c30369b302ba2, type: 3}
   head: {fileID: 2368592766139926808}
   shotPoint: {fileID: 72415233601318223}
   tornadoParticles: {fileID: 718482032503631928}
-  shadow: {fileID: 1391083417732046919, guid: ef25c3ac56d0b744489a91eb936cecf0, type: 3}
-  shadowPosition: {fileID: 6595318995025113296}
-  height: -3.52
   fallingSound: {fileID: 4466477845230302638}
   landSound: {fileID: 6290901059033420847}
   tornadoSound: {fileID: 7364135911500014733}
-  targets: []
 --- !u!95 &6697705262777171950
 Animator:
   serializedVersion: 3
