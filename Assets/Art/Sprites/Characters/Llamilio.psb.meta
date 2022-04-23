@@ -93,8 +93,8 @@ ScriptedImporter:
   rigSpriteImportData:
   - name: Flamethrower
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.26504642, y: 0.6387902}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -115,8 +115,8 @@ ScriptedImporter:
     uvTransform: {x: -227, y: 23}
   - name: Arm
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.8138314, y: 0.83615804}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -137,8 +137,8 @@ ScriptedImporter:
     uvTransform: {x: 150, y: -280}
   - name: Hand
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.36572966, y: 0.7473726}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -159,8 +159,8 @@ ScriptedImporter:
     uvTransform: {x: 361, y: -348}
   - name: Head
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.50318307, y: 0.075853854}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -181,8 +181,8 @@ ScriptedImporter:
     uvTransform: {x: -386, y: 44}
   - name: Pants
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5484484, y: 0.62654936}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -203,8 +203,8 @@ ScriptedImporter:
     uvTransform: {x: 77, y: -313}
   - name: Chest
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.54754144, y: 0.12567577}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -225,8 +225,8 @@ ScriptedImporter:
     uvTransform: {x: 241, y: -18}
   - name: Foot
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.4656438, y: 0.5981638}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -247,8 +247,8 @@ ScriptedImporter:
     uvTransform: {x: 335, y: 140}
   - name: Leg
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5000016, y: 0.75958854}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
