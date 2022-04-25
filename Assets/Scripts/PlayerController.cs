@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour {
     private void FindTarget() {
         int index = NearestTarget();
         if (index != -1) 
-            action.SetTargetPosition(targets[index].position);
+            action.LookAtTarget(targets[index].position);
     }
 
     private int NearestTarget() {

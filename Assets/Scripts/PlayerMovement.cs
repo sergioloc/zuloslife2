@@ -5,6 +5,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
     
     [SerializeField] private float speed;
+    [SerializeField] private GameObject landDetector;
+
+    [Header("Sounds")]
+    [SerializeField] private AudioSource fallingSound;
+    [SerializeField] private AudioSource landSound;
+
     private Animator animator;
     private bool run;
 
@@ -26,18 +32,30 @@ public class PlayerMovement : MonoBehaviour {
         }
     }
 
+    void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.gameObject.tag == "Ground") {
+            animator.SetTrigger("Land");
+            Destroy(landDetector);
+        }
+    }
+
     void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.tag == "Ground") {
+            PlayLandSound();
             newShadow.transform.parent = gameObject.transform;
             newShadow.transform.position = new Vector3(shadowPosition.transform.position.x, shadowPosition.transform.position.y, shadowPosition.transform.position.z);
             Destroy(shadowPosition);
-            animator.SetTrigger("Land");
             run = true;
         }
     }
 
     public void SetRunning(bool run) {
         this.run = run;
+    }
+
+    private void PlayLandSound() {
+        fallingSound.Stop();
+        landSound.Play();
     }
     
 }

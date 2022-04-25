@@ -269,13 +269,13 @@ ScriptedImporter:
     uvTransform: {x: 278, y: -274}
   - name: Axe
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.13622424, y: 0.17809506}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 3
       width: 517
       height: 352
     spriteID: 2b8b58327aa5ebf4f936c70d04fc53c3
