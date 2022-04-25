@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class Llamilio : PlayerAction {
     
+    [Header("Attack")]
+    [SerializeField] private float frequency;
+
+    [Header("Effects")]
     [SerializeField] private ParticleSystem fireParticles;
     [SerializeField] private ParticleSystem chargeParticles;
     [SerializeField] private ParticleSystem explosionParticles;
     [SerializeField] private GameObject flame;
     [SerializeField] private GameObject crack;
     [SerializeField] private Transform crackPosition;
-    [SerializeField] private float frequency;
+
+    [Header("Sounds")]
+    [SerializeField] private AudioSource axeImpactSound;
+    [SerializeField] private AudioSource axeBackSound;
+
     private bool isAttacking = false;
 
     // Override functions
@@ -40,6 +48,14 @@ public class Llamilio : PlayerAction {
 
     public void Crack() {
         Instantiate(crack, crackPosition.position, crackPosition.rotation);
+    }
+
+    public void PlayAxeImpact() {
+        axeImpactSound.Play();
+    }
+
+    public void PlayAxeBack() {
+        axeBackSound.Play();
     }
     
 
