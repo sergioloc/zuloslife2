@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
     
     [SerializeField] private float speed;
+    [SerializeField] private float runDelay;
     [SerializeField] private GameObject landDetector;
 
     [Header("Sounds")]
@@ -45,8 +46,13 @@ public class PlayerMovement : MonoBehaviour {
             newShadow.transform.parent = gameObject.transform;
             newShadow.transform.position = new Vector3(shadowPosition.transform.position.x, shadowPosition.transform.position.y, shadowPosition.transform.position.z);
             Destroy(shadowPosition);
-            run = true;
+            StartCoroutine(StartRunning());
         }
+    }
+
+    IEnumerator StartRunning() {
+        yield return new WaitForSeconds(runDelay);
+        run = true;
     }
 
     public void SetRunning(bool run) {
