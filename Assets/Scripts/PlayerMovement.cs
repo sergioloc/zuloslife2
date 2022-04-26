@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour {
     [Header("Sounds")]
     [SerializeField] private AudioSource fallingSound;
     [SerializeField] private AudioSource landSound;
+    [SerializeField] private AudioSource stepSound;
+    [SerializeField] private List<AudioClip> steps;
 
     private Animator animator;
     private bool run;
@@ -62,6 +64,11 @@ public class PlayerMovement : MonoBehaviour {
     private void PlayLandSound() {
         fallingSound.Stop();
         landSound.Play();
+    }
+
+    public void PlayStep() {
+        stepSound.clip = steps[Random.Range(0, steps.Count-1)];
+        stepSound.Play();
     }
     
 }
