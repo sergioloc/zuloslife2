@@ -20,13 +20,13 @@ public class PlayerController : MonoBehaviour {
     }
 
     void OnTriggerStay2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Enemy") {
+        if (collision.gameObject.tag == targetTag) {
             FindTarget();
         }
     }
 
     void OnTriggerExit2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Enemy") {
+        if (collision.gameObject.tag == targetTag) {
             if (targets.Contains(collision.transform))
                 targets.Remove(collision.transform);
             if (targets.Count == 0) {
