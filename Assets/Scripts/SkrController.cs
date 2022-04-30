@@ -7,13 +7,20 @@ public class SkrController : MonoBehaviour {
     public float speed;
     public float sockwaveTime;
     public GameObject skrParticles;
+    private Camera cam;
+    private RipplePostProcessor rippleEffect;
 
-    private UnityEngine.Rendering.Universal.UniversalAdditionalCameraData camData;
+    [Header("Ripple Effect")]
+    [SerializeField] private float amount = 50f;
+    [Range(0,1)]
+    [SerializeField] private float friction = 0.9f;
+
     private bool run = false;
     
     void Start() {
         GameObject[] camList = GameObject.FindGameObjectsWithTag("MainCamera");
-        camData = camList[0].GetComponent<UnityEngine.Rendering.Universal.UniversalAdditionalCameraData>();
+        cam = camList[0].GetComponent<Camera>();
+        rippleEffect = camList[0].GetComponent<RipplePostProcessor>();
     }
 
     void FixedUpdate() {
@@ -24,24 +31,23 @@ public class SkrController : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision) {
         // Start running whem character touches ground
-        if (collision.gameObject.tag == "Ground" && !run) {
+        if (collision.gameObject.tag == "Ground") {
             run = true;
         }
     }
 
     void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Center") {
+        if (collision.gameObject.tag == "Kasper") {
+            run = false;
             StartCoroutine(Shockwave());
         }
     }
 
     IEnumerator Shockwave() {
-        yield return new WaitForSeconds(1f);
-        run = false;
-        camData.SetRenderer(1);
-        Instantiate(skrParticles, transform.position, Quaternion.identity);
-        yield return new WaitForSeconds(sockwaveTime);
-        camData.SetRenderer(0);
+        Vector3 screenPos = cam.WorldToScreenPoint(transform.position);
+        rippleEffect.Play(screenPos.x, screenPos.y, amount, friction);
+        yield return new WaitForSeconds(3f);
+        rippleEffect.Stop();
     }
 
 }

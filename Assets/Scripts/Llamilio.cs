@@ -4,12 +4,21 @@ using UnityEngine;
 
 public class Llamilio : PlayerAction {
 
-    [Header("Effects")]
+    [Header("Fire Effect")]
     [SerializeField] private ParticleSystem fireParticles;
     [SerializeField] private ParticleSystem chargeParticles;
     [SerializeField] private ParticleSystem explosionParticles;
     [SerializeField] private ParticleSystem cooldownParticles;
     [SerializeField] private GameObject flame;
+
+    [Header("Ripple Effect")]
+    [SerializeField] private float amount = 50f;
+    [Range(0,1)]
+    [SerializeField] private float friction = 0.9f;
+    private RipplePostProcessor rippleEffect;
+    private Camera cam;
+
+    [Header("Land Effect")]
     [SerializeField] private GameObject crack;
     [SerializeField] private Transform crackPosition;
 
@@ -25,6 +34,9 @@ public class Llamilio : PlayerAction {
 
     void Start() {
         animator = GetComponent<Animator>();
+        GameObject[] camList = GameObject.FindGameObjectsWithTag("MainCamera");
+        cam = camList[0].GetComponent<Camera>();
+        rippleEffect = camList[0].GetComponent<RipplePostProcessor>();
     }
 
     // Override functions
@@ -79,6 +91,9 @@ public class Llamilio : PlayerAction {
         cooldownSound.Play();
         fireParticles.Stop();
         flamethrowerSound.Stop();
+
+         Vector3 screenPos = cam.WorldToScreenPoint(transform.position);
+        rippleEffect.Play(screenPos.x, screenPos.y, amount, friction);
     }
 
 }

@@ -45084,6 +45084,8 @@ MonoBehaviour:
   explosionParticles: {fileID: 8552778548775331050}
   cooldownParticles: {fileID: 7750384987357284868}
   flame: {fileID: 116404244459436193, guid: aec3fbfcce4ba614583c2cd5efe92b12, type: 3}
+  amount: 10
+  friction: 0.9
   crack: {fileID: 3601136348151448970, guid: 84c7344ed6a87b74e89e0e9e86c603c8, type: 3}
   crackPosition: {fileID: 4602361961199998499}
   axeImpactSound: {fileID: 2132403801984447208}
