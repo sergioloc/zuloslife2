@@ -659,9 +659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2013979e6b800db4a9a94e7b58fa0a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RippleMaterial: {fileID: 2100000, guid: 56189ce187782ee4c81c500aeb4989ff, type: 2}
-  MaxAmount: 30
-  Friction: 0.97
+  rippleMaterial: {fileID: 2100000, guid: 56189ce187782ee4c81c500aeb4989ff, type: 2}
 --- !u!1 &529015657
 GameObject:
   m_ObjectHideFlags: 0

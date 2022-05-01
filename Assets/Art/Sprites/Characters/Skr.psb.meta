@@ -91,18 +91,18 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Hand
+  - name: Foot
     originalName: 
-    pivot: {x: 0.3293717, y: 0.7977636}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 846
-      width: 89
-      height: 102
-    spriteID: adb60c841bb4ff245a6e03c16c7bf2eb
+      x: 368
+      y: 4
+      width: 100
+      height: 88
+    spriteID: d0a0b68f710dce2448d122636d4f984f
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -112,19 +112,41 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -355, y: 545}
+    uvTransform: {x: -68, y: -166}
+  - name: Chest
+    originalName: 
+    pivot: {x: 0.5, y: 0.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 477
+      width: 182
+      height: 220
+    spriteID: 9436ca3cd20dfb84b9797d3c8d725626
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -428, y: 181}
   - name: Arm
     originalName: 
-    pivot: {x: 0.80973667, y: 0.7959314}
+    pivot: {x: 0.8, y: 0.8}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 688
+      y: 705
       width: 132
       height: 150
-    spriteID: a6c6bbacf7fbd2f409dcf9c70bbbe89b
+    spriteID: 8941291ea1398214585c71a5ab4e9c17
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -134,10 +156,54 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -348, y: 333}
+    uvTransform: {x: -348, y: 350}
+  - name: Hand
+    originalName: 
+    pivot: {x: 0.35, y: 0.8}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 863
+      width: 89
+      height: 102
+    spriteID: 97b1512cc36f269498137bd26b6cef64
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -355, y: 562}
+  - name: Pants
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 477
+      width: 187
+      height: 73
+    spriteID: f358b9b199290034c812dcaf379c5b88
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -239, y: 193}
   - name: Head
     originalName: 
-    pivot: {x: 0.51312524, y: 0.052837282}
+    pivot: {x: 0.5, y: 0.05}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -146,7 +212,7 @@ ScriptedImporter:
       y: 4
       width: 356
       height: 465
-    spriteID: 70a8cfc9e4865d24583dff4eb76635c1
+    spriteID: 4fc9e0889b84fe644a93ef7567783ad4
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -157,62 +223,18 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -342, y: -476}
-  - name: Pants
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 195
-      y: 477
-      width: 187
-      height: 72
-    spriteID: 5febafd39f3e1c64c94f9f086e985b91
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -238, y: 192}
-  - name: Foot
-    originalName: 
-    pivot: {x: 0.51242715, y: 0.7920375}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 368
-      y: 4
-      width: 94
-      height: 92
-    spriteID: 7b454772f36a7dc40a4826b6d3058c2e
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -51, y: -162}
   - name: Leg
     originalName: 
-    pivot: {x: 0.59871644, y: 0.82310516}
+    pivot: {x: 0.5, y: 0.8}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 101
-      y: 846
-      width: 71
+      y: 863
+      width: 68
       height: 94
-    spriteID: 7c0a2f134fd97464f9026eefa30ac71c
+    spriteID: 51e869f246265614aa7449f87c207c95
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -222,29 +244,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -334, y: 615}
-  - name: Chest
-    originalName: 
-    pivot: {x: 0.53830004, y: 0.16048864}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 477
-      width: 183
-      height: 203
-    spriteID: 9598380900918694c87f71e6cbfeb15f
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -427, y: 164}
+    uvTransform: {x: -349, y: 636}
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
@@ -308,55 +308,62 @@ ScriptedImporter:
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Hand
-    spriteName: Hand
-    isGroup: 0
+  - name: Color
+    spriteName: 
+    isGroup: 1
     parentIndex: -1
-    spriteID: adb60c841bb4ff245a6e03c16c7bf2eb
-    layerID: 98
-    mosaicPosition: {x: 4, y: 846}
-  - name: Arm
-    spriteName: Arm
-    isGroup: 0
-    parentIndex: -1
-    spriteID: a6c6bbacf7fbd2f409dcf9c70bbbe89b
-    layerID: 95
-    mosaicPosition: {x: 4, y: 688}
-  - name: Head
-    spriteName: Head
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 70a8cfc9e4865d24583dff4eb76635c1
-    layerID: 93
-    mosaicPosition: {x: 4, y: 4}
-  - name: Pants
-    spriteName: Pants
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 5febafd39f3e1c64c94f9f086e985b91
-    layerID: 96
-    mosaicPosition: {x: 195, y: 477}
+    spriteID: 00000000000000000000000000000000
+    layerID: 149
+    mosaicPosition: {x: 0, y: 0}
   - name: Foot
     spriteName: Foot
     isGroup: 0
-    parentIndex: -1
-    spriteID: 7b454772f36a7dc40a4826b6d3058c2e
-    layerID: 97
+    parentIndex: 0
+    spriteID: d0a0b68f710dce2448d122636d4f984f
+    layerID: 161
     mosaicPosition: {x: 368, y: 4}
-  - name: Leg
-    spriteName: Leg
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 7c0a2f134fd97464f9026eefa30ac71c
-    layerID: 99
-    mosaicPosition: {x: 101, y: 846}
   - name: Chest
     spriteName: Chest
     isGroup: 0
-    parentIndex: -1
-    spriteID: 9598380900918694c87f71e6cbfeb15f
-    layerID: 94
+    parentIndex: 0
+    spriteID: 9436ca3cd20dfb84b9797d3c8d725626
+    layerID: 167
     mosaicPosition: {x: 4, y: 477}
+  - name: Arm
+    spriteName: Arm
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 8941291ea1398214585c71a5ab4e9c17
+    layerID: 170
+    mosaicPosition: {x: 4, y: 705}
+  - name: Hand
+    spriteName: Hand
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 97b1512cc36f269498137bd26b6cef64
+    layerID: 173
+    mosaicPosition: {x: 4, y: 863}
+  - name: Pants
+    spriteName: Pants
+    isGroup: 0
+    parentIndex: 0
+    spriteID: f358b9b199290034c812dcaf379c5b88
+    layerID: 176
+    mosaicPosition: {x: 194, y: 477}
+  - name: Head
+    spriteName: Head
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 4fc9e0889b84fe644a93ef7567783ad4
+    layerID: 154
+    mosaicPosition: {x: 4, y: 4}
+  - name: Leg
+    spriteName: Leg
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 51e869f246265614aa7449f87c207c95
+    layerID: 178
+    mosaicPosition: {x: 101, y: 863}
   characterData:
     bones: []
     parts: []
