@@ -32,7 +32,6 @@ public class Skr : PlayerAction {
 
     public override void Attack() {
         animator.SetBool("isAttacking", true);
-        StartCoroutine(Shockwave());
     }
 
     public override void Run() {
@@ -55,15 +54,18 @@ public class Skr : PlayerAction {
     // Aux functions
 
     IEnumerator Shockwave() {
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(0.5f);
+        shockwaveParticles.Play();
         skrParticles.Play();
+        shockwaveSound.Play();
 
         Vector3 screenPos = cam.WorldToScreenPoint(mouthPosition.position);
         rippleEffect.Play(screenPos.x, screenPos.y, amount, friction);
 
         yield return new WaitForSeconds(duration);
+        shockwaveParticles.Stop();
         rippleEffect.Stop();
-        animator.SetBool("isAttacking", false);
+        animator.SetTrigger("Cooldown");
     }
 
 }
