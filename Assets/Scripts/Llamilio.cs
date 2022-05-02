@@ -92,7 +92,7 @@ public class Llamilio : PlayerAction {
         fireParticles.Stop();
         flamethrowerSound.Stop();
 
-         Vector3 screenPos = cam.WorldToScreenPoint(transform.position);
+        Vector3 screenPos = cam.WorldToScreenPoint(transform.position);
         rippleEffect.Play(screenPos.x, screenPos.y, amount, friction);
     }
 

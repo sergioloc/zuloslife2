@@ -20,8 +20,7 @@ public class RipplePostProcessor : MonoBehaviour {
     }
 
     public void Stop() {
-        currentAmount = 0f;
-        currentFriction = 0f;
+        currentFriction = 0.8f;
     }
  
     void OnRenderImage(RenderTexture src, RenderTexture dst) {
