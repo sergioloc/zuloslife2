@@ -51,11 +51,16 @@ public class Skr : PlayerAction {
         }
     }
 
+    // Animation functions
+
+    public void StartShockwave() {
+        shockwaveParticles.Play();
+    }
+
     // Aux functions
 
     IEnumerator Shockwave() {
         yield return new WaitForSeconds(0.5f);
-        shockwaveParticles.Play();
         skrParticles.Play();
         shockwaveSound.Play();
 
