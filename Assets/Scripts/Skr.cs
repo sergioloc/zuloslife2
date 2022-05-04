@@ -12,7 +12,7 @@ public class Skr : PlayerAction {
     [SerializeField] private ParticleSystem skrParticles;
     [SerializeField] private ParticleSystem shockwaveParticles;
     private Camera cam;
-    private RipplePostProcessor rippleEffect;
+    private RippleEffect rippleEffect;
 
     [Header("Sounds")]
     [SerializeField] private AudioSource shockwaveSound;
@@ -25,7 +25,7 @@ public class Skr : PlayerAction {
         mouthPosition = skrParticles.GetComponent<Transform>();
         GameObject[] camList = GameObject.FindGameObjectsWithTag("MainCamera");
         cam = camList[0].GetComponent<Camera>();
-        rippleEffect = camList[0].GetComponent<RipplePostProcessor>();
+        rippleEffect = camList[0].GetComponent<RippleEffect>();
     }
 
     // Override functions

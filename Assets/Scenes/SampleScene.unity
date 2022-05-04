@@ -660,6 +660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rippleMaterial: {fileID: 2100000, guid: 56189ce187782ee4c81c500aeb4989ff, type: 2}
+  currentAmount: 0
 --- !u!1 &529015657
 GameObject:
   m_ObjectHideFlags: 0

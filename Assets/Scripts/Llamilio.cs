@@ -15,7 +15,7 @@ public class Llamilio : PlayerAction {
     [SerializeField] private float amount = 50f;
     [Range(0,1)]
     [SerializeField] private float friction = 0.9f;
-    private RipplePostProcessor rippleEffect;
+    private RippleEffect rippleEffect;
     private Camera cam;
 
     [Header("Land Effect")]
@@ -36,7 +36,7 @@ public class Llamilio : PlayerAction {
         animator = GetComponent<Animator>();
         GameObject[] camList = GameObject.FindGameObjectsWithTag("MainCamera");
         cam = camList[0].GetComponent<Camera>();
-        rippleEffect = camList[0].GetComponent<RipplePostProcessor>();
+        rippleEffect = camList[0].GetComponent<RippleEffect>();
     }
 
     // Override functions
