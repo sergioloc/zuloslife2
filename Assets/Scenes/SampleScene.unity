@@ -383,7 +383,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Card1
+  m_Text: Cepa
 --- !u!222 &236769227
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3268,7 +3268,7 @@ GameObject:
   - component: {fileID: 1743239559}
   - component: {fileID: 1743239558}
   m_Layer: 5
-  m_Name: Card1
+  m_Name: CardCepa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3307,7 +3307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fcdff1668267f0469850a8d7a006218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawn: {fileID: 3892489512465882029, guid: 27c0e20c59bf9764cbe6fdae77d9a97d, type: 3}
+  spawn: {fileID: 6019677086731596036, guid: 2812d217e3d1fcd46ab535e97f0f80ac, type: 3}
   loader: {fileID: 868248353}
   cooldown: 1
   isSelected: 0
