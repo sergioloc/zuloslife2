@@ -1047,7 +1047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  runDelay: 0
+  runDelay: 1.5
   landDetector: {fileID: 6051933208560442461}
   fallingSound: {fileID: 6051933209131768732}
   landSound: {fileID: 6051933209131768733}
