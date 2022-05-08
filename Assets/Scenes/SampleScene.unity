@@ -1650,7 +1650,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Card3
+  m_Text: Stere
 --- !u!222 &1112617951
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2953,7 +2953,7 @@ GameObject:
   - component: {fileID: 1655384524}
   - component: {fileID: 1655384527}
   m_Layer: 5
-  m_Name: Card3
+  m_Name: Stere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3086,7 +3086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fcdff1668267f0469850a8d7a006218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawn: {fileID: 1035101452867884727, guid: 862e1f51c3501044e91f2a54a3ccc0c3, type: 3}
+  spawn: {fileID: 6051933209131768675, guid: 21ba9761b48833541bca569a9f525a29, type: 3}
   loader: {fileID: 1345524781}
   cooldown: 1
   isSelected: 0
