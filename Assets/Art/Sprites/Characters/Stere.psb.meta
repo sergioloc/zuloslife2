@@ -289,6 +289,28 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 91, y: -203}
+  - name: Roller
+    originalName: 
+    pivot: {x: 0.1, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 403
+      width: 340
+      height: 75
+    spriteID: b1854d98f14117a46b85b3a2fc60f84d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 353, y: -15}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
@@ -308,66 +330,80 @@ ScriptedImporter:
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
+  - name: Color
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 606
+    mosaicPosition: {x: 0, y: 0}
+  - name: Roller
+    spriteName: Roller
+    isGroup: 0
+    parentIndex: 0
+    spriteID: b1854d98f14117a46b85b3a2fc60f84d
+    layerID: 608
+    mosaicPosition: {x: 416, y: 403}
   - name: Head
     spriteName: Head
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: d0ce7d5930d163046bb1e01c890d376c
     layerID: 586
     mosaicPosition: {x: 4, y: 4}
   - name: Detail
     spriteName: Detail
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: 42fed63440a12604f8e6c62cc439a025
     layerID: 581
     mosaicPosition: {x: 878, y: 4}
   - name: Arm
     spriteName: Arm
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: 5bb98333677a2fb46b3ed54d39ec3fa0
     layerID: 578
     mosaicPosition: {x: 271, y: 509}
   - name: Hand
     spriteName: Hand
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: 42c28b090ffd29c4fbbd452c2eea5160
     layerID: 587
     mosaicPosition: {x: 271, y: 662}
   - name: Chest Front
     spriteName: Chest Front
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: a271952183e5fb249ab3d2322cdd5ca2
     layerID: 573
     mosaicPosition: {x: 4, y: 755}
   - name: Chest Back
     spriteName: Chest Back
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: 19dda0b0068d457428faba82129423a1
     layerID: 563
     mosaicPosition: {x: 4, y: 509}
   - name: Dress Top Front
     spriteName: Dress Top Front
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: 1f140a9cf7b90e04ba3adf8c396d75a4
     layerID: 567
     mosaicPosition: {x: 416, y: 285}
   - name: Dress Top Back
     spriteName: Dress Top Back
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: 4190e5e49c845b7468d7df971ae32739
     layerID: 575
     mosaicPosition: {x: 416, y: 155}
   - name: Dress Bottom
     spriteName: Dress Bottom
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: e29be77e8d4cb4748b0ef62b01044e74
     layerID: 574
     mosaicPosition: {x: 416, y: 4}
