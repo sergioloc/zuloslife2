@@ -47,7 +47,7 @@ public class Skr : PlayerAction {
     void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.tag == "Ground") {
             Vector3 screenPos = cam.WorldToScreenPoint(transform.position);
-            rippleEffect.Play(screenPos.x, screenPos.y, amount/1.5f, friction/1.5f);
+            rippleEffect.Play(screenPos.x, screenPos.y, amount/1.25f, friction/1.25f);
         }
     }
 
