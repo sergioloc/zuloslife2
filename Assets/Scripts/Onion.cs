@@ -5,7 +5,7 @@ using UnityEngine;
 public class Onion : MonoBehaviour {
     
     [SerializeField] private float lifetime;
-    public float force;
+    [HideInInspector] public float force;
     private Rigidbody2D rb2D;
 
     void Start() {
