@@ -150,6 +150,7 @@ GameObject:
   - component: {fileID: 6917441039592971116}
   - component: {fileID: 6917441039592971117}
   - component: {fileID: 6917441039592971118}
+  - component: {fileID: 2220023576866166982}
   m_Layer: 6
   m_Name: Onion
   m_TagString: Untagged
@@ -224,6 +225,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifetime: 4
   force: 0
+--- !u!95 &2220023576866166982
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6917441039592971119}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 770aab472aab1014580b24860d23a466, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7612029385882794936
 GameObject:
   m_ObjectHideFlags: 0
