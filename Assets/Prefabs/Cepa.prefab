@@ -1243,7 +1243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c586239f58e6934da19d169290f0c63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onion: {fileID: 6917441039592971119, guid: f4411d39b6f575d4387331a5e52ccad3, type: 3}
+  projectile: {fileID: 6917441039592971119, guid: f4411d39b6f575d4387331a5e52ccad3, type: 3}
   shotPoint: {fileID: 2802092409115924995}
 --- !u!114 &6019677086731596047
 MonoBehaviour:
@@ -1368,7 +1368,7 @@ AudioSource:
   m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
-  Mute: 0
+  Mute: 1
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
