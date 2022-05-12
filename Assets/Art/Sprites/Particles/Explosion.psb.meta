@@ -113,64 +113,20 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -51, y: -80}
-  - name: Fragment2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 707
-      width: 71
-      height: 186
-    spriteID: 4da065e0446d54b45980d5d9b5dd9f3a
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -299, y: 523}
-  - name: Fragment1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 356
-      width: 104
-      height: 343
-    spriteID: 896185f5c655ef042af0fbbddfd3c633
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -106, y: 303}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
   importedTextureWidth: 512
-  importedTextureHeight: 1024
+  importedTextureHeight: 512
   documentSize: {x: 512, y: 512}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
   textureActualWidth: 512
-  textureActualHeight: 1024
+  textureActualHeight: 512
   spritePackingTag: 
   resliceFromLayer: 0
   characterMode: 1
@@ -183,20 +139,6 @@ ScriptedImporter:
     spriteID: dc5930cc832b4cb4dba1d2251e1dc6f8
     layerID: 10
     mosaicPosition: {x: 4, y: 4}
-  - name: Fragment2
-    spriteName: Fragment2
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 4da065e0446d54b45980d5d9b5dd9f3a
-    layerID: 16
-    mosaicPosition: {x: 4, y: 707}
-  - name: Fragment1
-    spriteName: Fragment1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 896185f5c655ef042af0fbbddfd3c633
-    layerID: 15
-    mosaicPosition: {x: 4, y: 356}
   characterData:
     bones: []
     parts: []

@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour {
     
     [SerializeField] private float speed;
     [SerializeField] private float runDelay;
+    [SerializeField] private bool reverse = false;
     [SerializeField] private GameObject landDetector;
 
     [Header("Sounds")]
@@ -31,7 +32,10 @@ public class PlayerMovement : MonoBehaviour {
 
     void FixedUpdate() {
         if (run) {
-            transform.Translate(Vector2.right * (speed / 10) * Time.deltaTime);
+            if (reverse)
+                transform.Translate(Vector2.left * (speed / 10) * Time.deltaTime);
+            else
+                transform.Translate(Vector2.right * (speed / 10) * Time.deltaTime);
         }
     }
 
