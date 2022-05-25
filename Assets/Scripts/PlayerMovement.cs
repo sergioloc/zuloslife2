@@ -15,14 +15,15 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField] private AudioSource stepSound;
     [SerializeField] private List<AudioClip> steps;
 
+    [Header("Bottom shadow")]
+    [SerializeField] private GameObject shadow;
+    [SerializeField] private GameObject shadowPosition;
+    [SerializeField] private float height = -3.52f;
+    [SerializeField] private bool bounce = false;
+    private GameObject newShadow;
+
     private Animator animator;
     private bool run;
-
-    [Header("Bottom shadow")]
-    public GameObject shadow;
-    public GameObject shadowPosition;
-    public float height = -3.52f;
-    private GameObject newShadow;
 
     void Start() {
         run = false;
@@ -59,6 +60,8 @@ public class PlayerMovement : MonoBehaviour {
     IEnumerator StartRunning() {
         yield return new WaitForSeconds(runDelay);
         run = true;
+        if (bounce)
+            newShadow.GetComponent<Animator>().SetTrigger("Bounce");
     }
 
     public void SetRunning(bool run) {
@@ -66,13 +69,15 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     private void PlayLandSound() {
-        fallingSound.Stop();
-        landSound.Play();
+        if (fallingSound) fallingSound.Stop();
+        if (landSound) landSound.Play();
     }
 
     public void PlayStep() {
-        stepSound.clip = steps[Random.Range(0, steps.Count-1)];
-        stepSound.Play();
+        if (stepSound) {
+            stepSound.clip = steps[Random.Range(0, steps.Count-1)];
+            stepSound.Play();
+        }
     }
     
 }
