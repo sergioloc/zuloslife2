@@ -89,4 +89,10 @@ public class GreenLife : PlayerAction {
         rb2d.AddForce(Vector2.left * recoil * 10);
     }
 
+    public void StopRecoil() {
+        shooting = false;
+        rb2d.velocity = Vector3.zero;
+        rb2d.angularVelocity = 0f;
+    }
+
 }

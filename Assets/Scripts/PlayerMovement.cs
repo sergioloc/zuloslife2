@@ -73,7 +73,8 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     public void SetRunning(bool run) {
-        this.run = run;
+        if (rb2d.constraints == RigidbodyConstraints2D.FreezeRotation)
+            this.run = run;
     }
 
     private void PlayLandSound() {
@@ -92,11 +93,11 @@ public class PlayerMovement : MonoBehaviour {
         run = false;
         reverse = true;
         animator.SetTrigger("Spell");
-        rb2d.constraints = RigidbodyConstraints2D.FreezePositionY;
+        rb2d.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
 
         yield return new WaitForSeconds(2f);
 
-        rb2d.constraints = RigidbodyConstraints2D.None;
+        rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
         transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
         run = true;
         gameObject.tag = "Enemy";

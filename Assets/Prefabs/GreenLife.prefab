@@ -10451,7 +10451,7 @@ Transform:
   - {fileID: 4854259263363975977}
   - {fileID: 4115607545805604656}
   m_Father: {fileID: 683415506159520877}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!198 &718482032503631928
 ParticleSystem:
@@ -15254,7 +15254,7 @@ Transform:
   m_Children:
   - {fileID: 6425826612082505179}
   m_Father: {fileID: 683415506159520877}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6595318995025113296
 GameObject:
@@ -15284,7 +15284,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 683415506159520877}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7587406340127572841
 GameObject:
@@ -15460,10 +15460,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5856235345154207593}
   - {fileID: 4179164339741327071}
-  - {fileID: 3862701154386661258}
+  - {fileID: 5856235345154207593}
   - {fileID: 4774788317830446842}
+  - {fileID: 3862701154386661258}
   - {fileID: 7682233014503392786}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -15535,12 +15535,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  landDetector: {fileID: 0}
+  runDelay: 0
+  landDetector: {fileID: 8402570435803570420}
   fallingSound: {fileID: 4466477845230302638}
   landSound: {fileID: 6290901059033420847}
+  stepSound: {fileID: 0}
+  steps: []
   shadow: {fileID: 1391083417732046919, guid: ef25c3ac56d0b744489a91eb936cecf0, type: 3}
   shadowPosition: {fileID: 6595318995025113296}
   height: -3.52
+  bounce: 0
+  reverse: 0
 --- !u!114 &5178061727701967267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15554,7 +15559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSpeed: 10
-  recoil: 5
+  recoil: 3
   projectile: {fileID: 162166558154797446, guid: bb4f4f8c16f5cf24fa4c30369b302ba2, type: 3}
   head: {fileID: 2368592766139926808}
   shotPoint: {fileID: 72415233601318223}
@@ -16181,7 +16186,7 @@ GameObject:
   - component: {fileID: 5856235345154207593}
   - component: {fileID: 4629379859655065361}
   m_Layer: 6
-  m_Name: Range
+  m_Name: Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16199,7 +16204,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 683415506159520877}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &4629379859655065361
 CircleCollider2D:
