@@ -10320,7 +10320,7 @@ GameObject:
   - component: {fileID: 3577202456569475818}
   - component: {fileID: 6596269066965296113}
   - component: {fileID: 8313743446369444559}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Rose
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -10554,7 +10554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5611396389476580519}
   - component: {fileID: 5611396389476580504}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
