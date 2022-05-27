@@ -91,50 +91,6 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Hat
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 4
-      width: 622
-      height: 488
-    spriteID: 3642b17e5c26def4c86811e0f1628b3b
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -254, y: -565}
-  - name: Ceoter
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 936
-      width: 121
-      height: 543
-    spriteID: 1cb32f73769a08449aff6b3e3a713b9b
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -83, y: 765}
   - name: Hair
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -186,8 +142,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 791
-      y: 381
+      x: 4
+      y: 1620
       width: 91
       height: 93
     spriteID: 9a35b189461c5994f942467cc2a6b982
@@ -200,29 +156,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 407, y: 69}
-  - name: Pants
-    originalName: 
-    pivot: {x: 0.55, y: 0.5}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 133
-      y: 1139
-      width: 211
-      height: 130
-    spriteID: f69ac5f7dbb690a48b25c6499cda7821
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -321, y: 842}
+    uvTransform: {x: -380, y: 1308}
   - name: Chest
     originalName: 
     pivot: {x: 0.55, y: 0.1}
@@ -245,28 +179,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -311, y: 587}
-  - name: Foot
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 634
-      y: 381
-      width: 149
-      height: 107
-    spriteID: 701c317ebc12c3641b24361504e726cf
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 111, y: 195}
   - name: Leg
     originalName: 
     pivot: {x: 0.5, y: 0.75}
@@ -311,6 +223,138 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 274, y: -497}
+  - name: Cepter
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 936
+      width: 121
+      height: 543
+    spriteID: 9c56914fd56a5f140a70ad23c6ed441f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -83, y: 765}
+  - name: Heart
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1721
+      width: 95
+      height: 84
+    spriteID: f556334904bb1e64393c2e1622c3fcdf
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -576, y: 1155}
+  - name: Mouth
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 789
+      y: 381
+      width: 154
+      height: 65
+    spriteID: 8c44d38bdf44ba14e8509288e2d28eed
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 306, y: -130}
+  - name: Hat
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 622
+      height: 488
+    spriteID: 5b6cb04fea4efd044b87aafdc3cca3dc
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -254, y: -565}
+  - name: Foot
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 634
+      y: 381
+      width: 147
+      height: 102
+    spriteID: 0e8f172ae9a19e841ae69056003fae1f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 109, y: 193}
+  - name: Pants
+    originalName: 
+    pivot: {x: 0.55, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 133
+      y: 1139
+      width: 211
+      height: 146
+    spriteID: 64563ad34dcf5e24ebcedfd3817ec6e3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -321, y: 842}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
@@ -337,19 +381,40 @@ ScriptedImporter:
     spriteID: 00000000000000000000000000000000
     layerID: 493
     mosaicPosition: {x: 0, y: 0}
+  - name: Foot
+    spriteName: Foot
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 0e8f172ae9a19e841ae69056003fae1f
+    layerID: 538
+    mosaicPosition: {x: 634, y: 381}
   - name: Hat
     spriteName: Hat
     isGroup: 0
     parentIndex: 0
-    spriteID: 3642b17e5c26def4c86811e0f1628b3b
-    layerID: 515
+    spriteID: 5b6cb04fea4efd044b87aafdc3cca3dc
+    layerID: 536
     mosaicPosition: {x: 4, y: 4}
-  - name: Ceoter
-    spriteName: Ceoter
+  - name: Heart
+    spriteName: Heart
     isGroup: 0
     parentIndex: 0
-    spriteID: 1cb32f73769a08449aff6b3e3a713b9b
-    layerID: 496
+    spriteID: f556334904bb1e64393c2e1622c3fcdf
+    layerID: 533
+    mosaicPosition: {x: 4, y: 1721}
+  - name: Mouth
+    spriteName: Mouth
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 8c44d38bdf44ba14e8509288e2d28eed
+    layerID: 529
+    mosaicPosition: {x: 789, y: 381}
+  - name: Cepter
+    spriteName: Cepter
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 9c56914fd56a5f140a70ad23c6ed441f
+    layerID: 521
     mosaicPosition: {x: 4, y: 936}
   - name: Hair
     spriteName: Hair
@@ -378,13 +443,13 @@ ScriptedImporter:
     parentIndex: 0
     spriteID: 9a35b189461c5994f942467cc2a6b982
     layerID: 511
-    mosaicPosition: {x: 791, y: 381}
+    mosaicPosition: {x: 4, y: 1620}
   - name: Pants
     spriteName: Pants
     isGroup: 0
     parentIndex: 0
-    spriteID: f69ac5f7dbb690a48b25c6499cda7821
-    layerID: 503
+    spriteID: 64563ad34dcf5e24ebcedfd3817ec6e3
+    layerID: 539
     mosaicPosition: {x: 133, y: 1139}
   - name: Chest
     spriteName: Chest
@@ -393,13 +458,6 @@ ScriptedImporter:
     spriteID: 7624db6f78bdd2f459bcbd0bbb5a8e8a
     layerID: 504
     mosaicPosition: {x: 133, y: 936}
-  - name: Foot
-    spriteName: Foot
-    isGroup: 0
-    parentIndex: 0
-    spriteID: 701c317ebc12c3641b24361504e726cf
-    layerID: 507
-    mosaicPosition: {x: 634, y: 381}
   - name: Leg
     spriteName: Leg
     isGroup: 0
