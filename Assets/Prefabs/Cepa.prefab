@@ -1169,7 +1169,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &6019677086731596044
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1231,6 +1231,8 @@ MonoBehaviour:
   shadow: {fileID: 1391083417732046919, guid: ef25c3ac56d0b744489a91eb936cecf0, type: 3}
   shadowPosition: {fileID: 6019677086154232505}
   height: -3.52
+  bounce: 0
+  reverse: 0
 --- !u!114 &2438939119933179158
 MonoBehaviour:
   m_ObjectHideFlags: 0
