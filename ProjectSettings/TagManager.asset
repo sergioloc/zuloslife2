@@ -12,6 +12,7 @@ TagManager:
   - Muro
   - Center
   - Leaf
+  - Thunder
   layers:
   - Default
   - TransparentFX

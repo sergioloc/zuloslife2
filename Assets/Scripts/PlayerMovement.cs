@@ -6,7 +6,6 @@ public class PlayerMovement : MonoBehaviour {
     
     [SerializeField] private float speed;
     [SerializeField] private float runDelay;
-    [SerializeField] private bool reverse = false;
     [SerializeField] private GameObject landDetector;
 
     [Header("Sounds")]
@@ -22,6 +21,7 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField] private bool bounce = false;
     private GameObject newShadow;
 
+    [HideInInspector] public bool reverse = false;
     private Animator animator;
     private bool run;
 
@@ -45,6 +45,9 @@ public class PlayerMovement : MonoBehaviour {
             animator.SetTrigger("Land");
             Destroy(landDetector);
         }
+        else if (collision.gameObject.tag == "Thunder" && !reverse) {
+            StartCoroutine(Spell());
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
@@ -57,7 +60,7 @@ public class PlayerMovement : MonoBehaviour {
         }
     }
 
-    IEnumerator StartRunning() {
+    private IEnumerator StartRunning() {
         yield return new WaitForSeconds(runDelay);
         run = true;
         if (bounce)
@@ -78,6 +81,15 @@ public class PlayerMovement : MonoBehaviour {
             stepSound.clip = steps[Random.Range(0, steps.Count-1)];
             stepSound.Play();
         }
+    }
+
+    private IEnumerator Spell() {
+        run = false;
+        reverse = true;
+        //animator.SetTrigger("Spell");
+        yield return new WaitForSeconds(2f);
+        transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        run = true;
     }
     
 }

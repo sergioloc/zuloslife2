@@ -30,8 +30,13 @@ public class Rose : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag == "Player") {
-            run = false;
-            animator.SetBool("isAttacking", true);
+            if (!collision.gameObject.GetComponent<PlayerMovement>().reverse) {
+                run = false;
+                animator.SetTrigger("Attack");
+            }
+            else {
+                run = true;
+            }
         }
     }
 
