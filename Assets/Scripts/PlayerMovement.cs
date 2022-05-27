@@ -22,11 +22,15 @@ public class PlayerMovement : MonoBehaviour {
     private GameObject newShadow;
 
     [HideInInspector] public bool reverse = false;
+    private Rigidbody2D rb2d;
     private Animator animator;
     private bool run;
+    private bool grounded;
 
     void Start() {
         run = false;
+        grounded = false;
+        rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         newShadow = Instantiate(shadow, new Vector3(transform.position.x, height, transform.position.z), Quaternion.identity);
     }
@@ -51,7 +55,8 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.tag == "Ground") {
+        if (collision.gameObject.tag == "Ground" && !grounded) {
+            grounded = true;
             PlayLandSound();
             newShadow.transform.parent = gameObject.transform;
             newShadow.transform.position = new Vector3(shadowPosition.transform.position.x, shadowPosition.transform.position.y, shadowPosition.transform.position.z);
@@ -86,10 +91,16 @@ public class PlayerMovement : MonoBehaviour {
     private IEnumerator Spell() {
         run = false;
         reverse = true;
-        //animator.SetTrigger("Spell");
+        animator.SetTrigger("Spell");
+        rb2d.constraints = RigidbodyConstraints2D.FreezePositionY;
+
         yield return new WaitForSeconds(2f);
+
+        rb2d.constraints = RigidbodyConstraints2D.None;
         transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
         run = true;
+        gameObject.tag = "Enemy";
+        gameObject.GetComponent<PlayerController>().SetTargetTag("Player");
     }
     
 }

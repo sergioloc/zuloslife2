@@ -36,6 +36,10 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+    public void SetTargetTag(string tag) {
+        targetTag = tag;
+    }
+
     private void FindTarget() {
         int index = NearestTarget();
         if (index != -1) 
