@@ -19,8 +19,10 @@ public class Skr : PlayerAction {
 
     private Animator animator;
     private Transform mouthPosition;
+    private bool grounded;
     
     void Start() {
+        grounded = false;
         animator = GetComponent<Animator>();
         mouthPosition = skrParticles.GetComponent<Transform>();
         GameObject[] camList = GameObject.FindGameObjectsWithTag("MainCamera");
@@ -45,7 +47,8 @@ public class Skr : PlayerAction {
     // Listeners
 
     void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.tag == "Ground") {
+        if (collision.gameObject.tag == "Ground" && !grounded) {
+            grounded = true;
             Vector3 screenPos = cam.WorldToScreenPoint(transform.position);
             rippleEffect.Play(screenPos.x, screenPos.y, amount/1.25f, friction/1.25f);
         }
