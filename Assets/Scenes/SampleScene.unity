@@ -1094,7 +1094,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 786504221}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.8, y: 0, z: 0}
+  m_LocalPosition: {x: -3.67, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1142,7 +1142,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7, y: 10}
+  m_Size: {x: 20, y: 10}
   m_EdgeRadius: 0
 --- !u!1 &825258547
 GameObject:
@@ -2954,7 +2954,7 @@ GameObject:
   - component: {fileID: 1655384524}
   - component: {fileID: 1655384527}
   m_Layer: 5
-  m_Name: Stere
+  m_Name: CardStere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -7,6 +7,7 @@ public class Cepa : PlayerAction {
     [SerializeField] private GameObject projectile;
     [SerializeField] private Transform shotPoint;
     private float distance = 0;
+    private float angle = 0;
 
     private Animator animator;
 
@@ -26,12 +27,17 @@ public class Cepa : PlayerAction {
 
     public override void LookAtTarget(Vector2 targetPosition) {
         distance = targetPosition.x - transform.position.x;
+        angle = -30f;
+        if (distance < 0) {
+            distance = Mathf.Abs(distance);
+            angle = Mathf.Abs(angle);
+        }
     }
 
     // Animation functions
 
     public void ThrowOnion() {
-        GameObject onion = Instantiate(projectile, shotPoint.position, Quaternion.Euler(0f, 0f, -30f));
+        GameObject onion = Instantiate(projectile, shotPoint.position, Quaternion.Euler(0f, 0f, angle));
         Debug.Log(distance);
         onion.GetComponent<Onion>().force = getForce();
     
