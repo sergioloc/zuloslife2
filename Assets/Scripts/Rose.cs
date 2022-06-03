@@ -32,7 +32,8 @@ public class Rose : MonoBehaviour {
         if (collision.gameObject.tag == "Player") {
             if (!collision.gameObject.GetComponent<PlayerMovement>().reverse) {
                 run = false;
-                animator.SetTrigger("Attack");
+                animator.SetBool("isAttacking", true);
+                StartCoroutine(StopAttack());
             }
             else {
                 run = true;
@@ -47,6 +48,12 @@ public class Rose : MonoBehaviour {
     void Thunder() {
         thunderParticles.Play();
         thunderSound.Play();
+    }
+
+    private IEnumerator StopAttack() {
+        yield return new WaitForSeconds(1f);
+       animator.SetBool("isAttacking", false);
+       run = true;
     }
 
 }
