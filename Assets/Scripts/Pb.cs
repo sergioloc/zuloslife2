@@ -10,7 +10,8 @@ public class Pb : MonoBehaviour {
     [SerializeField] private float damage;
 
     [Header("Attack")]
-    [SerializeField] private ParticleSystem inhaleParticles;
+    [SerializeField] private ParticleSystem absorbParticles;
+    [SerializeField] private AudioSource absorbSound;
 
     private bool run;
     private Animator animator;
@@ -30,7 +31,8 @@ public class Pb : MonoBehaviour {
         if (collision.gameObject.tag == "Player") {
             collision.gameObject.GetComponent<Animator>().SetTrigger("Absorb");
             run = false;
-            inhaleParticles.Play();
+            absorbParticles.Play();
+            absorbSound.Play();
             animator.SetBool("isAttacking", true);
         }
     }
@@ -38,7 +40,7 @@ public class Pb : MonoBehaviour {
     void OnTriggerExit2D(Collider2D collision) {
         if (collision.gameObject.tag == "Player") {
             StartCoroutine(StartRun());
-            inhaleParticles.Stop();
+            absorbParticles.Stop();
             animator.SetBool("isAttacking", false);
         }
     }
@@ -46,6 +48,10 @@ public class Pb : MonoBehaviour {
     private IEnumerator StartRun() {
         yield return new WaitForSeconds(1f);
         run = true;
+    }
+
+    public void PlayAbsorb() {
+        absorbSound.Play();
     }
 
 }
