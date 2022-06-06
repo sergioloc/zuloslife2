@@ -2,25 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rose : MonoBehaviour {
-    
+public class Pb : MonoBehaviour {
+
     [Header("Values")]
     [SerializeField] private float health = 100;
     [SerializeField] private float speed;
     [SerializeField] private float damage;
 
     [Header("Attack")]
-    [SerializeField] private ParticleSystem thunderParticles;
-    [SerializeField] private AudioSource thunderSound;
+    [SerializeField] private ParticleSystem inhaleParticles;
 
     private bool run;
     private Animator animator;
-
+    
     void Start() {
-        run = false;
+        run = true;
         animator = GetComponent<Animator>();
     }
-
    
     void Update() {
         if (run) {
@@ -30,29 +28,23 @@ public class Rose : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag == "Player") {
-            if (!collision.gameObject.GetComponent<PlayerMovement>().reverse) {
-                run = false;
-                animator.SetBool("isAttacking", true);
-                StartCoroutine(StopAttack());
-            }
-            else {
-                run = true;
-            }
+            collision.gameObject.GetComponent<Animator>().SetTrigger("Absorb");
+            run = false;
+            inhaleParticles.Play();
+            animator.SetBool("isAttacking", true);
         }
     }
 
-    void Run() {
-        run = true;
+    void OnTriggerExit2D(Collider2D collision) {
+        if (collision.gameObject.tag == "Player") {
+            StartCoroutine(StartRun());
+            inhaleParticles.Stop();
+            animator.SetBool("isAttacking", false);
+        }
     }
 
-    void Thunder() {
-        thunderParticles.Play();
-        thunderSound.Play();
-    }
-
-    private IEnumerator StopAttack() {
+    private IEnumerator StartRun() {
         yield return new WaitForSeconds(1f);
-        animator.SetBool("isAttacking", false);
         run = true;
     }
 

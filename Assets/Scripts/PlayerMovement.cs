@@ -89,6 +89,14 @@ public class PlayerMovement : MonoBehaviour {
         }
     }
 
+    public void DestroyShadow() {
+        Destroy(newShadow);
+    }
+
+    public void DestroyGameObject() {
+        Destroy(gameObject);
+    }
+
     private IEnumerator Spell() {
         run = false;
         reverse = true;
