@@ -30,7 +30,7 @@ TagManager:
   - Weapon
   - Moquino
   - Rose
-  - 
+  - Pb
   - 
   - 
   - 
@@ -49,6 +49,9 @@ TagManager:
   m_SortingLayers:
   - name: Background
     uniqueID: 1035242685
+    locked: 0
+  - name: Pb
+    uniqueID: 3907899477
     locked: 0
   - name: Muro
     uniqueID: 1563869137

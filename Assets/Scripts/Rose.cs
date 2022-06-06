@@ -12,6 +12,7 @@ public class Rose : MonoBehaviour {
     [Header("Attack")]
     [SerializeField] private ParticleSystem thunderParticles;
     [SerializeField] private AudioSource thunderSound;
+    [SerializeField] private AudioSource spellSound;
 
     private bool run;
     private Animator animator;
@@ -48,6 +49,10 @@ public class Rose : MonoBehaviour {
     void Thunder() {
         thunderParticles.Play();
         thunderSound.Play();
+    }
+
+    void PlaySpell() {
+        spellSound.Play();
     }
 
     private IEnumerator StopAttack() {
