@@ -35,6 +35,12 @@ public class Pb : MonoBehaviour {
             absorbSound.Play();
             animator.SetBool("isAttacking", true);
         }
+        else if (collision.gameObject.tag == "Shield") {
+            run = false;
+            absorbParticles.Play();
+            absorbSound.Play();
+            animator.SetBool("isAttacking", true);
+        }
     }
 
     void OnTriggerExit2D(Collider2D collision) {
