@@ -7,11 +7,14 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private PlayerMovement movement;
     [SerializeField] private PlayerAction action;
     [SerializeField] private float actionDelay;
-    [SerializeField] private string targetTag;
+
+    [Space()]
+    [SerializeField] private List<string> targetsTag;
     [SerializeField] private List<Transform> targets;
+    private string targetTag;
 
     void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag == targetTag) {
+        if (isEnemy(collision.gameObject.tag)) {
             if (!targets.Contains(collision.transform))
                 targets.Add(collision.transform);
             StartCoroutine(StopRunning());
@@ -20,30 +23,50 @@ public class PlayerController : MonoBehaviour {
     }
 
     void OnTriggerStay2D(Collider2D collision) {
-        if (collision.gameObject.tag == targetTag) {
+        if (isEnemy(collision.gameObject.tag)) {
             FindTarget();
         }
     }
 
     void OnTriggerExit2D(Collider2D collision) {
-        if (collision.gameObject.tag == targetTag) {
+        if (isEnemy(collision.gameObject.tag)) {
             if (targets.Contains(collision.transform))
                 targets.Remove(collision.transform);
             if (targets.Count == 0) {
                 movement.SetRunning(true);
+                movement.ResetLook();
                 action.Run();
             }
         }
     }
 
     public void SetTargetTag(string tag) {
+        targetsTag = new List<string>();
         targetTag = tag;
     }
 
+    
+    IEnumerator StopRunning() {
+        yield return new WaitForSeconds(actionDelay);
+        movement.SetRunning(false);
+    }
+
+    // Get target enemy from area
     private void FindTarget() {
-        int index = NearestTarget();
+        int index = -1;
+
+        for (int i = 0; i < targets.Count; i++) {
+            if (targets[i].tag == targetTag) {
+                index = i;
+            }
+        }
+
+        // If there are no enemies in area, get nearest enemy
+        if (index == -1)
+            index = NearestTarget();
+
         if (index != -1) 
-            action.LookAtTarget(targets[index].position);
+            movement.LookAt(targets[index].position);
     }
 
     private int NearestTarget() {
@@ -63,9 +86,17 @@ public class PlayerController : MonoBehaviour {
         return index;
     }
 
-    IEnumerator StopRunning() {
-        yield return new WaitForSeconds(actionDelay);
-        movement.SetRunning(false);
+    // Check if tag belongs to an enemy
+    private bool isEnemy(string tag) {
+        if (targetTag == tag)
+            return true;
+        else {
+            for (int i = 0; i < targetsTag.Count; i++) {
+                if (targetsTag[i] == tag)
+                    return true;
+            }
+        }
+        return false;
     }
 
 }

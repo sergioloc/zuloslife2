@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7811500068124850196}
   - component: {fileID: 8499914258792172364}
   - component: {fileID: 5512113300480156052}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: AbsorbParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4814,7 +4814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7268029521340193299}
   - component: {fileID: 7268029521340193298}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4899,7 +4899,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7268029521510672983}
   - component: {fileID: 2468539373643679965}
-  m_Layer: 11
+  m_Layer: 16
   m_Name: Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4956,7 +4956,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7268029521705699492}
   - component: {fileID: 7268029521705699483}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Hand (R)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5038,7 +5038,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7268029521852189693}
   - component: {fileID: 7268029521852189692}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Arm (L)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5121,7 +5121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7268029521947881011}
   - component: {fileID: 7268029521947881010}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Foot (L)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5202,7 +5202,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7268029521952244616}
-  m_Layer: 6
+  m_Layer: 16
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5236,7 +5236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7268029522208770388}
   - component: {fileID: 7268029522208770379}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Hand (L)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5318,7 +5318,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7268029522235879347}
   - component: {fileID: 7268029522235879346}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Arm (R)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5401,7 +5401,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7268029522255277630}
   - component: {fileID: 7268029522255277629}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Foot (R)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5483,7 +5483,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7268029522300729556}
   - component: {fileID: 7268029522300729547}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Leg (R)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5566,7 +5566,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7268029522528531061}
   - component: {fileID: 7268029522528531060}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Face
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5648,7 +5648,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7268029522872213159}
   - component: {fileID: 7268029522872213152}
-  m_Layer: 6
+  m_Layer: 16
   m_Name: LandDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5695,7 +5695,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7268029522914027643}
   - component: {fileID: 7268029522914027642}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5778,7 +5778,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7268029522941211959}
-  m_Layer: 6
+  m_Layer: 16
   m_Name: ShadowPosition
   m_TagString: Untagged
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -5809,7 +5809,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7268029522986831552}
   - component: {fileID: 7268029522986831559}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Leg (L)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5896,9 +5896,9 @@ GameObject:
   - component: {fileID: 6784113060091113394}
   - component: {fileID: 7704417991412145356}
   - component: {fileID: 3903932332124681836}
-  m_Layer: 6
+  m_Layer: 16
   m_Name: Pb
-  m_TagString: Player
+  m_TagString: Pb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

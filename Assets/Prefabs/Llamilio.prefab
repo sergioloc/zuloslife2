@@ -45068,7 +45068,9 @@ MonoBehaviour:
   movement: {fileID: 225054057995709293}
   action: {fileID: 2841801813511186884}
   actionDelay: 0
-  targetTag: Kasper
+  targetsTag:
+  - Rose
+  - Pb
   targets: []
 --- !u!114 &225054057995709293
 MonoBehaviour:

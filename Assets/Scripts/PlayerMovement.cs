@@ -26,10 +26,12 @@ public class PlayerMovement : MonoBehaviour {
     private Animator animator;
     private bool run;
     private bool grounded;
+    private bool ignoreLanding;
 
     void Start() {
         run = false;
         grounded = false;
+        ignoreLanding = false;
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         newShadow = Instantiate(shadow, new Vector3(transform.position.x, height, transform.position.z), Quaternion.identity);
@@ -61,7 +63,8 @@ public class PlayerMovement : MonoBehaviour {
             newShadow.transform.parent = gameObject.transform;
             newShadow.transform.position = new Vector3(shadowPosition.transform.position.x, shadowPosition.transform.position.y, shadowPosition.transform.position.z);
             Destroy(shadowPosition);
-            StartCoroutine(StartRunning());
+            if (!ignoreLanding)
+                StartCoroutine(StartRunning());
         }
     }
 
@@ -73,6 +76,8 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     public void SetRunning(bool run) {
+        if (!grounded)
+            ignoreLanding = true;
         if (rb2d.constraints == RigidbodyConstraints2D.FreezeRotation)
             this.run = run;
     }
@@ -110,6 +115,26 @@ public class PlayerMovement : MonoBehaviour {
         run = true;
         gameObject.tag = "Enemy";
         gameObject.GetComponent<PlayerController>().SetTargetTag("Player");
+    }
+
+
+    // Check which direction must character look
+    public void LookAt(Vector3 target) {
+        float distanceToTarget = target.x - transform.position.x;
+
+        // Look right
+        if (distanceToTarget > 0) {
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        }
+        // Look left
+        else if (distanceToTarget < 0) {
+            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        }
+    }
+
+    // Reset character look to right
+    public void ResetLook() {
+        transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
     }
     
 }
