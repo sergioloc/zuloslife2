@@ -8,6 +8,6 @@ public abstract class PlayerAction : MonoBehaviour {
 
     public abstract void Run();
 
-    public abstract void LookAtTarget(Vector2 targetPosition);
+    public abstract void LookAt(Vector2 targetPosition);
 
 }

@@ -40,9 +40,11 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    public void SetTargetTag(string tag) {
+    public void ReverseTag() {
         targetsTag = new List<string>();
-        targetTag = tag;
+        targetsTag.Add("Shield");
+        targetsTag.Add("Player");
+        targetTag = targetsTag[0];
     }
 
     
@@ -65,8 +67,10 @@ public class PlayerController : MonoBehaviour {
         if (index == -1)
             index = NearestTarget();
 
-        if (index != -1) 
+        if (index != -1) {
             movement.LookAt(targets[index].position);
+            action.LookAt(targets[index].position);
+        }
     }
 
     private int NearestTarget() {

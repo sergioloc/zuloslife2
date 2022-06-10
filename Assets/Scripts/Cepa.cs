@@ -25,7 +25,7 @@ public class Cepa : PlayerAction {
         animator.SetBool("isAttacking", false);
     }
 
-    public override void LookAtTarget(Vector2 targetPosition) {
+    public override void LookAt(Vector2 targetPosition) {
         distance = targetPosition.x - transform.position.x;
         angle = -30f;
         if (distance < 0) {

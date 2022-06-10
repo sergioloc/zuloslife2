@@ -43,7 +43,7 @@ public class GreenLife : PlayerAction {
         head.rotation = new Quaternion(0,0,0,0);
     }
 
-    public override void LookAtTarget(Vector2 targetPosition) {
+    public override void LookAt(Vector2 targetPosition) {
         float distanceX = targetPosition.x - transform.position.x;
         float distanceY = targetPosition.y - transform.position.y;
 

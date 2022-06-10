@@ -10325,7 +10325,7 @@ GameObject:
   - component: {fileID: 8313743446369444559}
   m_Layer: 15
   m_Name: Rose
-  m_TagString: Enemy
+  m_TagString: Rose
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

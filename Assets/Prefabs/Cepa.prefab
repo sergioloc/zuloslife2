@@ -1201,7 +1201,8 @@ MonoBehaviour:
   movement: {fileID: 6019677086731596046}
   action: {fileID: 2438939119933179158}
   actionDelay: 0
-  targetTag: Kasper
+  targetsTag:
+  - Kasper
   targets: []
 --- !u!114 &6019677086731596046
 MonoBehaviour:

@@ -52,9 +52,8 @@ public class Llamilio : PlayerAction {
         flamethrowerSound.Stop();
     }
 
-    public override void LookAtTarget(Vector2 targetPosition) {
-        //this.targetPosition = targetPosition;
-        //LookAtTarget();
+    public override void LookAt(Vector2 targetPosition) {
+        
     }
 
     // Animation functions

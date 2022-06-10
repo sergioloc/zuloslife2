@@ -27,7 +27,7 @@ public class Stere : PlayerAction {
         animator.SetBool("isAttacking", false);
     }
 
-    public override void LookAtTarget(Vector2 targetPosition) {
+    public override void LookAt(Vector2 targetPosition) {
         
     }
 
