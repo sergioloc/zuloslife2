@@ -6,14 +6,16 @@ public class MuroController : MonoBehaviour {
 
     [SerializeField] private float speed;
     [SerializeField] private int wallIn;
-    
+    [SerializeField] private ParticleSystem punchParticles;
+
     private bool run;
     private Animator animator;
 
     void Start() {
         run = true;
         animator = GetComponent<Animator>();
-        StartCoroutine(StartWall(Random.Range(wallIn, wallIn + 5)));
+        StartCoroutine(Attack());
+        //StartCoroutine(StartWall(Random.Range(wallIn, wallIn + 5)));
     }
 
     
@@ -27,6 +29,21 @@ public class MuroController : MonoBehaviour {
         yield return new WaitForSeconds(seconds);
         run = false;
         animator.SetBool("isWall", true);
+    }
+
+    private IEnumerator Attack() {
+        yield return new WaitForSeconds(wallIn);
+        run = false;
+        animator.SetTrigger("Attack");
+    }
+
+    public void PlayPunch() {
+        punchParticles.Play();
+    }
+
+    public void OnAttackFinish() {
+        run = true;
+        StartCoroutine(Attack());
     }
     
 }
