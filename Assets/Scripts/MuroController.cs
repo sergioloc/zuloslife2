@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class MuroController : MonoBehaviour {
 
+    [Header("Walk")]
     [SerializeField] private float speed;
-    [SerializeField] private int wallIn;
+    [SerializeField] private AudioSource stepSound;
+    [SerializeField] private List<AudioClip> steps;
+
+    [Header("Attack")]
+    [SerializeField] private int interval;
     [SerializeField] private ParticleSystem punchParticles;
+    [SerializeField] private AudioSource punchSound;
 
     private bool run;
     private Animator animator;
@@ -15,7 +21,6 @@ public class MuroController : MonoBehaviour {
         run = true;
         animator = GetComponent<Animator>();
         StartCoroutine(Attack());
-        //StartCoroutine(StartWall(Random.Range(wallIn, wallIn + 5)));
     }
 
     
@@ -32,13 +37,21 @@ public class MuroController : MonoBehaviour {
     }
 
     private IEnumerator Attack() {
-        yield return new WaitForSeconds(wallIn);
+        yield return new WaitForSeconds(interval);
         run = false;
         animator.SetTrigger("Attack");
     }
 
+    public void PlayStep() {
+        if (stepSound) {
+            stepSound.clip = steps[Random.Range(0, steps.Count)];
+            stepSound.Play();
+        }
+    }
+
     public void PlayPunch() {
         punchParticles.Play();
+        punchSound.Play();
     }
 
     public void OnAttackFinish() {
