@@ -1,5 +1,62 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2980698783727942126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5141843051505507433}
+  - component: {fileID: 8226962690929264782}
+  m_Layer: 9
+  m_Name: Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5141843051505507433
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2980698783727942126}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4255958029212815526}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &8226962690929264782
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2980698783727942126}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -20}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.98, y: 5.23}
+    newSize: {x: 6.98, y: 5.23}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 15, y: 30}
+  m_EdgeRadius: 0
 --- !u!1 &4255958028229003951
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,7 +67,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4255958028229003944}
   - component: {fileID: 4255958028229003945}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Leg (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +148,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4255958028698741467}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ShotPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4255958028761036454}
   - component: {fileID: 4255958028761036455}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wing (L)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +261,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4255958028900467794}
   - component: {fileID: 4255958028900467795}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Eye (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,7 +344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4255958028967472697}
   - component: {fileID: 4255958028967472698}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Leg (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -369,7 +426,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4255958029046226597}
   - component: {fileID: 4255958029046226598}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Leg (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,7 +508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4255958029050857592}
   - component: {fileID: 4255958029050857593}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pupil (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,7 +590,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4255958029159713365}
   - component: {fileID: 4255958029159713366}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pupil (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -618,7 +675,7 @@ GameObject:
   - component: {fileID: 4255958029212815524}
   - component: {fileID: 4255958029212815525}
   - component: {fileID: 4255958029212815520}
-  m_Layer: 14
+  m_Layer: 8
   m_Name: Moquino
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -637,6 +694,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children:
   - {fileID: 4255958029938890035}
+  - {fileID: 5141843051505507433}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -725,7 +783,7 @@ GameObject:
   - component: {fileID: 4255958029454791499}
   - component: {fileID: 4255958029454791508}
   - component: {fileID: 4255958029454791510}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mucus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -820,7 +878,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4255958029862946644}
   - component: {fileID: 4255958029862946645}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Eye (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -903,7 +961,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4255958029914801894}
   - component: {fileID: 4255958029914801895}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wing (R)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -985,8 +1043,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4255958029938890035}
   - component: {fileID: 4255958029938890044}
-  - component: {fileID: 4255958029938890045}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1068,32 +1125,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &4255958029938890045
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4255958029938890034}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -20}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.98, y: 5.23}
-    newSize: {x: 6.98, y: 5.23}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 15, y: 30}
-  m_EdgeRadius: 0
 --- !u!1 &4255958029963667077
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,7 +1135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4255958029963667078}
   - component: {fileID: 4255958029963667079}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Leg (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

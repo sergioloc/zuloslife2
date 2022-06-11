@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 698390940142462339}
   - component: {fileID: 698390940142462349}
   - component: {fileID: 698390940142462338}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Thunder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4828,7 +4828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8664386102552367218}
   - component: {fileID: 120139302294927718}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4910,7 +4910,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7200056103778748145}
   - component: {fileID: 7999639932920970519}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cepter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4994,7 +4994,7 @@ GameObject:
   - component: {fileID: 4729809681137363755}
   - component: {fileID: 430320833978786950}
   - component: {fileID: 2051654813829361081}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Electricity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9810,7 +9810,7 @@ GameObject:
   m_Component:
   - component: {fileID: 507889588069645798}
   - component: {fileID: 6569642113858118839}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ThunderArea
   m_TagString: Thunder
   m_Icon: {fileID: 0}
@@ -9867,7 +9867,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5611396388867884112}
   - component: {fileID: 5611396388867884113}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Arm (R)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9950,7 +9950,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5611396388873551255}
   - component: {fileID: 5611396388873551240}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pants
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10035,7 +10035,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5611396388954417738}
   - component: {fileID: 5611396388954417739}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Foot (R)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10117,7 +10117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5611396388968212148}
   - component: {fileID: 5611396388968212149}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Arm (L)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10200,7 +10200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5611396389117261276}
   - component: {fileID: 5611396389117261277}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10284,7 +10284,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5611396389126307561}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ShadowPosition
   m_TagString: Untagged
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -10323,7 +10323,7 @@ GameObject:
   - component: {fileID: 6596269066965296113}
   - component: {fileID: 6778323066815130389}
   - component: {fileID: 8313743446369444559}
-  m_Layer: 15
+  m_Layer: 8
   m_Name: Rose
   m_TagString: Rose
   m_Icon: {fileID: 0}
@@ -10830,7 +10830,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5611396389476580519}
   - component: {fileID: 5611396389476580504}
-  m_Layer: 11
+  m_Layer: 9
   m_Name: Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10877,7 +10877,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5611396389800581777}
   - component: {fileID: 5611396389800581778}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hand (L)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10960,7 +10960,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5611396389835759911}
   - component: {fileID: 5611396389835759896}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11042,7 +11042,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5611396390179847980}
   - component: {fileID: 5611396390179847981}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hand (R)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11124,7 +11124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5611396390329077668}
   - component: {fileID: 5611396390329077669}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Leg (R)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11207,7 +11207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5611396390398087153}
   - component: {fileID: 5611396390398087154}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Foot (L)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11289,7 +11289,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5611396390489160281}
   - component: {fileID: 5611396390489160282}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Leg (L)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11371,7 +11371,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5611396390521278933}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11404,7 +11404,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5611396390543664939}
   - component: {fileID: 5611396390543664938}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LandDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11451,7 +11451,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5611396390755837125}
   - component: {fileID: 5611396390755837126}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11536,7 +11536,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5611396390924939479}
   - component: {fileID: 5611396390924939464}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11617,7 +11617,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7884707689452722751}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Face
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11652,7 +11652,7 @@ GameObject:
   - component: {fileID: 7708158986211600354}
   - component: {fileID: 2431113638918192248}
   - component: {fileID: 8433113730307819189}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Impact
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16525,7 +16525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 220679094344356939}
   - component: {fileID: 5241070058871189617}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Heart (L)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16608,7 +16608,7 @@ GameObject:
   - component: {fileID: 8952076693599082788}
   - component: {fileID: 8064090732979022284}
   - component: {fileID: 5388600742962333783}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21424,7 +21424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 27090298722540101}
   - component: {fileID: 691144126729186816}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Heart (R)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

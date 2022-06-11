@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6292422050060208196}
   - component: {fileID: 5302840868677287246}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: LandDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1661693399243529675}
   - component: {fileID: 1832928802830129014}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4787659155230279823}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: ShadowPosition
   m_TagString: Untagged
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -171,7 +171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2644544843705447947}
   - component: {fileID: 5278818951756387420}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5977778572253168491}
   - component: {fileID: 2088357139975317170}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pants
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9222893406814822364}
   - component: {fileID: 1178314056676085935}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Leg (R)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -424,7 +424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2605362311736987983}
   - component: {fileID: 5594371751644012945}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Foot (L)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -506,7 +506,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3227564598294400167}
   - component: {fileID: 8845425405543498651}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Arm (L)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -589,7 +589,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1371320111275071276}
   - component: {fileID: 1548398536698528327}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Leg (L)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -672,7 +672,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3601197314066159415}
   - component: {fileID: 2081762126730229940}
-  m_Layer: 11
+  m_Layer: 9
   m_Name: Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -719,7 +719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4407110970658523600}
   - component: {fileID: 8845988850922649234}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hand (R)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -800,7 +800,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2732884009305192241}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -832,7 +832,7 @@ GameObject:
   m_Component:
   - component: {fileID: 722090488165870117}
   - component: {fileID: 2261539097814712204}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Arm (R)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -925,7 +925,7 @@ GameObject:
   - component: {fileID: 7516793834124992749}
   - component: {fileID: 3657384680398352840}
   - component: {fileID: 51894092292991955}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Skr
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1002,7 +1002,7 @@ MonoBehaviour:
   movement: {fileID: 8896755698479406082}
   action: {fileID: 160478649969928229}
   actionDelay: 0
-  targetTag: Kasper
+  targetsTag: []
   targets: []
 --- !u!114 &8896755698479406082
 MonoBehaviour:
@@ -1477,7 +1477,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8405393180792278916}
   - component: {fileID: 2359402878737021599}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hand (L)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1560,7 +1560,7 @@ GameObject:
   - component: {fileID: 3042760856312761541}
   - component: {fileID: 6502230130155583938}
   - component: {fileID: 1834291423690906587}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ShockwaveParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6363,7 +6363,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8538906835968677230}
   - component: {fileID: 8990457408183978918}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Foot (R)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6446,7 +6446,7 @@ GameObject:
   - component: {fileID: 5933061312421674043}
   - component: {fileID: 1243678088209743660}
   - component: {fileID: 2820547468825757761}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SkrParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

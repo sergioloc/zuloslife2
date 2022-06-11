@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2775352268735393360}
   - component: {fileID: 3472168845781256117}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Leg (R)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4115607545805604656}
   - component: {fileID: 7098221173791795956}
   - component: {fileID: 7266030294499863331}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LeavesParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4897,7 +4897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4380524012236013156}
   - component: {fileID: 6421237318534277283}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4982,7 +4982,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2504410780775374495}
   - component: {fileID: 3547316331793217467}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Foot (L)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5064,7 +5064,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8621926239516766462}
   - component: {fileID: 1377016347377527505}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Arm (R)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5147,7 +5147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5125909276575651298}
   - component: {fileID: 2213798674676231317}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Leg (L)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5230,7 +5230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6425826612082505179}
   - component: {fileID: 9151286293900684506}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pants
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5315,7 +5315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 85610023510361180}
   - component: {fileID: 4336378916473292940}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Foot (R)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5396,7 +5396,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 72415233601318223}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ShotPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5427,7 +5427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7447934762443422508}
   - component: {fileID: 1254667852338753681}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Arm (L)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5509,7 +5509,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9164264146548401640}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Faces
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5543,7 +5543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 378697070312191204}
   - component: {fileID: 3581494682726391311}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FaceAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5626,7 +5626,7 @@ GameObject:
   - component: {fileID: 4854259263363975977}
   - component: {fileID: 2654520479065241527}
   - component: {fileID: 1623141662320915335}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ChargeParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10430,7 +10430,7 @@ GameObject:
   - component: {fileID: 4774788317830446842}
   - component: {fileID: 718482032503631928}
   - component: {fileID: 5575113384132145002}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TornadoParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15234,7 +15234,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4179164339741327071}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15265,7 +15265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3862701154386661258}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: ShadowPosition
   m_TagString: Untagged
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
@@ -15296,7 +15296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7268801316564710914}
   - component: {fileID: 2468073205127091580}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trail (R)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15442,7 +15442,7 @@ GameObject:
   - component: {fileID: 4466477845230302638}
   - component: {fileID: 6290901059033420847}
   - component: {fileID: 7364135911500014733}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: GreenLife
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -15520,7 +15520,7 @@ MonoBehaviour:
   movement: {fileID: 1736131850906631807}
   action: {fileID: 5178061727701967267}
   actionDelay: 1
-  targetTag: Enemy
+  targetsTag: []
   targets: []
 --- !u!114 &1736131850906631807
 MonoBehaviour:
@@ -15883,7 +15883,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5453928189347539799}
   - component: {fileID: 6009809372875025945}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FaceNormal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15965,7 +15965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4864698177856908966}
   - component: {fileID: 8397343199283168863}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FaceBlink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16047,7 +16047,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3425350457265761240}
   - component: {fileID: 5220247642304515200}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trail (L)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16185,7 +16185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5856235345154207593}
   - component: {fileID: 4629379859655065361}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16232,7 +16232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7682233014503392786}
   - component: {fileID: 4527606768433620234}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: LandDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16279,7 +16279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2368592766139926808}
   - component: {fileID: 1395911060311161285}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
