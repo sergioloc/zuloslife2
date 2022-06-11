@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class MuroController : MonoBehaviour {
 
-    public float speed;
-
+    [SerializeField] private float speed;
+    [SerializeField] private int wallIn;
+    
     private bool run;
     private Animator animator;
 
     void Start() {
         run = true;
         animator = GetComponent<Animator>();
+        StartCoroutine(StartWall(Random.Range(wallIn, wallIn + 5)));
     }
 
     
@@ -21,11 +23,10 @@ public class MuroController : MonoBehaviour {
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.tag == "Player") {
-            run = false;
-            animator.SetBool("isWall", true);
-        }
+    private IEnumerator StartWall(float seconds) {
+        yield return new WaitForSeconds(seconds);
+        run = false;
+        animator.SetBool("isWall", true);
     }
     
 }
