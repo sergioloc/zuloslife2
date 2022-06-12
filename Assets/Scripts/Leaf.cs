@@ -21,7 +21,7 @@ public class Leaf : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Enemy") {
+        if (collision.gameObject.tag == "Moquino" || collision.gameObject.tag == "Player") {
             Instantiate(particles, transform.position, transform.rotation);
             sprite.SetActive(false);
             leaveDestroy.Play();

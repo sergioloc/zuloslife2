@@ -716,6 +716,7 @@ GameObject:
   - component: {fileID: 6206675256616634301}
   - component: {fileID: 6056805472391528182}
   - component: {fileID: 3026743038963777982}
+  - component: {fileID: 3117268088932801875}
   m_Layer: 8
   m_Name: Kasper
   m_TagString: Kasper
@@ -813,6 +814,28 @@ MonoBehaviour:
   inhaleParticles: {fileID: 7234717227829517764}
   deathParticles: {fileID: 1526636078858154458, guid: 055aafa01d18e6548806364415d13e7e, type: 3}
   deathPoint: {fileID: 7121010284164213461}
+--- !u!114 &3117268088932801875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3861042275280852518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21bf3be214592594196584bf3fc71448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  isEnemy: 1
+  fire: 0
+  leave: 0
+  roller: 0
+  onion: 0
+  shockwave: 100
+  mucus: 0
+  stone: 0
+  kasper: 0
 --- !u!1 &4811076696039875845
 GameObject:
   m_ObjectHideFlags: 0
@@ -5844,7 +5867,7 @@ MonoBehaviour:
   - {fileID: 6252323536511541479}
   - {fileID: 6466612083962611464}
   m_Bounds:
-    m_Center: {x: 0.0008749962, y: -0.0014849901, z: 0}
+    m_Center: {x: 0.0008752346, y: -0.0014851093, z: 0}
     m_Extent: {x: 0.7541251, y: 1.4085151, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1

@@ -48,12 +48,16 @@ public class Llamilio : PlayerAction {
 
     public override void Run() {
         animator.SetBool("isAttacking", false);
+        animator.SetBool("Fly", false);
         fireParticles.Stop();
         flamethrowerSound.Stop();
     }
 
     public override void LookAt(Vector2 targetPosition) {
-        
+        if (gameObject.GetComponent<PlayerMovement>().reverse)
+            animator.SetBool("Fly", false);
+        else
+            animator.SetBool("Fly", targetPosition.y > -2);
     }
 
     // Animation functions

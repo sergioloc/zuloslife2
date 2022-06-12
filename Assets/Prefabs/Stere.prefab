@@ -949,6 +949,7 @@ GameObject:
   - component: {fileID: 6051933209131768729}
   - component: {fileID: 6051933209131768734}
   - component: {fileID: 823171455194630713}
+  - component: {fileID: 6411303879955651035}
   - component: {fileID: 6051933209131768735}
   - component: {fileID: 6051933209131768732}
   - component: {fileID: 6051933209131768733}
@@ -1081,6 +1082,28 @@ MonoBehaviour:
   landParticles: {fileID: 6956730538946008114}
   getRollerSound: {fileID: 7725748691228738047}
   rollerImpactSound: {fileID: 4352949842085560111}
+--- !u!114 &6411303879955651035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6051933209131768675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21bf3be214592594196584bf3fc71448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  isEnemy: 0
+  fire: 10
+  leave: 10
+  roller: 10
+  onion: 10
+  shockwave: 10
+  mucus: 34
+  stone: 100
+  kasper: 20
 --- !u!114 &6051933209131768735
 MonoBehaviour:
   m_ObjectHideFlags: 0

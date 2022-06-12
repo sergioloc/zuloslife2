@@ -10317,6 +10317,7 @@ GameObject:
   - component: {fileID: 8841026577890896239}
   - component: {fileID: 5611396389334093834}
   - component: {fileID: 103950248849360182}
+  - component: {fileID: 3413846608788787487}
   - component: {fileID: 3577202456569475818}
   - component: {fileID: 5222707013328013429}
   - component: {fileID: 1962548844581114941}
@@ -10405,6 +10406,28 @@ MonoBehaviour:
   thunderParticles: {fileID: 698390940142462349}
   thunderSound: {fileID: 6596269066965296113}
   spellSound: {fileID: 6778323066815130389}
+--- !u!114 &3413846608788787487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5611396389334093840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21bf3be214592594196584bf3fc71448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  isEnemy: 1
+  fire: 50
+  leave: 0
+  roller: 0
+  onion: 0
+  shockwave: 10
+  mucus: 0
+  stone: 0
+  kasper: 0
 --- !u!114 &3577202456569475818
 MonoBehaviour:
   m_ObjectHideFlags: 0

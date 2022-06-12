@@ -5,7 +5,6 @@ using UnityEngine;
 public class KasperController : MonoBehaviour {
 
     [Header("Values")]
-    public float health = 100;
     public float speed;
     public float fireDamage;
 
@@ -29,25 +28,9 @@ public class KasperController : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Fire") {
-            if (!animator.GetBool("isBurning")) {
-                animator.SetBool("isBurning", true);
-            }
-            health = health - fireDamage;
-            if (health <= 0) {
-                Instantiate(deathParticles, deathPoint.position, Quaternion.identity);
-                Destroy(gameObject);
-            }
-        }
-        else if (collision.gameObject.tag == "Shield") {
+        if (collision.gameObject.tag == "Shield") {
             run = false;
             animator.SetTrigger("Attack");
-        }
-    }
-
-    void OnTriggerExit2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Fire") {
-            animator.SetBool("isBurning", false);
         }
     }
 

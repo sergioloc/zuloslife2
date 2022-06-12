@@ -16,6 +16,8 @@ TagManager:
   - Pb
   - Rose
   - Stone
+  - Shockwave
+  - Moquino
   layers:
   - Default
   - TransparentFX

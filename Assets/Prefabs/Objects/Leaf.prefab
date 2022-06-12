@@ -4888,7 +4888,7 @@ GameObject:
   - component: {fileID: 2445150204193483153}
   - component: {fileID: 3595569878796131153}
   - component: {fileID: 431050971673233774}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Leaf
   m_TagString: Leaf
   m_Icon: {fileID: 0}
@@ -5169,7 +5169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4748136122016290861}
   - component: {fileID: 5141347129354088671}
-  m_Layer: 13
+  m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

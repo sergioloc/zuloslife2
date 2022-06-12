@@ -5,7 +5,6 @@ using UnityEngine;
 public class Rose : MonoBehaviour {
     
     [Header("Values")]
-    [SerializeField] private float health = 100;
     [SerializeField] private float speed;
     [SerializeField] private float damage;
 

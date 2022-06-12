@@ -70,7 +70,6 @@ public class GreenLife : PlayerAction {
     // Animation functions
 
     public void StartCharge() {
-        rb2d.AddForce(Vector2.up * 700);
         chargeParticles.Play();
     }
 

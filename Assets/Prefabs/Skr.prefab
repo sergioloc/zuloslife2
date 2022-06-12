@@ -919,6 +919,7 @@ GameObject:
   - component: {fileID: 4164580178626233829}
   - component: {fileID: 8896755698479406082}
   - component: {fileID: 160478649969928229}
+  - component: {fileID: 6498119227187185142}
   - component: {fileID: 8801233036753969506}
   - component: {fileID: 8852535263778581264}
   - component: {fileID: 3167716251644826192}
@@ -947,6 +948,7 @@ Transform:
   - {fileID: 3601197314066159415}
   - {fileID: 6292422050060208196}
   - {fileID: 4787659155230279823}
+  - {fileID: 3909127982718335968}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1002,7 +1004,8 @@ MonoBehaviour:
   movement: {fileID: 8896755698479406082}
   action: {fileID: 160478649969928229}
   actionDelay: 0
-  targetsTag: []
+  targetsTag:
+  - Kasper
   targets: []
 --- !u!114 &8896755698479406082
 MonoBehaviour:
@@ -1052,6 +1055,28 @@ MonoBehaviour:
   skrParticles: {fileID: 1243678088209743660}
   shockwaveParticles: {fileID: 6502230130155583938}
   shockwaveSound: {fileID: 3657384680398352840}
+--- !u!114 &6498119227187185142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7247062534220374791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21bf3be214592594196584bf3fc71448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  isEnemy: 0
+  fire: 10
+  leaf: 0
+  roller: 10
+  onion: 10
+  shockwave: 10
+  mucus: 34
+  stone: 100
+  kasper: 20
 --- !u!114 &8801233036753969506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1549,6 +1574,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &8315176101004349960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3909127982718335968}
+  - component: {fileID: 5825167607253236310}
+  m_Layer: 7
+  m_Name: Shockwave
+  m_TagString: Shockwave
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &3909127982718335968
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8315176101004349960}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8084978622030845321}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &5825167607253236310
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8315176101004349960}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 7
 --- !u!1 &8687800353889815412
 GameObject:
   m_ObjectHideFlags: 0

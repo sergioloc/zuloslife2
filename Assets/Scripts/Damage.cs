@@ -9,7 +9,7 @@ public class Damage : MonoBehaviour {
 
     [Header("Character")]
     [SerializeField] private float fire; // Llamilio
-    [SerializeField] private float leave; // GreenLife
+    [SerializeField] private float leaf; // GreenLife
     [SerializeField] private float roller; // Stere
     [SerializeField] private float onion; // Cepa
     [SerializeField] private float shockwave; // Skr
@@ -26,8 +26,8 @@ public class Damage : MonoBehaviour {
                 health -= fire;
                 break;
 
-                case "Leave":
-                health -= leave;
+                case "Leaf":
+                health -= leaf;
                 break;
                 
                 case "Roller":
@@ -59,7 +59,7 @@ public class Damage : MonoBehaviour {
             }
         }
 
-        if (health < 0)
+        if (health <= 0)
             Destroy(gameObject);
 
         //collision.gameObject.GetComponent<Animator>().SetTrigger("Absorb");

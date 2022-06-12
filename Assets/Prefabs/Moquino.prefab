@@ -674,10 +674,11 @@ GameObject:
   - component: {fileID: 4255958029212815527}
   - component: {fileID: 4255958029212815524}
   - component: {fileID: 4255958029212815525}
+  - component: {fileID: 3866360149294134486}
   - component: {fileID: 4255958029212815520}
   m_Layer: 8
   m_Name: Moquino
-  m_TagString: Enemy
+  m_TagString: Moquino
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -747,12 +748,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e26bf9573b093546a40f114d0c12d4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
   speed: 1
-  damageReceived: 34
   mucus: {fileID: 7304716449303792097, guid: f9d9c58043f1c5e4ab46eb2cea1763ec, type: 3}
   shotPoint: {fileID: 4255958028698741467}
   dieParticles: {fileID: 8586647822238974435, guid: 37be230ec85ee2f4a9032d4e6a6f7d1c, type: 3}
+--- !u!114 &3866360149294134486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4255958029212815579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21bf3be214592594196584bf3fc71448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  isEnemy: 1
+  fire: 0
+  leaf: 34
+  roller: 0
+  onion: 0
+  shockwave: 0
+  mucus: 0
+  stone: 0
+  kasper: 0
 --- !u!95 &4255958029212815520
 Animator:
   serializedVersion: 3

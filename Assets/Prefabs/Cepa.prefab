@@ -1119,6 +1119,7 @@ GameObject:
   - component: {fileID: 6019677086731596046}
   - component: {fileID: 2438939119933179158}
   - component: {fileID: 6019677086731596047}
+  - component: {fileID: 6867641250232657584}
   - component: {fileID: 6019677086731596032}
   - component: {fileID: 6019677086731596033}
   - component: {fileID: 6019677086731596034}
@@ -1202,6 +1203,8 @@ MonoBehaviour:
   action: {fileID: 2438939119933179158}
   actionDelay: 0
   targetsTag:
+  - Muro
+  - Pb
   - Kasper
   targets: []
 --- !u!114 &6019677086731596046
@@ -1260,6 +1263,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e768d91d62eeafd45b446568eecb6799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6867641250232657584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6019677086731596036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21bf3be214592594196584bf3fc71448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  isEnemy: 0
+  fire: 10
+  leave: 10
+  roller: 10
+  onion: 10
+  shockwave: 10
+  mucus: 34
+  stone: 100
+  kasper: 20
 --- !u!82 &6019677086731596032
 AudioSource:
   m_ObjectHideFlags: 0
