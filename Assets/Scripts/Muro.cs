@@ -53,7 +53,7 @@ public class Muro : MonoBehaviour {
 
     private void Attack() {
         run = false;
-        animator.SetTrigger("Attack");
+        animator.SetBool("isAttacking", true);
     }
 
     public void PlayStep() {
@@ -72,6 +72,7 @@ public class Muro : MonoBehaviour {
     }
 
     public void OnAttackFinish() {
+        animator.SetBool("isAttacking", false);
         if (!canMove)
             Attack();
         else
