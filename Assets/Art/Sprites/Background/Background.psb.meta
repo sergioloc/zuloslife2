@@ -113,160 +113,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
-  - name: EUPHORIA
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1507
-      y: 2177
-      width: 225
-      height: 44
-    spriteID: 016a68835cf42244787baf7a87eae54c
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 1046, y: 1294}
-  - name: Floor
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 1823
-      width: 1920
-      height: 346
-    spriteID: 267b9efa101a3f84eaa0c2bdb416bab4
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 1823}
-  - name: Skyline
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 1092
-      width: 1920
-      height: 723
-    spriteID: 9671ee5b008f67c479654912fb0a5393
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 753}
-  - name: Building3
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 964
-      y: 2177
-      width: 535
-      height: 477
-    spriteID: 6a1db5e335e4db44fa6365d5fde2b8b3
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -67, y: 1835}
-  - name: Building4
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 2810
-      width: 336
-      height: 698
-    spriteID: 5b41666ca442e2a4b8f6f39af762fa85
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -1378, y: 2468}
-  - name: Building2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 516
-      y: 2177
-      width: 440
-      height: 614
-    spriteID: 6390b60eb900e474f8f0a18a406e1e91
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -145, y: 1838}
-  - name: Building1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 2177
-      width: 504
-      height: 625
-    spriteID: af0193e2607c94d4ab2f7b615ffc43e2
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -208, y: 1835}
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
@@ -317,75 +163,26 @@ ScriptedImporter:
   documentAlignment: 7
   importHiddenLayers: 0
   importedTextureWidth: 2048
-  importedTextureHeight: 4096
+  importedTextureHeight: 2048
   documentSize: {x: 1920, y: 1080}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
   textureActualWidth: 2048
-  textureActualHeight: 4096
+  textureActualHeight: 2048
   spritePackingTag: 
   resliceFromLayer: 0
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Color
+  - name: Old
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 00000000000000000000000000000000
-    layerID: 365
+    spriteID: 
+    layerID: 406
     mosaicPosition: {x: 0, y: 0}
-  - name: EUPHORIA
-    spriteName: EUPHORIA
-    isGroup: 0
-    parentIndex: 0
-    spriteID: 016a68835cf42244787baf7a87eae54c
-    layerID: 339
-    mosaicPosition: {x: 1507, y: 2177}
-  - name: Building1
-    spriteName: Building1
-    isGroup: 0
-    parentIndex: 0
-    spriteID: af0193e2607c94d4ab2f7b615ffc43e2
-    layerID: 400
-    mosaicPosition: {x: 4, y: 2177}
-  - name: Building2
-    spriteName: Building2
-    isGroup: 0
-    parentIndex: 0
-    spriteID: 6390b60eb900e474f8f0a18a406e1e91
-    layerID: 393
-    mosaicPosition: {x: 516, y: 2177}
-  - name: Building3
-    spriteName: Building3
-    isGroup: 0
-    parentIndex: 0
-    spriteID: 6a1db5e335e4db44fa6365d5fde2b8b3
-    layerID: 380
-    mosaicPosition: {x: 964, y: 2177}
-  - name: Building4
-    spriteName: Building4
-    isGroup: 0
-    parentIndex: 0
-    spriteID: 5b41666ca442e2a4b8f6f39af762fa85
-    layerID: 387
-    mosaicPosition: {x: 4, y: 2810}
-  - name: Floor
-    spriteName: Floor
-    isGroup: 0
-    parentIndex: 0
-    spriteID: 267b9efa101a3f84eaa0c2bdb416bab4
-    layerID: 277
-    mosaicPosition: {x: 4, y: 1823}
-  - name: Skyline
-    spriteName: Skyline
-    isGroup: 0
-    parentIndex: 0
-    spriteID: 9671ee5b008f67c479654912fb0a5393
-    layerID: 360
-    mosaicPosition: {x: 4, y: 1092}
   - name: Color
     spriteName: Color
     isGroup: 0
