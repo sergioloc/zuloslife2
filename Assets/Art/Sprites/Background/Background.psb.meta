@@ -135,28 +135,6 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 1046, y: 1294}
-  - name: Building1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 2177
-      width: 504
-      height: 625
-    spriteID: b2d5b5adc172fc74ab5772c07825b6f3
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -208, y: 1835}
   - name: Floor
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -267,6 +245,28 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -145, y: 1838}
+  - name: Building1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2177
+      width: 504
+      height: 625
+    spriteID: af0193e2607c94d4ab2f7b615ffc43e2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -208, y: 1835}
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
@@ -348,8 +348,8 @@ ScriptedImporter:
     spriteName: Building1
     isGroup: 0
     parentIndex: 0
-    spriteID: b2d5b5adc172fc74ab5772c07825b6f3
-    layerID: 346
+    spriteID: af0193e2607c94d4ab2f7b615ffc43e2
+    layerID: 400
     mosaicPosition: {x: 4, y: 2177}
   - name: Building2
     spriteName: Building2
