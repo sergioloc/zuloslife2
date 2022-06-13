@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoquinoController : MonoBehaviour {
+public class Moquino : MonoBehaviour {
 
     public float speed;
     public GameObject mucus;

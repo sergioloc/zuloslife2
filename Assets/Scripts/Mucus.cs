@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MucusController : MonoBehaviour {
+public class Mucus : MonoBehaviour {
 
     public GameObject particles;
 

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KasperController : MonoBehaviour {
+public class Kasper : MonoBehaviour {
 
     [Header("Values")]
     public float speed;
