@@ -112,7 +112,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -313, y: 504}
+    uvTransform: {x: -323, y: 504}
   - name: Glow
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -120,7 +120,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 518
+      x: 508
       y: 674
       width: 388
       height: 389
@@ -134,7 +134,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -431, y: 190}
+    uvTransform: {x: -441, y: 190}
   - name: Building3
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -248,7 +248,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: bd4d5f1d69957a543809ee08d442ad26
     layerID: 14
-    mosaicPosition: {x: 518, y: 674}
+    mosaicPosition: {x: 508, y: 674}
   - name: Building1
     spriteName: Building1
     isGroup: 0
