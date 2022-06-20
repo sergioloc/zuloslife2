@@ -99,7 +99,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 674
+      y: 2391
       width: 506
       height: 629
     spriteID: 38f0f37a750e083479466c5f6e088128
@@ -112,7 +112,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -323, y: 504}
+    uvTransform: {x: -323, y: 2221}
   - name: Glow
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -120,8 +120,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 508
-      y: 674
+      x: 530
+      y: 2208
       width: 388
       height: 389
     spriteID: bd4d5f1d69957a543809ee08d442ad26
@@ -134,7 +134,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -441, y: 190}
+    uvTransform: {x: -419, y: 1724}
   - name: Building3
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -143,7 +143,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 1721
       width: 518
       height: 662
     spriteID: 55b58455ce6151d4085102ee5748a11d
@@ -156,7 +156,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -698, y: -166}
+    uvTransform: {x: -698, y: 1551}
   - name: Building4
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -164,8 +164,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 1311
+      x: 530
+      y: 1721
       width: 593
       height: 479
     spriteID: badd1085db9ebf44a888fcc42e77da7d
@@ -178,7 +178,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1126, y: 1141}
+    uvTransform: {x: -600, y: 1551}
   - name: Building5
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -186,8 +186,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 605
-      y: 1311
+      x: 4
+      y: 3028
       width: 360
       height: 728
     spriteID: aad3be283bcda4b47b8a019575999840
@@ -200,7 +200,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -927, y: 1141}
+    uvTransform: {x: -1528, y: 2858}
   - name: Building1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -209,7 +209,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 1798
+      y: 3764
       width: 422
       height: 234
     spriteID: cbda07525e118a8408efefc78843f54a
@@ -222,7 +222,51 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -10, y: 1628}
+    uvTransform: {x: -10, y: 3594}
+  - name: Skyline
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1920
+      height: 621
+    spriteID: a60171d97b4bc514dad956ce8f974c1f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 922}
+  - name: Sky
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: e110d70ae4f74fe43a7cd2c2bef00433
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
@@ -235,8 +279,8 @@ ScriptedImporter:
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
-  textureActualWidth: 1024
-  textureActualHeight: 2048
+  textureActualWidth: 2048
+  textureActualHeight: 4096
   spritePackingTag: 
   resliceFromLayer: 0
   characterMode: 1
@@ -248,42 +292,56 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: bd4d5f1d69957a543809ee08d442ad26
     layerID: 14
-    mosaicPosition: {x: 508, y: 674}
+    mosaicPosition: {x: 530, y: 2208}
   - name: Building1
     spriteName: Building1
     isGroup: 0
     parentIndex: -1
     spriteID: cbda07525e118a8408efefc78843f54a
     layerID: 25
-    mosaicPosition: {x: 4, y: 1798}
+    mosaicPosition: {x: 4, y: 3764}
   - name: Building2
     spriteName: Building2
     isGroup: 0
     parentIndex: -1
     spriteID: 38f0f37a750e083479466c5f6e088128
     layerID: 13
-    mosaicPosition: {x: 4, y: 674}
+    mosaicPosition: {x: 4, y: 2391}
   - name: Building3
     spriteName: Building3
     isGroup: 0
     parentIndex: -1
     spriteID: 55b58455ce6151d4085102ee5748a11d
     layerID: 17
-    mosaicPosition: {x: 4, y: 4}
+    mosaicPosition: {x: 4, y: 1721}
   - name: Building4
     spriteName: Building4
     isGroup: 0
     parentIndex: -1
     spriteID: badd1085db9ebf44a888fcc42e77da7d
     layerID: 20
-    mosaicPosition: {x: 4, y: 1311}
+    mosaicPosition: {x: 530, y: 1721}
   - name: Building5
     spriteName: Building5
     isGroup: 0
     parentIndex: -1
     spriteID: aad3be283bcda4b47b8a019575999840
     layerID: 22
-    mosaicPosition: {x: 605, y: 1311}
+    mosaicPosition: {x: 4, y: 3028}
+  - name: Skyline
+    spriteName: Skyline
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a60171d97b4bc514dad956ce8f974c1f
+    layerID: 34
+    mosaicPosition: {x: 4, y: 1092}
+  - name: Sky
+    spriteName: Sky
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e110d70ae4f74fe43a7cd2c2bef00433
+    layerID: 35
+    mosaicPosition: {x: 4, y: 4}
   characterData:
     bones: []
     parts: []

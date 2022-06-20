@@ -18,13 +18,13 @@ public class Building : MonoBehaviour {
 
     void Start() {
         animator = GetComponent<Animator>();
-        StartCoroutine(ChangeLight(Random.Range(interval, interval * 2)));
+        StartCoroutine(ChangeLight(Random.Range(interval, interval * 3)));
     }
 
     private IEnumerator ChangeLight(float seconds) {
         yield return new WaitForSeconds(seconds);
         animator.Play(animations[Random.Range(0, animations.Count)]);
-        StartCoroutine(ChangeLight(Random.Range(interval, interval * 2)));
+        StartCoroutine(ChangeLight(Random.Range(interval, interval * 3)));
     }
 
     public void SpawnTop() {

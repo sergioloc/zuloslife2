@@ -3912,9 +3912,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995441912}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7295681, y: 1.43, z: 0}
-  m_LocalScale: {x: 0.93, y: 0.93, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.9, y: 0.89, z: 0}
+  m_LocalScale: {x: 0.95, y: 0.95, z: 1}
   m_Children: []
   m_Father: {fileID: 248806695}
   m_RootOrder: 5
@@ -3959,15 +3959,15 @@ SpriteRenderer:
   m_SortingLayerID: 1035242685
   m_SortingLayer: -5
   m_SortingOrder: -11
-  m_Sprite: {fileID: 1877130114050404912, guid: 500d8c5dde3a82d498999848a6c29147, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: -7853425835805146495, guid: 7732b0dba7889a94d99567c3f4850227, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 19.2, y: 7.23}
+  m_Size: {x: 19.2, y: 6.21}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1010931698
@@ -7219,8 +7219,8 @@ SpriteRenderer:
   m_SortingLayerID: 1035242685
   m_SortingLayer: -5
   m_SortingOrder: -12
-  m_Sprite: {fileID: 2323149308799135717, guid: 500d8c5dde3a82d498999848a6c29147, type: 3}
-  m_Color: {r: 0.23887502, g: 0.6366892, b: 0.8301887, a: 1}
+  m_Sprite: {fileID: 8488895959573117791, guid: 7732b0dba7889a94d99567c3f4850227, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7237,9 +7237,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1943385789}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7295681, y: 0.07857014, z: 0}
-  m_LocalScale: {x: 0.93, y: 0.93, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.74, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 248806695}
   m_RootOrder: 4
