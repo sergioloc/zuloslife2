@@ -4,13 +4,9 @@ using UnityEngine;
 
 public class Mucus : MonoBehaviour {
 
-    public GameObject particles;
+    [SerializeField] private GameObject particles;
 
-    void Start() {
-        
-    }
-
-    void OnCollisionEnter2D(Collision2D collision) {
+    void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Ground") {
             Instantiate(particles, transform.position, Quaternion.identity);
             Destroy(gameObject);

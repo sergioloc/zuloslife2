@@ -15,8 +15,8 @@ public class Onion : MonoBehaviour {
         rb2D.AddForce(transform.up * force * 10);
     }
 
-    void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.tag == "Ground") {
+    void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Muro") {
             Instantiate(explosionParticles, transform.position, transform.rotation);
             DestroyOnion();
         }

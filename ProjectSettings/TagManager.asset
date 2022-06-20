@@ -19,6 +19,10 @@ TagManager:
   - Shockwave
   - Moquino
   - Destroyer
+  - Mucus
+  - Ghost
+  - Onion
+  - Roller
   layers:
   - Default
   - TransparentFX
@@ -28,10 +32,10 @@ TagManager:
   - UI
   - Ground
   - Player
+  - Player Damage
   - Enemy
+  - Enemy Damage
   - Area
-  - 
-  - 
   - 
   - 
   - 

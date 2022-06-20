@@ -560,6 +560,34 @@ AnimationClip:
     path: Body/Chest/Arm (R)/Hand (R)/Roller/Trail
     classID: 96
     script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1.25
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Enabled
+    path: Body/Chest/Arm (R)/Hand (R)/Roller
+    classID: 58
+    script: {fileID: 0}
   m_PPtrCurves: []
   m_SampleRate: 60
   m_WrapMode: 0
@@ -629,6 +657,13 @@ AnimationClip:
       attribute: 1228858774
       script: {fileID: 0}
       typeID: 96
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2294092855
+      attribute: 3305885265
+      script: {fileID: 0}
+      typeID: 58
       customType: 0
       isPPtrCurve: 0
     pptrCurveMapping: []
@@ -2279,6 +2314,34 @@ AnimationClip:
     attribute: m_Emitting
     path: Body/Chest/Arm (R)/Hand (R)/Roller/Trail
     classID: 96
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1.25
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_Enabled
+    path: Body/Chest/Arm (R)/Hand (R)/Roller
+    classID: 58
     script: {fileID: 0}
   m_EulerEditorCurves:
   - curve:

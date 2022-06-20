@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Damage : MonoBehaviour {
 
+    [SerializeField] private GameObject healthBar;
+    [SerializeField] private Slider slider;
     [SerializeField] private float health;
     [SerializeField] private bool isEnemy;
 
@@ -17,8 +20,8 @@ public class Damage : MonoBehaviour {
     [Header("Enemy")]
     [SerializeField] private float mucus; // Moquino
     [SerializeField] private float stone; // Muro
-    [SerializeField] private float kasper; // Kasper
-
+    [SerializeField] private float ghost; // Kasper
+ 
     void OnTriggerEnter2D(Collider2D collision) {
         if (isEnemy) {
             switch(collision.gameObject.tag) {
@@ -53,11 +56,16 @@ public class Damage : MonoBehaviour {
                 health -= stone;
                 break;
 
-                case "Kasper":
-                health -= kasper;
+                case "Ghost":
+                health -= ghost;
                 break;
             }
         }
+
+        if (slider) slider.value = health / 100f;
+
+        if (health < 100)
+            healthBar.SetActive(true);
 
         if (health <= 0)
             Destroy(gameObject);

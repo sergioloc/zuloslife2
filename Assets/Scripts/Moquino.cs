@@ -21,7 +21,7 @@ public class Moquino : MonoBehaviour {
 
     void FixedUpdate() {
         if (run) {
-            transform.Translate(Vector2.left * speed * Time.deltaTime);
+            transform.Translate(Vector2.left * (speed / 10) * Time.deltaTime);
         }
     }
 
