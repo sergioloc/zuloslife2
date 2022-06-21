@@ -73,7 +73,7 @@ public class Skr : PlayerAction {
         yield return new WaitForSeconds(duration);
         shockwaveParticles.Stop();
         rippleEffect.Stop();
-        animator.SetTrigger("Cooldown");
+        animator.SetBool("isAttacking", false);
     }
 
 }

@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D collision) {
         if (isEnemy(collision.gameObject.tag)) {
-            if (targets.Contains(collision.transform))
+            if (targets.Contains(collision.transform)) 
                 targets.Remove(collision.transform);
             if (targets.Count == 0) {
                 movement.SetRunning(true);
