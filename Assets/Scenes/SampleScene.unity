@@ -4226,7 +4226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 7268029523007698031, guid: bf0e20bcbcb76d34c970adc98c8d6e41, type: 3}
-  position: {x: 6.5, y: 0, z: 0}
+  position: {x: 6.5, y: -3, z: 0}
 --- !u!114 &1041937818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5019,7 +5019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.003915994, g: 0.7848246, b: 0.8301887, a: 1}
+  m_Color: {r: 0.5707547, g: 0.9755879, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5308,7 +5308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.018689923, g: 0.7924528, b: 0.09151466, a: 1}
+  m_Color: {r: 0.17697577, g: 0.9150943, b: 0.2444181, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5677,7 +5677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnObject: {fileID: 5446771408115831044, guid: c2240a52cd625fc4bad1b99256dc96d7, type: 3}
-  position: {x: 7, y: 0, z: 0}
+  position: {x: 7, y: -1, z: 0}
 --- !u!114 &1513609507
 MonoBehaviour:
   m_ObjectHideFlags: 0
