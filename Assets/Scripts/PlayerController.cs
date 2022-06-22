@@ -17,7 +17,6 @@ public class PlayerController : MonoBehaviour {
         if (isEnemy(delegation.Other.gameObject.tag)) {
             if (!targets.Contains(delegation.Other.transform)) {
                 targets.Add(delegation.Other.transform);
-                Debug.Log("Attack");
                 movement.SetRunning(false);
                 action.Attack();
             }
@@ -34,7 +33,6 @@ public class PlayerController : MonoBehaviour {
         if (isEnemy(delegation.Other.gameObject.tag)) {
             targets.Remove(delegation.Other.transform);
             if (targets.Count == 0) {
-                Debug.Log("Run");
                 movement.SetRunning(true);
                 action.Run();
             }

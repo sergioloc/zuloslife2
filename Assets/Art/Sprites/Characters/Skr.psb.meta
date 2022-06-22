@@ -98,8 +98,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 368
-      y: 4
+      x: 238
+      y: 705
       width: 100
       height: 88
     spriteID: d0a0b68f710dce2448d122636d4f984f
@@ -112,7 +112,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -68, y: -166}
+    uvTransform: {x: -198, y: 535}
   - name: Chest
     originalName: 
     pivot: {x: 0.5, y: 0.1}
@@ -142,8 +142,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 705
+      x: 194
+      y: 477
       width: 132
       height: 150
     spriteID: 8941291ea1398214585c71a5ab4e9c17
@@ -156,7 +156,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -348, y: 350}
+    uvTransform: {x: -158, y: 122}
   - name: Hand
     originalName: 
     pivot: {x: 0.35, y: 0.8}
@@ -164,8 +164,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 863
+      x: 238
+      y: 867
       width: 89
       height: 102
     spriteID: 97b1512cc36f269498137bd26b6cef64
@@ -178,7 +178,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -355, y: 562}
+    uvTransform: {x: -121, y: 566}
   - name: Pants
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -186,8 +186,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 194
-      y: 477
+      x: 368
+      y: 320
       width: 187
       height: 73
     spriteID: f358b9b199290034c812dcaf379c5b88
@@ -200,7 +200,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -239, y: 193}
+    uvTransform: {x: -65, y: 36}
   - name: Head
     originalName: 
     pivot: {x: 0.5, y: 0.05}
@@ -230,8 +230,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 101
-      y: 863
+      x: 368
+      y: 401
       width: 68
       height: 94
     spriteID: 51e869f246265614aa7449f87c207c95
@@ -244,7 +244,95 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -349, y: 636}
+    uvTransform: {x: -82, y: 174}
+  - name: FaceNormal
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 867
+      width: 226
+      height: 151
+    spriteID: 8590c7588b5b0da4e8113393863936f3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -451, y: 366}
+  - name: FaceAttack
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 705
+      width: 226
+      height: 154
+    spriteID: 33cff7ef2762ea8419afbe701696d44b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -451, y: 208}
+  - name: FaceImpact
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 368
+      y: 163
+      width: 226
+      height: 149
+    spriteID: 784db8281d831224a9baa30c62923796
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -87, y: -340}
+  - name: FaceBlink
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 368
+      y: 4
+      width: 226
+      height: 151
+    spriteID: bd77221a61726da458e65fc24c6dc587
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -87, y: -497}
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
@@ -294,14 +382,14 @@ ScriptedImporter:
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
-  importedTextureWidth: 512
+  importedTextureWidth: 1024
   importedTextureHeight: 1024
   documentSize: {x: 1080, y: 1080}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
-  textureActualWidth: 512
+  textureActualWidth: 1024
   textureActualHeight: 1024
   spritePackingTag: 
   resliceFromLayer: 0
@@ -315,13 +403,41 @@ ScriptedImporter:
     spriteID: 00000000000000000000000000000000
     layerID: 149
     mosaicPosition: {x: 0, y: 0}
+  - name: FaceNormal
+    spriteName: FaceNormal
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 8590c7588b5b0da4e8113393863936f3
+    layerID: 190
+    mosaicPosition: {x: 4, y: 867}
+  - name: FaceImpact
+    spriteName: FaceImpact
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 784db8281d831224a9baa30c62923796
+    layerID: 192
+    mosaicPosition: {x: 368, y: 163}
+  - name: FaceBlink
+    spriteName: FaceBlink
+    isGroup: 0
+    parentIndex: 0
+    spriteID: bd77221a61726da458e65fc24c6dc587
+    layerID: 191
+    mosaicPosition: {x: 368, y: 4}
+  - name: FaceAttack
+    spriteName: FaceAttack
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 33cff7ef2762ea8419afbe701696d44b
+    layerID: 188
+    mosaicPosition: {x: 4, y: 705}
   - name: Foot
     spriteName: Foot
     isGroup: 0
     parentIndex: 0
     spriteID: d0a0b68f710dce2448d122636d4f984f
     layerID: 161
-    mosaicPosition: {x: 368, y: 4}
+    mosaicPosition: {x: 238, y: 705}
   - name: Chest
     spriteName: Chest
     isGroup: 0
@@ -335,21 +451,21 @@ ScriptedImporter:
     parentIndex: 0
     spriteID: 8941291ea1398214585c71a5ab4e9c17
     layerID: 170
-    mosaicPosition: {x: 4, y: 705}
+    mosaicPosition: {x: 194, y: 477}
   - name: Hand
     spriteName: Hand
     isGroup: 0
     parentIndex: 0
     spriteID: 97b1512cc36f269498137bd26b6cef64
     layerID: 173
-    mosaicPosition: {x: 4, y: 863}
+    mosaicPosition: {x: 238, y: 867}
   - name: Pants
     spriteName: Pants
     isGroup: 0
     parentIndex: 0
     spriteID: f358b9b199290034c812dcaf379c5b88
     layerID: 176
-    mosaicPosition: {x: 194, y: 477}
+    mosaicPosition: {x: 368, y: 320}
   - name: Head
     spriteName: Head
     isGroup: 0
@@ -363,7 +479,7 @@ ScriptedImporter:
     parentIndex: 0
     spriteID: 51e869f246265614aa7449f87c207c95
     layerID: 178
-    mosaicPosition: {x: 101, y: 863}
+    mosaicPosition: {x: 368, y: 401}
   characterData:
     bones: []
     parts: []
