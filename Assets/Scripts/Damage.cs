@@ -68,15 +68,9 @@ public class Damage : MonoBehaviour {
             healthBar.SetActive(true);
 
         if (health <= 0) {
-            gameObject.SetActive(false);
-            Invoke("DestroyObject", 0.5f);
+            Destroy(gameObject);
         }
 
-        //collision.gameObject.GetComponent<Animator>().SetTrigger("Absorb");
-    }
-
-    public void DestroyObject() {
-        Destroy(gameObject);
     }
 
 }

@@ -14791,9 +14791,10 @@ GameObject:
   - component: {fileID: 7556216247912859137}
   - component: {fileID: 4988917790557014620}
   - component: {fileID: 2906424537583327207}
-  m_Layer: 0
+  - component: {fileID: 3698996878915129639}
+  m_Layer: 8
   m_Name: Flamethrower
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14964,6 +14965,32 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!61 &3698996878915129639
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2886631687745859958}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 10, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.25, y: 0.85}
+    oldSize: {x: 7.06, y: 2.02}
+    newSize: {x: 7.06, y: 2.02}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10, y: 3}
+  m_EdgeRadius: 0
 --- !u!1 &2968090109157475057
 GameObject:
   m_ObjectHideFlags: 0
@@ -45070,6 +45097,7 @@ MonoBehaviour:
   movement: {fileID: 225054057995709293}
   action: {fileID: 2841801813511186884}
   actionDelay: 0
+  isFemale: 0
   targetsTag:
   - Rose
   - Muro

@@ -35,6 +35,7 @@ public class PlayerMovement : MonoBehaviour {
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         newShadow = Instantiate(shadow, new Vector3(transform.position.x, height, transform.position.z), Quaternion.identity);
+        rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
     void FixedUpdate() {
@@ -75,11 +76,13 @@ public class PlayerMovement : MonoBehaviour {
             newShadow.GetComponent<Animator>().SetTrigger("Bounce");
     }
 
-    public void SetRunning(bool run) {
+    public void SetRunning(bool value) {
         if (!grounded)
             ignoreLanding = true;
-        if (rb2d.constraints == RigidbodyConstraints2D.FreezeRotation)
-            this.run = run;
+        if (rb2d.constraints == RigidbodyConstraints2D.FreezeRotation) 
+            run = value;
+        if (value && !reverse)
+            ResetLook();
     }
 
     private void PlayLandSound() {
@@ -133,7 +136,7 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     // Reset character look to right
-    public void ResetLook() {
+    private void ResetLook() {
         transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
     }
     

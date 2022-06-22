@@ -6,35 +6,36 @@ public class PlayerController : MonoBehaviour {
 
     [SerializeField] private PlayerMovement movement;
     [SerializeField] private PlayerAction action;
-    [SerializeField] private float actionDelay;
+    public bool isFemale;
 
     [Space()]
     [SerializeField] private List<string> targetsTag;
     [SerializeField] private List<Transform> targets;
     private string targetTag;
 
-    void OnTriggerEnter2D(Collider2D collision) {
-        if (isEnemy(collision.gameObject.tag)) {
-            if (!targets.Contains(collision.transform))
-                targets.Add(collision.transform);
-            StartCoroutine(StopRunning());
-            action.Attack();
+    public void OnAreaTriggerEnter(OnTriggerDelegation delegation) {
+        if (isEnemy(delegation.Other.gameObject.tag)) {
+            if (!targets.Contains(delegation.Other.transform)) {
+                targets.Add(delegation.Other.transform);
+                Debug.Log("Attack");
+                movement.SetRunning(false);
+                action.Attack();
+            }
         }
     }
 
-    void OnTriggerStay2D(Collider2D collision) {
-        if (isEnemy(collision.gameObject.tag)) {
+    public void OnAreaTriggerStay(OnTriggerDelegation delegation) {
+        if (isEnemy(delegation.Other.gameObject.tag)) {
             FindTarget();
         }
     }
 
-    void OnTriggerExit2D(Collider2D collision) {
-        if (isEnemy(collision.gameObject.tag)) {
-            if (targets.Contains(collision.transform)) 
-                targets.Remove(collision.transform);
+    public void OnAreaTriggerExit(OnTriggerDelegation delegation) {
+        if (isEnemy(delegation.Other.gameObject.tag)) {
+            targets.Remove(delegation.Other.transform);
             if (targets.Count == 0) {
+                Debug.Log("Run");
                 movement.SetRunning(true);
-                movement.ResetLook();
                 action.Run();
             }
         }
@@ -45,12 +46,6 @@ public class PlayerController : MonoBehaviour {
         targetsTag.Add("Shield");
         targetsTag.Add("Player");
         targetTag = targetsTag[0];
-    }
-
-    
-    IEnumerator StopRunning() {
-        yield return new WaitForSeconds(actionDelay);
-        movement.SetRunning(false);
     }
 
     // Get target enemy from area

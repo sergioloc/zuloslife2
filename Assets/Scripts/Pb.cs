@@ -27,7 +27,7 @@ public class Pb : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Player") {
+        if (collision.gameObject.tag == "Player" && !collision.gameObject.GetComponent<PlayerController>().isFemale) {
             collision.gameObject.GetComponent<Animator>().SetTrigger("Absorb");
             run = false;
             absorbParticles.Play();

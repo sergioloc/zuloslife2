@@ -10422,7 +10422,7 @@ MonoBehaviour:
   slider: {fileID: 2802199054495254265}
   health: 100
   isEnemy: 1
-  fire: 50
+  fire: 34
   leaf: 0
   roller: 0
   onion: 0
