@@ -99,10 +99,54 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 2180
       width: 810
       height: 1080
     spriteID: 2f59c8d671be9884d863eff04c495386
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 2180}
+  - name: Vignette
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 810
+      height: 1080
+    spriteID: b3d9bfb7c17037147bcaf93bef9cc8d3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 1092}
+  - name: Vignette White
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 810
+      height: 1080
+    spriteID: 7f5c63fefa4dc4a4b9c9335be583c437
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -125,20 +169,34 @@ ScriptedImporter:
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
-  textureActualWidth: 1024
-  textureActualHeight: 2048
+  textureActualWidth: 2048
+  textureActualHeight: 4096
   spritePackingTag: 
   resliceFromLayer: 0
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
+  - name: Vignette White
+    spriteName: Vignette White
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7f5c63fefa4dc4a4b9c9335be583c437
+    layerID: 9
+    mosaicPosition: {x: 4, y: 4}
+  - name: Vignette
+    spriteName: Vignette
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b3d9bfb7c17037147bcaf93bef9cc8d3
+    layerID: 7
+    mosaicPosition: {x: 4, y: 1092}
   - name: Card
     spriteName: Card
     isGroup: 0
     parentIndex: -1
     spriteID: 2f59c8d671be9884d863eff04c495386
     layerID: 3
-    mosaicPosition: {x: 4, y: 4}
+    mosaicPosition: {x: 4, y: 2180}
   characterData:
     bones: []
     parts: []

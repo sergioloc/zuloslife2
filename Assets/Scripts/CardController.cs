@@ -5,15 +5,12 @@ using UnityEngine.UI;
 
 public class CardController : MonoBehaviour {
 
-    [SerializeField]
-    private GameObject spawn;
-    [SerializeField]
-    private Image loader;
-    [SerializeField]
-    private int cooldown = 0;
-    [SerializeField]
-    private bool isSelected;
+    [SerializeField] private GameObject spawn;
+    [SerializeField] private Image loader;
+    [SerializeField] private int cooldown = 0;
+    [SerializeField] private bool isSelected;
 
+    private Animator animator;
     private float counter;
     private bool isCooldown;
 
@@ -22,6 +19,7 @@ public class CardController : MonoBehaviour {
         counter = 0;
         isCooldown = false;
         isSelected = false;
+        animator = GetComponent<Animator>();
     }
 
     void Update() {
@@ -55,6 +53,7 @@ public class CardController : MonoBehaviour {
 
     public void SetSelected(bool isSelected) {
         this.isSelected = isSelected;
+        animator.SetBool("isSelected", isSelected);
     }
 
     public void Cooldown() {
