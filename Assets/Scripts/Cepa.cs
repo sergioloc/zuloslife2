@@ -38,9 +38,7 @@ public class Cepa : PlayerAction {
 
     public void ThrowOnion() {
         GameObject onion = Instantiate(projectile, shotPoint.position, Quaternion.Euler(0f, 0f, angle));
-        Debug.Log(distance);
         onion.GetComponent<Onion>().force = getForce();
-    
     }
 
     private float getForce() {
