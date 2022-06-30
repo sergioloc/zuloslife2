@@ -9,6 +9,9 @@ public class CardController : MonoBehaviour {
     [SerializeField] private Image loader;
     [SerializeField] private int cooldown = 0;
     [SerializeField] private bool isSelected;
+    [SerializeField] private Image front;
+    [SerializeField] private Sprite spriteSelected;
+    [SerializeField] private Sprite spriteUnselected;
 
     private Animator animator;
     private float counter;
@@ -54,6 +57,10 @@ public class CardController : MonoBehaviour {
     public void SetSelected(bool isSelected) {
         this.isSelected = isSelected;
         animator.SetBool("isSelected", isSelected);
+        if (isSelected)
+            front.sprite = spriteSelected;
+        else
+            front.sprite = spriteUnselected;
     }
 
     public void Cooldown() {
