@@ -20,8 +20,10 @@ public class Timer : MonoBehaviour {
             currentTime -= Time.deltaTime;
             bar.fillAmount = currentTime / time;
         }
-        else
+        else {
+            Time.timeScale = 0f;
             Destroy(gameObject);
+        }
     }
 
 }
