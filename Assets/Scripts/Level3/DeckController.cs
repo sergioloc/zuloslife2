@@ -6,15 +6,18 @@ public class DeckController : MonoBehaviour {
 
     [SerializeField] private Animator spawnOutside;
     [SerializeField] private List<CardController> cards;
+    public bool isActive = true;
 
     public void Spawn() {
-        CardController activeCard = GetActiveCard();
-        if (activeCard != null) {
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
-            Instantiate(activeCard.GetSpawn(), mousePos2D, Quaternion.identity);
-            activeCard.SetSelected(false);
-            activeCard.Cooldown();
+        if (isActive) {
+            CardController activeCard = GetActiveCard();
+            if (activeCard != null) {
+                Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
+                Instantiate(activeCard.GetSpawn(), mousePos2D, Quaternion.identity);
+                activeCard.SetSelected(false);
+                activeCard.Cooldown();
+            }
         }
     }
 
@@ -31,7 +34,7 @@ public class DeckController : MonoBehaviour {
     }
 
     public void pressCard1() {
-        if (cards[0].IsReady()) {
+        if (isActive && cards[0].IsReady()) {
             cards[0].SetSelected(true);
             cards[1].SetSelected(false);
             cards[2].SetSelected(false);
@@ -41,7 +44,7 @@ public class DeckController : MonoBehaviour {
     }
 
     public void pressCard2() {
-        if (cards[1].IsReady()) {
+        if (isActive && cards[1].IsReady()) {
             cards[0].SetSelected(false);
             cards[1].SetSelected(true);
             cards[2].SetSelected(false);
@@ -51,7 +54,7 @@ public class DeckController : MonoBehaviour {
     }
 
     public void pressCard3() {
-        if (cards[2].IsReady()) {
+        if (isActive && cards[2].IsReady()) {
             cards[0].SetSelected(false);
             cards[1].SetSelected(false);
             cards[2].SetSelected(true);
@@ -61,7 +64,7 @@ public class DeckController : MonoBehaviour {
     }
 
     public void pressCard4() {
-        if (cards[3].IsReady()) {
+        if (isActive && cards[3].IsReady()) {
             cards[0].SetSelected(false);
             cards[1].SetSelected(false);
             cards[2].SetSelected(false);
@@ -71,7 +74,7 @@ public class DeckController : MonoBehaviour {
     }
 
     public void pressCard5() {
-        if (cards[4].IsReady()) {
+        if (isActive && cards[4].IsReady()) {
             cards[0].SetSelected(false);
             cards[1].SetSelected(false);
             cards[2].SetSelected(false);

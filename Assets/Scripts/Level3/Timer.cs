@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour {
 
     [SerializeField] private float time = 0;
+    [SerializeField] private DeckController deck;
     private float currentTime;
     private Image bar;
 
@@ -22,6 +23,7 @@ public class Timer : MonoBehaviour {
         }
         else {
             Time.timeScale = 0f;
+            deck.isActive = false;
             Destroy(gameObject);
         }
     }
