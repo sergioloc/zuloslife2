@@ -93,8 +93,8 @@ ScriptedImporter:
   rigSpriteImportData:
   - name: ArmLong
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.75, y: 0.75}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -113,32 +113,10 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -32, y: -408}
-  - name: Capa 1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 347
-      y: 151
-      width: 129
-      height: 134
-    spriteID: 4bc9be5b1747fa04d995f15ce971352f
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -35, y: -264}
   - name: Head
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0.05}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -159,8 +137,8 @@ ScriptedImporter:
     uvTransform: {x: -393, y: -526}
   - name: Chest
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0.1}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -203,13 +181,13 @@ ScriptedImporter:
     uvTransform: {x: -285, y: 33}
   - name: Leg
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0.8}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 750
+      y: 567
       width: 71
       height: 94
     spriteID: 8ee39357e8ca6dc4e8fc75d2dd8532c2
@@ -222,16 +200,16 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -569, y: 473}
+    uvTransform: {x: -569, y: 290}
   - name: Hand
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.3, y: 0.75}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 657
+      x: 347
+      y: 241
       width: 87
       height: 85
     spriteID: eb80b07df1322c4448e0f61e91d19ff1
@@ -244,16 +222,16 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -389, y: 305}
+    uvTransform: {x: -46, y: -111}
   - name: Foot
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0.75}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 567
+      x: 347
+      y: 151
       width: 101
       height: 82
     spriteID: 7744d12c395f8724f935363e4d00bbd0
@@ -266,7 +244,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -560, y: 343}
+    uvTransform: {x: -217, y: -73}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
@@ -293,13 +271,6 @@ ScriptedImporter:
     spriteID: 731da0a80d302fc4595ba46e2c4dc631
     layerID: 451
     mosaicPosition: {x: 347, y: 4}
-  - name: Capa 1
-    spriteName: Capa 1
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 4bc9be5b1747fa04d995f15ce971352f
-    layerID: 452
-    mosaicPosition: {x: 347, y: 151}
   - name: Head
     spriteName: Head
     isGroup: 0
@@ -327,21 +298,21 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: 8ee39357e8ca6dc4e8fc75d2dd8532c2
     layerID: 442
-    mosaicPosition: {x: 4, y: 750}
+    mosaicPosition: {x: 4, y: 567}
   - name: Hand
     spriteName: Hand
     isGroup: 0
     parentIndex: -1
     spriteID: eb80b07df1322c4448e0f61e91d19ff1
     layerID: 440
-    mosaicPosition: {x: 4, y: 657}
+    mosaicPosition: {x: 347, y: 241}
   - name: Foot
     spriteName: Foot
     isGroup: 0
     parentIndex: -1
     spriteID: 7744d12c395f8724f935363e4d00bbd0
     layerID: 439
-    mosaicPosition: {x: 4, y: 567}
+    mosaicPosition: {x: 347, y: 151}
   characterData:
     bones: []
     parts: []
