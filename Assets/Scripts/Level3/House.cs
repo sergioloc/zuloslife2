@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Building : MonoBehaviour {
+public class House : MonoBehaviour {
 
     [SerializeField] private float interval;
     [SerializeField] private List<string> animations;
