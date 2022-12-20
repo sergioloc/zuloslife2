@@ -2954,6 +2954,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 248806695}
     m_Modifications:
+    - target: {fileID: 1998280053484757650, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
+      propertyPath: move
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998280053484757650, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998280053484757650, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
+      propertyPath: lifetime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3768563527545337612, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
       propertyPath: m_Name
       value: Streetlight (L)
@@ -3013,6 +3025,30 @@ PrefabInstance:
     - target: {fileID: 3768563527545337613, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768563527840378519, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
+      propertyPath: m_Color.b
+      value: 0.3764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768563527840378519, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768563527995829368, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768563528422785585, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768563528526354852, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8730086104931209296, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
@@ -8177,6 +8213,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 248806695}
     m_Modifications:
+    - target: {fileID: 1998280053484757650, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
+      propertyPath: move
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998280053484757650, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998280053484757650, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
+      propertyPath: lifetime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3768563527545337612, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
       propertyPath: m_Name
       value: 'Streetlight (R) '
@@ -8236,6 +8284,30 @@ PrefabInstance:
     - target: {fileID: 3768563527545337613, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768563527840378519, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
+      propertyPath: m_Color.b
+      value: 0.3764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768563527840378519, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768563527995829368, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768563528422785585, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768563528526354852, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8730086104931209296, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c62e9681804f30a43a0a8d942d72f3df, type: 3}
