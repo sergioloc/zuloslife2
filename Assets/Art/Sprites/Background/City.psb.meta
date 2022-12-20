@@ -98,8 +98,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1965
-      y: 2616
+      x: 1990
+      y: 2769
       width: 33
       height: 52
     spriteID: e9fda3cb32923aa4f8024fcaee89b916
@@ -112,7 +112,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1121, y: 1677}
+    uvTransform: {x: 1146, y: 1830}
   - name: Door
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -120,8 +120,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1965
-      y: 2526
+      x: 1932
+      y: 2769
       width: 50
       height: 82
     spriteID: 6f1b8fe59270dc047b6203d9afc95450
@@ -134,11 +134,11 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1054, y: 1602}
-  - name: Building4
+    uvTransform: {x: 1021, y: 1845}
+  - name: Building2
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -157,7 +157,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -257, y: 2029}
-  - name: Windows3
+  - name: Windows4
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -179,10 +179,10 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 1398, y: 2220}
-  - name: Building3
+  - name: Building4
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -223,7 +223,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 1092}
-  - name: Windows2
+  - name: Windows3
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -231,7 +231,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 2769
+      y: 3625
       width: 156
       height: 216
     spriteID: ce59f9b71ebf59345b49fe92ba4eed0b
@@ -244,11 +244,11 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -675, y: 2486}
-  - name: Building2
+    uvTransform: {x: -675, y: 3342}
+  - name: Building3
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -267,7 +267,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 788, y: 2022}
-  - name: Windows1
+  - name: Windows5
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -289,10 +289,10 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 756, y: 1840}
-  - name: Building1
+  - name: Building5
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -333,6 +333,72 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
+  - name: Building1
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 306
+      y: 2906
+      width: 265
+      height: 616
+    spriteID: ca396c125d9320346b8c3751589b6216
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 262, y: 2752}
+  - name: Building6
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2906
+      width: 294
+      height: 711
+    spriteID: 916f6d60896575e4899488110f0df2d3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1575, y: 2751}
+  - name: Floor
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2769
+      width: 1920
+      height: 129
+    spriteID: dea5ed8465139494d9ca77da0932a7a7
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 2664}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
@@ -358,91 +424,126 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: e9fda3cb32923aa4f8024fcaee89b916
     layerID: 16
-    mosaicPosition: {x: 1965, y: 2616}
+    mosaicPosition: {x: 1990, y: 2769}
   - name: Door
     spriteName: Door
     isGroup: 0
     parentIndex: -1
     spriteID: 6f1b8fe59270dc047b6203d9afc95450
     layerID: 10
-    mosaicPosition: {x: 1965, y: 2526}
-  - name: Building 4
+    mosaicPosition: {x: 1932, y: 2769}
+  - name: Floor
+    spriteName: Floor
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dea5ed8465139494d9ca77da0932a7a7
+    layerID: 70
+    mosaicPosition: {x: 4, y: 2769}
+  - name: Building1
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 60
+    mosaicPosition: {x: 0, y: 0}
+  - name: Building1
+    spriteName: Building1
+    isGroup: 0
+    parentIndex: 3
+    spriteID: ca396c125d9320346b8c3751589b6216
+    layerID: 62
+    mosaicPosition: {x: 306, y: 2906}
+  - name: Building 2
     spriteName: 
     isGroup: 1
     parentIndex: -1
     spriteID: 00000000000000000000000000000000
     layerID: 54
     mosaicPosition: {x: 0, y: 0}
-  - name: Building4
-    spriteName: Building4
-    isGroup: 0
-    parentIndex: 2
-    spriteID: 6c316f7135bc0114f92c0ce8d279c0c1
-    layerID: 56
-    mosaicPosition: {x: 999, y: 2180}
-  - name: Building 2
-    spriteName: 
-    isGroup: 1
-    parentIndex: -1
-    spriteID: 
-    layerID: 37
-    mosaicPosition: {x: 0, y: 0}
-  - name: Windows2
-    spriteName: Windows2
-    isGroup: 0
-    parentIndex: 4
-    spriteID: ce59f9b71ebf59345b49fe92ba4eed0b
-    layerID: 43
-    mosaicPosition: {x: 4, y: 2769}
   - name: Building2
     spriteName: Building2
     isGroup: 0
-    parentIndex: 4
+    parentIndex: 5
+    spriteID: 6c316f7135bc0114f92c0ce8d279c0c1
+    layerID: 56
+    mosaicPosition: {x: 999, y: 2180}
+  - name: Building 3
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 37
+    mosaicPosition: {x: 0, y: 0}
+  - name: Windows3
+    spriteName: Windows3
+    isGroup: 0
+    parentIndex: 7
+    spriteID: ce59f9b71ebf59345b49fe92ba4eed0b
+    layerID: 43
+    mosaicPosition: {x: 4, y: 3625}
+  - name: Building3
+    spriteName: Building3
+    isGroup: 0
+    parentIndex: 7
     spriteID: 6668870ced836de47a643f80026e5e98
     layerID: 39
     mosaicPosition: {x: 1391, y: 2180}
-  - name: Building 3
+  - name: Building 4
     spriteName: 
     isGroup: 1
     parentIndex: -1
     spriteID: 00000000000000000000000000000000
     layerID: 44
     mosaicPosition: {x: 0, y: 0}
-  - name: Windows3
-    spriteName: Windows3
+  - name: Windows4
+    spriteName: Windows4
     isGroup: 0
-    parentIndex: 7
+    parentIndex: 10
     spriteID: 94dff387635527a43afc41e4d12f7347
     layerID: 53
     mosaicPosition: {x: 1707, y: 2526}
-  - name: Building3
-    spriteName: Building3
+  - name: Building4
+    spriteName: Building4
     isGroup: 0
-    parentIndex: 7
+    parentIndex: 10
     spriteID: 44c3d81418723d346b6d9c624d938845
     layerID: 46
     mosaicPosition: {x: 526, y: 2180}
-  - name: Building 1
+  - name: Building 5
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 35
     mosaicPosition: {x: 0, y: 0}
-  - name: Windows1
-    spriteName: Windows1
+  - name: Windows5
+    spriteName: Windows5
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 13
     spriteID: 1f07e137590507f4796e37e714f04a90
     layerID: 34
     mosaicPosition: {x: 1707, y: 2180}
-  - name: Building1
-    spriteName: Building1
+  - name: Building5
+    spriteName: Building5
     isGroup: 0
-    parentIndex: 10
+    parentIndex: 13
     spriteID: 143bfa6ebef1d754a93d5ca3f33408e3
     layerID: 4
     mosaicPosition: {x: 4, y: 2180}
+  - name: Building 6
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 64
+    mosaicPosition: {x: 0, y: 0}
+  - name: Building6
+    spriteName: Building6
+    isGroup: 0
+    parentIndex: 16
+    spriteID: 916f6d60896575e4899488110f0df2d3
+    layerID: 66
+    mosaicPosition: {x: 4, y: 2906}
   - name: Cartoon-City-2D-Backgrounds-4
     spriteName: Cartoon-City-2D-Backgrounds-4
     isGroup: 0

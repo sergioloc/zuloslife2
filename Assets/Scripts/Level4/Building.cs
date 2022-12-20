@@ -29,8 +29,10 @@ public class Building : MonoBehaviour {
         spriteRenderer.color = colors[Random.Range(0, colors.Length)];
 
         // Select windows type
-        int windowPos = Random.Range(0, types[typePos].windows.Length);
-        windowsRenderer.sprite = types[typePos].windows[windowPos];
+        if (types[typePos].windows.Length > 0) {
+            int windowPos = Random.Range(0, types[typePos].windows.Length);
+            windowsRenderer.sprite = types[typePos].windows[windowPos];
+        }
     }
 
     void FixedUpdate() {

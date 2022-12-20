@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1920434927987526988
 Transform:
   m_ObjectHideFlags: 0
@@ -107,8 +107,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920434928077089721}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.27, y: -3.66, z: 5.258944}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1920434927987526988}
@@ -152,9 +152,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1035242685
+  m_SortingLayer: -5
+  m_SortingOrder: 2
   m_Sprite: {fileID: 6239597471279358692, guid: 8a1a8cd713bee87428ce7c0fdcb0d95d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -179,16 +179,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  lifetime: 10
+  lifetime: 7
   windowsRenderer: {fileID: 1920434927987526991}
   types:
-  - sprite: {fileID: 6239597471279358692, guid: 8a1a8cd713bee87428ce7c0fdcb0d95d, type: 3}
-    windows:
-    - {fileID: -8857390885546174099, guid: 8a1a8cd713bee87428ce7c0fdcb0d95d, type: 3}
-    - {fileID: 2672272834830095931, guid: 8a1a8cd713bee87428ce7c0fdcb0d95d, type: 3}
+  - sprite: {fileID: -7579354450644229262, guid: 8a1a8cd713bee87428ce7c0fdcb0d95d, type: 3}
+    windows: []
+  - sprite: {fileID: 1568556095497152461, guid: 8a1a8cd713bee87428ce7c0fdcb0d95d, type: 3}
+    windows: []
+  - sprite: {fileID: 408615215833693629, guid: 8a1a8cd713bee87428ce7c0fdcb0d95d, type: 3}
+    windows: []
   - sprite: {fileID: -7979106318239919573, guid: 8a1a8cd713bee87428ce7c0fdcb0d95d, type: 3}
-    windows:
-    - {fileID: 2672272834830095931, guid: 8a1a8cd713bee87428ce7c0fdcb0d95d, type: 3}
+    windows: []
+  - sprite: {fileID: 6239597471279358692, guid: 8a1a8cd713bee87428ce7c0fdcb0d95d, type: 3}
+    windows: []
+  - sprite: {fileID: 1172165732734870811, guid: 8a1a8cd713bee87428ce7c0fdcb0d95d, type: 3}
+    windows: []
   colors:
   - {r: 0.8396226, g: 0.18614274, b: 0.18614274, a: 1}
   - {r: 0.1843137, g: 0.5687942, b: 0.8392157, a: 1}

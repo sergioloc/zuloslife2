@@ -5,17 +5,28 @@ using UnityEngine;
 public class CityController : MonoBehaviour {
 
     [SerializeField] private GameObject building;
-    [SerializeField] private float frecuency;
+    [SerializeField] private float buildingFrecuency;
+    [SerializeField] private Transform buildingSpawnPoint;
+    [SerializeField] private GameObject streetlight;
+    [SerializeField] private float streetlightFrecuency;
+    [SerializeField] private Transform streetlightSpawnPoint;
 
     void Start() {
-        Instantiate(building, transform.position, Quaternion.identity);
+        Instantiate(building, buildingSpawnPoint.position, Quaternion.identity);
         StartCoroutine(CreateBuilding());
+        StartCoroutine(CreateStreetlight());
     }
 
     private IEnumerator CreateBuilding() {
-        yield return new WaitForSeconds(frecuency);
-        Instantiate(building, transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(buildingFrecuency);
+        Instantiate(building, buildingSpawnPoint.position, Quaternion.identity);
         StartCoroutine(CreateBuilding());
+    }
+
+    private IEnumerator CreateStreetlight() {
+        yield return new WaitForSeconds(streetlightFrecuency);
+        Instantiate(streetlight, streetlightSpawnPoint.position, Quaternion.identity);
+        StartCoroutine(CreateStreetlight());
     }
 
 }
