@@ -91,128 +91,18 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Palette
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 424
-      y: 940
-      width: 78
-      height: 323
-    spriteID: 10478dd8689b434428add1424b647515
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -575, y: 188}
-  - name: Hat
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 1618
-      width: 405
-      height: 229
-    spriteID: a733742303fde6549a97ad76037419b3
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -323, y: 952}
-  - name: Shadows
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 1328
-      width: 471
-      height: 282
-    spriteID: 081bccddfbbb1534e902977255976335
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -291, y: 748}
-  - name: Cream
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 510
-      y: 4
-      width: 400
-      height: 223
-    spriteID: eeb5514fc623e314ca1aea186ba2a254
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 182, y: -665}
   - name: Head
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 546
-      width: 422
-      height: 386
-    spriteID: 4a7ffbbf36e904946a007a585bafed83
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -309, y: 55}
-  - name: Shadows_1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0.05}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 498
-      height: 534
-    spriteID: d8b6261aecf1d434e8471119d42802e0
+      width: 422
+      height: 404
+    spriteID: 74324db52b17bbc44952f53c9b43bf6d
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -222,19 +112,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -239, y: -381}
-  - name: Brown
+    uvTransform: {x: -309, y: -487}
+  - name: Shoulder
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.75, y: 0.75}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 940
-      width: 412
-      height: 380
-    spriteID: b8ecacf08e458084a888801a02754162
+      y: 743
+      width: 105
+      height: 95
+    spriteID: d277f0218831c7c4991d19dec15ef1e5
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -244,19 +134,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -312, y: 446}
-  - name: Skin
+    uvTransform: {x: -377, y: 306}
+  - name: Arm
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.6, y: 0.75}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 510
-      y: 235
-      width: 334
-      height: 225
-    spriteID: 31c37465265ca3b4c99527323a970fc6
+      x: 4
+      y: 621
+      width: 101
+      height: 114
+    spriteID: 64e86dc7eea966348aec656ae3745373
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -266,7 +156,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 151, y: -275}
+    uvTransform: {x: -352, y: 230}
   - name: Pants
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -274,11 +164,11 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 1855
+      x: 184
+      y: 416
       width: 194
       height: 76
-    spriteID: 176800d4c222fa64f8b76f4bd5cf4bdb
+    spriteID: 80970a90b9211db4cb0e32ffe7ef7296
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -288,173 +178,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -430, y: 1538}
-  - name: Cream_1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 345
-      y: 1939
-      width: 67
-      height: 28
-    spriteID: 62cd469d1ec59bf4ba55e00daa1715db
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -167, y: 1583}
-  - name: Shadow
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 918
-      y: 4
-      width: 65
-      height: 38
-    spriteID: d5cd2d0764a9f6d44a203b387f8fc98d
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 479, y: -352}
-  - name: Belt
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 153
-      y: 1939
-      width: 184
-      height: 35
-    spriteID: a72c849f3bb896f4f9ebe7fcdec95d6e
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -285, y: 1583}
-  - name: Shadows_2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 403
-      y: 1855
-      width: 83
-      height: 50
-    spriteID: 0ed72ba0e70e48f439ca67463300fd9e
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -14, y: 1538}
-  - name: Brown_1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 206
-      y: 1855
-      width: 189
-      height: 71
-    spriteID: c4d56468c16724248949ecb5e7c0b0d1
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -232, y: 1535}
+    uvTransform: {x: -250, y: 99}
   - name: Chest
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 510
-      y: 731
-      width: 172
-      height: 197
-    spriteID: 7d662dd3ab6bca243aadcfee7e499dab
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 71, y: 389}
-  - name: Black
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 852
-      y: 412
-      width: 118
-      height: 36
-    spriteID: 5ed5a3f93ed50b943a92a1563d4b1625
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 390, y: -88}
-  - name: Cream_2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0.15}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 1939
-      width: 141
-      height: 77
-    spriteID: fa58b1ff3ff10d146b9b3ba006cc2ccc
+      y: 416
+      width: 172
+      height: 197
+    spriteID: d5caff6370df5ee488714c84b512c86b
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -464,19 +200,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -444, y: 1482}
-  - name: Lights
+    uvTransform: {x: -435, y: 74}
+  - name: Foot
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0.75}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 424
-      y: 1271
-      width: 73
-      height: 36
-    spriteID: 475c037858d1eba458d566d2933e6413
+      x: 184
+      y: 501
+      width: 96
+      height: 78
+    spriteID: 721ab1e3865672f419a95ec8f210cb6e
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -486,19 +222,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -81, y: 819}
-  - name: Shadows_3
+    uvTransform: {x: -353, y: 311}
+  - name: Leg
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0.75}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 510
-      y: 468
-      width: 204
-      height: 255
-    spriteID: 8d4ec549187e57f44ac01b393ee54d4b
+      x: 4
+      y: 846
+      width: 69
+      height: 114
+    spriteID: 4f1f23c99a8c1654496989ba214da58c
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -508,19 +244,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 120, y: 171}
-  - name: Brown_2
+    uvTransform: {x: -541, y: 615}
+  - name: Hand
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0.75}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 852
-      y: 235
-      width: 166
-      height: 169
-    spriteID: 58ac0f812eb9ce24392a022e21909728
+      x: 81
+      y: 846
+      width: 81
+      height: 87
+    spriteID: 3bbb6a9c770a37d4184635a5e41d9e89
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -530,194 +266,89 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 410, y: -110}
+    uvTransform: {x: -282, y: 514}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
-  importedTextureWidth: 1024
-  importedTextureHeight: 2048
+  importedTextureWidth: 512
+  importedTextureHeight: 1024
   documentSize: {x: 1080, y: 1080}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   spriteCategoryList:
     categories: []
-  textureActualWidth: 1024
-  textureActualHeight: 2048
+  textureActualWidth: 512
+  textureActualHeight: 1024
   spritePackingTag: 
   resliceFromLayer: 0
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Palette
-    spriteName: Palette
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 10478dd8689b434428add1424b647515
-    layerID: 242
-    mosaicPosition: {x: 424, y: 940}
-  - name: Hat
+  - name: Parts
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 
-    layerID: 267
-    mosaicPosition: {x: 0, y: 0}
-  - name: Hat
-    spriteName: Hat
-    isGroup: 0
-    parentIndex: 1
-    spriteID: a733742303fde6549a97ad76037419b3
-    layerID: 271
-    mosaicPosition: {x: 4, y: 1618}
-  - name: Shadows
-    spriteName: Shadows
-    isGroup: 0
-    parentIndex: 1
-    spriteID: 081bccddfbbb1534e902977255976335
-    layerID: 272
-    mosaicPosition: {x: 4, y: 1328}
-  - name: Cream
-    spriteName: Cream
-    isGroup: 0
-    parentIndex: 1
-    spriteID: eeb5514fc623e314ca1aea186ba2a254
-    layerID: 270
-    mosaicPosition: {x: 510, y: 4}
-  - name: Head
-    spriteName: 
-    isGroup: 1
-    parentIndex: -1
-    spriteID: 
-    layerID: 238
+    spriteID: 00000000000000000000000000000000
+    layerID: 312
     mosaicPosition: {x: 0, y: 0}
   - name: Head
     spriteName: Head
     isGroup: 0
-    parentIndex: 5
-    spriteID: 4a7ffbbf36e904946a007a585bafed83
-    layerID: 240
-    mosaicPosition: {x: 4, y: 546}
-  - name: Shadows
-    spriteName: Shadows_1
-    isGroup: 0
-    parentIndex: 5
-    spriteID: d8b6261aecf1d434e8471119d42802e0
-    layerID: 262
+    parentIndex: 0
+    spriteID: 74324db52b17bbc44952f53c9b43bf6d
+    layerID: 322
     mosaicPosition: {x: 4, y: 4}
-  - name: Brown
-    spriteName: Brown
+  - name: Shoulder
+    spriteName: Shoulder
     isGroup: 0
-    parentIndex: 5
-    spriteID: b8ecacf08e458084a888801a02754162
-    layerID: 241
-    mosaicPosition: {x: 4, y: 940}
-  - name: Skin
-    spriteName: Skin
+    parentIndex: 0
+    spriteID: d277f0218831c7c4991d19dec15ef1e5
+    layerID: 318
+    mosaicPosition: {x: 4, y: 743}
+  - name: Arm
+    spriteName: Arm
     isGroup: 0
-    parentIndex: 5
-    spriteID: 31c37465265ca3b4c99527323a970fc6
-    layerID: 243
-    mosaicPosition: {x: 510, y: 235}
-  - name: Pants
-    spriteName: 
-    isGroup: 1
-    parentIndex: -1
-    spriteID: 
-    layerID: 251
-    mosaicPosition: {x: 0, y: 0}
+    parentIndex: 0
+    spriteID: 64e86dc7eea966348aec656ae3745373
+    layerID: 317
+    mosaicPosition: {x: 4, y: 621}
+  - name: Hand
+    spriteName: Hand
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 3bbb6a9c770a37d4184635a5e41d9e89
+    layerID: 330
+    mosaicPosition: {x: 81, y: 846}
   - name: Pants
     spriteName: Pants
     isGroup: 0
-    parentIndex: 10
-    spriteID: 176800d4c222fa64f8b76f4bd5cf4bdb
-    layerID: 253
-    mosaicPosition: {x: 4, y: 1855}
-  - name: Cream
-    spriteName: Cream_1
-    isGroup: 0
-    parentIndex: 10
-    spriteID: 62cd469d1ec59bf4ba55e00daa1715db
-    layerID: 255
-    mosaicPosition: {x: 345, y: 1939}
-  - name: Shadow
-    spriteName: Shadow
-    isGroup: 0
-    parentIndex: 10
-    spriteID: d5cd2d0764a9f6d44a203b387f8fc98d
-    layerID: 259
-    mosaicPosition: {x: 918, y: 4}
-  - name: Belt
-    spriteName: Belt
-    isGroup: 0
-    parentIndex: 10
-    spriteID: a72c849f3bb896f4f9ebe7fcdec95d6e
-    layerID: 256
-    mosaicPosition: {x: 153, y: 1939}
-  - name: Shadows
-    spriteName: Shadows_2
-    isGroup: 0
-    parentIndex: 10
-    spriteID: 0ed72ba0e70e48f439ca67463300fd9e
-    layerID: 258
-    mosaicPosition: {x: 403, y: 1855}
-  - name: Brown
-    spriteName: Brown_1
-    isGroup: 0
-    parentIndex: 10
-    spriteID: c4d56468c16724248949ecb5e7c0b0d1
-    layerID: 254
-    mosaicPosition: {x: 206, y: 1855}
-  - name: Chest
-    spriteName: 
-    isGroup: 1
-    parentIndex: -1
-    spriteID: 
-    layerID: 244
-    mosaicPosition: {x: 0, y: 0}
+    parentIndex: 0
+    spriteID: 80970a90b9211db4cb0e32ffe7ef7296
+    layerID: 319
+    mosaicPosition: {x: 184, y: 416}
   - name: Chest
     spriteName: Chest
     isGroup: 0
-    parentIndex: 17
-    spriteID: 7d662dd3ab6bca243aadcfee7e499dab
-    layerID: 264
-    mosaicPosition: {x: 510, y: 731}
-  - name: Black
-    spriteName: Black
+    parentIndex: 0
+    spriteID: d5caff6370df5ee488714c84b512c86b
+    layerID: 316
+    mosaicPosition: {x: 4, y: 416}
+  - name: Foot
+    spriteName: Foot
     isGroup: 0
-    parentIndex: 17
-    spriteID: 5ed5a3f93ed50b943a92a1563d4b1625
-    layerID: 250
-    mosaicPosition: {x: 852, y: 412}
-  - name: Cream
-    spriteName: Cream_2
+    parentIndex: 0
+    spriteID: 721ab1e3865672f419a95ec8f210cb6e
+    layerID: 315
+    mosaicPosition: {x: 184, y: 500}
+  - name: Leg
+    spriteName: Leg
     isGroup: 0
-    parentIndex: 17
-    spriteID: fa58b1ff3ff10d146b9b3ba006cc2ccc
-    layerID: 249
-    mosaicPosition: {x: 4, y: 1939}
-  - name: Lights
-    spriteName: Lights
-    isGroup: 0
-    parentIndex: 17
-    spriteID: 475c037858d1eba458d566d2933e6413
-    layerID: 248
-    mosaicPosition: {x: 424, y: 1271}
-  - name: Shadows
-    spriteName: Shadows_3
-    isGroup: 0
-    parentIndex: 17
-    spriteID: 8d4ec549187e57f44ac01b393ee54d4b
-    layerID: 257
-    mosaicPosition: {x: 510, y: 468}
-  - name: Brown
-    spriteName: Brown_2
-    isGroup: 0
-    parentIndex: 17
-    spriteID: 58ac0f812eb9ce24392a022e21909728
-    layerID: 247
-    mosaicPosition: {x: 852, y: 235}
+    parentIndex: 0
+    spriteID: 4f1f23c99a8c1654496989ba214da58c
+    layerID: 314
+    mosaicPosition: {x: 4, y: 846}
   characterData:
     bones: []
     parts: []

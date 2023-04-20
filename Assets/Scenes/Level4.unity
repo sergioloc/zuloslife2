@@ -713,6 +713,7 @@ GameObject:
   - component: {fileID: 601598161}
   - component: {fileID: 601598151}
   - component: {fileID: 601598152}
+  - component: {fileID: 601598153}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -752,6 +753,73 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 15
+  landDetector: {fileID: 0}
+--- !u!114 &601598153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601598150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09db8d15077b8ec4a862525aa54221b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  head: {fileID: 2037264462}
+  shoulderL: {fileID: 1223297651}
+  shoulderR: {fileID: 521544832}
+  armL: {fileID: 1255113333}
+  armR: {fileID: 165508973}
+  handL: {fileID: 1286962109}
+  handR: {fileID: 1524735539}
+  chest: {fileID: 245350783}
+  pants: {fileID: 1932415176}
+  legL: {fileID: 2044475565}
+  legR: {fileID: 120823942}
+  footL: {fileID: 524571059}
+  footR: {fileID: 2047355203}
+  characters:
+  - head: {fileID: -2056917962646529805, guid: 85d4c51d8c680154eb87404070f9bad8, type: 3}
+    shoulder: {fileID: -2174097541703449407, guid: 85d4c51d8c680154eb87404070f9bad8, type: 3}
+    arm: {fileID: 8742261097355428531, guid: 85d4c51d8c680154eb87404070f9bad8, type: 3}
+    hand: {fileID: -2910796847979794219, guid: 85d4c51d8c680154eb87404070f9bad8, type: 3}
+    chest: {fileID: -5361795043112635183, guid: 85d4c51d8c680154eb87404070f9bad8, type: 3}
+    pants: {fileID: -7727624949983663791, guid: 85d4c51d8c680154eb87404070f9bad8, type: 3}
+    leg: {fileID: 7194823670533794267, guid: 85d4c51d8c680154eb87404070f9bad8, type: 3}
+    foot: {fileID: 747485764362450347, guid: 85d4c51d8c680154eb87404070f9bad8, type: 3}
+  - head: {fileID: -9049545479269069767, guid: d8b6e360cea08964abc84396ed334fda, type: 3}
+    shoulder: {fileID: 5125238016379458876, guid: d8b6e360cea08964abc84396ed334fda, type: 3}
+    arm: {fileID: 6095694697757603997, guid: d8b6e360cea08964abc84396ed334fda, type: 3}
+    hand: {fileID: 3152409652380648411, guid: d8b6e360cea08964abc84396ed334fda, type: 3}
+    chest: {fileID: 8235688485375545341, guid: d8b6e360cea08964abc84396ed334fda, type: 3}
+    pants: {fileID: 8589284882455452667, guid: d8b6e360cea08964abc84396ed334fda, type: 3}
+    leg: {fileID: 2363624502025671083, guid: d8b6e360cea08964abc84396ed334fda, type: 3}
+    foot: {fileID: -2707689071290203890, guid: d8b6e360cea08964abc84396ed334fda, type: 3}
+  - head: {fileID: 878020039514816852, guid: 5f00c373c39968e4d981b697b99368e9, type: 3}
+    shoulder: {fileID: -6247367619253736926, guid: 5f00c373c39968e4d981b697b99368e9, type: 3}
+    arm: {fileID: 7902068956481781588, guid: 5f00c373c39968e4d981b697b99368e9, type: 3}
+    hand: {fileID: -1144619454748971719, guid: 5f00c373c39968e4d981b697b99368e9, type: 3}
+    chest: {fileID: 5607969462975297486, guid: 5f00c373c39968e4d981b697b99368e9, type: 3}
+    pants: {fileID: 8588067088482384977, guid: 5f00c373c39968e4d981b697b99368e9, type: 3}
+    leg: {fileID: -2028006893975272299, guid: 5f00c373c39968e4d981b697b99368e9, type: 3}
+    foot: {fileID: 6338982192908898058, guid: 5f00c373c39968e4d981b697b99368e9, type: 3}
+  - head: {fileID: -7137258904525142906, guid: 14e84c3f5ce192d4697de86009f2ee90, type: 3}
+    shoulder: {fileID: -4470411534607049768, guid: 14e84c3f5ce192d4697de86009f2ee90, type: 3}
+    arm: {fileID: -5466351354112580424, guid: 14e84c3f5ce192d4697de86009f2ee90, type: 3}
+    hand: {fileID: 3910270434912352364, guid: 14e84c3f5ce192d4697de86009f2ee90, type: 3}
+    chest: {fileID: 1147698272942583467, guid: 14e84c3f5ce192d4697de86009f2ee90, type: 3}
+    pants: {fileID: -2111761236943518026, guid: 14e84c3f5ce192d4697de86009f2ee90, type: 3}
+    leg: {fileID: -7383528433203889470, guid: 14e84c3f5ce192d4697de86009f2ee90, type: 3}
+    foot: {fileID: 8637848949598679886, guid: 14e84c3f5ce192d4697de86009f2ee90, type: 3}
+  - head: {fileID: 2131503995709608640, guid: 7acee51db14f7414eaca2189a8864cca, type: 3}
+    shoulder: {fileID: -371285410088081332, guid: 7acee51db14f7414eaca2189a8864cca, type: 3}
+    arm: {fileID: 6483528107129196382, guid: 7acee51db14f7414eaca2189a8864cca, type: 3}
+    hand: {fileID: 3910270434912352364, guid: 14e84c3f5ce192d4697de86009f2ee90, type: 3}
+    chest: {fileID: 5945941080193459343, guid: 7acee51db14f7414eaca2189a8864cca, type: 3}
+    pants: {fileID: 6684641980852726522, guid: 7acee51db14f7414eaca2189a8864cca, type: 3}
+    leg: {fileID: -2119054170220514801, guid: 7acee51db14f7414eaca2189a8864cca, type: 3}
+    foot: {fileID: 7534708240896594877, guid: 7acee51db14f7414eaca2189a8864cca, type: 3}
 --- !u!70 &601598161
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
