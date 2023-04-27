@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class SwitcherController : MonoBehaviour {
     
+    [SerializeField] private float shrinkScale;
+    [SerializeField] private float shrinkDuration;
+    [SerializeField] private float shrinkSpeed;
+
     [SerializeField] private SpriteRenderer head;
     [SerializeField] private SpriteRenderer shoulderL;
     [SerializeField] private SpriteRenderer shoulderR;
@@ -20,26 +24,41 @@ public class SwitcherController : MonoBehaviour {
 
     [SerializeField] private List<Character> characters;
 
+    private Animator animator;
+   private bool isShrinking = false;
+
     void Start() {
-        
+        animator = GetComponent<Animator>();
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Q)) {
-           changeTo(0);
-        }
-        else if (Input.GetKeyDown(KeyCode.W)) {
-           changeTo(1);
-        }
-        else if (Input.GetKeyDown(KeyCode.E)) {
-           changeTo(2);
-        }
-        else if (Input.GetKeyDown(KeyCode.R)) {
-           changeTo(3);
-        }
-        else if (Input.GetKeyDown(KeyCode.T)) {
-           changeTo(4);
-        }
+      // Jota
+      if (Input.GetKeyDown(KeyCode.Q)) {
+         changeTo(0);
+         animator.SetTrigger("Dance");
+      }
+      // Natalia
+      else if (Input.GetKeyDown(KeyCode.W)) {
+         changeTo(1);
+         animator.SetTrigger("Vomit");
+      }
+      // Isma
+      else if (Input.GetKeyDown(KeyCode.E)) {
+         changeTo(2);
+         animator.SetTrigger("Whip");
+      } 
+      // Sandra
+      else if (Input.GetKeyDown(KeyCode.R)) {
+         changeTo(3);
+         animator.SetTrigger("Invoke");
+      }
+      // Pablo
+      else if (Input.GetKeyDown(KeyCode.T)) {
+         changeTo(4);
+         if (!isShrinking) {
+            StartCoroutine(Shrink());
+         }
+      }
     }
 
     private void changeTo(int position) {
@@ -56,6 +75,37 @@ public class SwitcherController : MonoBehaviour {
         legR.sprite = characters[position].leg;
         footL.sprite = characters[position].foot;
         footR.sprite = characters[position].foot;
+    }
+
+    private IEnumerator Shrink() {
+      isShrinking = true;
+      Vector3 originalScale = transform.localScale;
+      Vector3 targetScale = originalScale * shrinkScale;
+
+      float currentTime = 0f;
+
+      while (currentTime < shrinkDuration) {
+         transform.localScale = Vector3.Lerp(originalScale, targetScale, currentTime * shrinkSpeed / shrinkDuration);
+         currentTime += Time.deltaTime;
+         yield return null;
+      }
+
+      transform.localScale = targetScale;
+
+      yield return new WaitForSeconds(shrinkDuration);
+
+      currentTime = 0f;
+
+      while (currentTime < shrinkDuration)
+      {
+         transform.localScale = Vector3.Lerp(targetScale, originalScale, currentTime * shrinkSpeed / shrinkDuration);
+         currentTime += Time.deltaTime;
+         yield return null;
+      }
+
+      transform.localScale = originalScale;
+
+      isShrinking = false;
     }
 
 }
